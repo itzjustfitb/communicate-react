@@ -1,9 +1,10 @@
 footer {
+  padding: 20px 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: $secondary-color;
-  height: 400px;
+  background-color: $footer-color;
+  min-height: 400px;
   position: relative;
   #footer__left {
     top: 0;
@@ -17,21 +18,68 @@ footer {
     position: absolute;
   }
   .footer__container {
+    z-index: 1;
+    width: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    gap: 20px;
+    .footer__logo {
+      img {
+        width: 200px;
+        object-fit: cover;
+      }
+    }
     nav {
       ul {
         display: flex;
-        gap: 10px;
         li {
+          padding: 0 20px;
+          border-right: 1px solid $border-color;
+          &:last-child {
+            border-right: none;
+          }
           a {
+            transition: 0.4s;
             text-decoration: none;
-            color: $primary-color;
+            color: $text-color;
+            position: relative;
+            &::before {
+              content: "";
+              position: absolute;
+              bottom: -8px;
+              left: 0;
+              height: 2px;
+              background-color: $accent;
+              width: 0;
+              transition: 0.4s;
+            }
+          }
+          &:hover {
+            a {
+              color: $accent;
+              &::before {
+                width: 100%;
+              }
+            }
           }
         }
       }
+    }
+    .footer__socials {
+      margin-top: 20px;
+      display: flex;
+      gap: 20px;
+    }
+    .footer__description {
+      margin-top: 20px;
+      width: 90%;
+      padding: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-top: 1px solid rgb(56, 53, 77);
+      color: $text-color;
     }
   }
 }

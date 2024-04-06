@@ -6,31 +6,27 @@ import { SocialItem } from "../components/components.styles";
 function Footer() {
   const navigations = [
     {
-      label: "ANA SƏHİFƏ",
+      label: "Ana səhifə",
       value: "/",
     },
     {
-      label: "HAQQIMIZDA",
+      label: "Haqqımızda",
       value: "/about",
     },
     {
-      label: "CİBİNİZƏ UYĞUN",
+      label: "Cibinizə uyğun",
       value: "/choices",
     },
     {
-      label: "PORTFOLİO",
+      label: "Portfolio",
       value: "/portfolio",
     },
     {
-      label: "KOMANDAMIZ",
-      value: "/team",
-    },
-    {
-      label: "BLOQ",
+      label: "Bloq",
       value: "/bloq",
     },
     {
-      label: "ƏLAQƏ",
+      label: "Əlaqə",
       value: "/contact",
     },
   ];
@@ -63,7 +59,7 @@ function Footer() {
             <i class="ri-linkedin-fill"></i>
           </SocialItem>
         </div>
-        <p>blueCat</p>
+        <p className="footer__description">blueCat</p>
       </div>
     </footer>
   );
