@@ -1,0 +1,38 @@
+.services__card {
+  width: 540px;
+  padding: 30px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  display: flex;
+  gap: 20px;
+  background-color: $white-color;
+  transition: 0.4s;
+  border: 1px solid transparent;
+  .services__card-logo {
+    border-radius: 50%;
+    width: fit-content;
+    height: fit-content;
+    background-color: $light-grey-color;
+    padding: 20px;
+  }
+  .services__card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    h1 {
+      color: $primary-color;
+      font-weight: 700;
+      font-size: 1.375rem;
+    }
+    p {
+      color: $text-color;
+    }
+    span {
+      color: $accent;
+    }
+  }
+  &:hover {
+    transform: rotate(-1deg);
+    border: 1px solid $light-purple-color;
+  }
+}

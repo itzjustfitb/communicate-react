@@ -30,5 +30,6 @@ export const SocialItem = styled.button(({ color }) => ({
   "&:hover": {
     backgroundColor: color,
     color: "#fff",
+    transform: "translateY(-5px)",
   },
 }));

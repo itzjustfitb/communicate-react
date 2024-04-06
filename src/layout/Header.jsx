@@ -5,27 +5,27 @@ function Header() {
   const navigations = [
     {
       label: "HAQQIMIZDA",
-      value: "/about",
+      value: "#about",
     },
     {
       label: "CİBİNİZƏ UYĞUN",
-      value: "/choices",
+      value: "#choices",
     },
     {
       label: "PORTFOLİO",
-      value: "/portfolio",
+      value: "#portfolio",
     },
     {
       label: "KOMANDAMIZ",
-      value: "/team",
+      value: "#team",
     },
     {
       label: "BLOQ",
-      value: "/bloq",
+      value: "#bloq",
     },
     {
       label: "ƏLAQƏ",
-      value: "/contact",
+      value: "#contact",
     },
   ];
 

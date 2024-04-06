@@ -1,0 +1,9 @@
+.hero__socials {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
