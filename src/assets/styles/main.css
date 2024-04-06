@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&family=Lato&display=swap");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: "Josefin Sans";
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .header__container {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .header__container .header__logo a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+header .header__container .header__logo a img {
+  width: 100px;
+}
+header .header__container .header__logo a p {
+  font-size: 1.5rem;
+  color: #3f396d;
+}
+header .header__container nav {
+  display: flex;
+}
+header .header__container nav ul {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+}
+header .header__container nav ul li {
+  padding: 0 10px;
+}
+header .header__container nav ul li a {
+  text-decoration: none;
+  transition: 0.4s;
+  color: #3f396d;
+  font-weight: 600;
+}
+header .header__container nav ul li a:hover {
+  color: #fca61f;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #07003b;
+  height: 400px;
+  position: relative;
+}
+footer #footer__left {
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+footer #footer__right {
+  bottom: 0;
+  right: 0;
+  transform: rotate(180deg);
+  position: absolute;
+}
+footer .footer__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .footer__container nav ul {
+  display: flex;
+  gap: 10px;
+}
+footer .footer__container nav ul li a {
+  text-decoration: none;
+  color: #3f396d;
+}
