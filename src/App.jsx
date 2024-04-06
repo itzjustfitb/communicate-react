@@ -15,7 +15,7 @@ function App() {
       <Services />
       {/* // ? ------- APP ENDS HERE ------- */}
 
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }
