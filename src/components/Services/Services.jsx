@@ -4,6 +4,9 @@ import serviceIcon1 from "../../assets/image/service-icon1.png";
 import serviceIcon2 from "../../assets/image/service-icon2.png";
 import serviceIcon3 from "../../assets/image/service-icon3.png";
 import serviceIcon4 from "../../assets/image/service-icon4.png";
+import circleBgLeft from "../../assets/image/circle-bg-left-img.png";
+import halfCircleLeft from "../../assets/image/half-circle-left-icon.png";
+import cornLeftIcon from "../../assets/image/corn-left-icon.png";
 
 function Services() {
   const services = [
@@ -34,7 +37,11 @@ function Services() {
   ];
   return (
     <section id="services">
+      <img id="circle-bg-left" src={circleBgLeft} alt="" />
+      <img id="half-circle-left" src={halfCircleLeft} alt="" />
       <div className="services__container">
+        <img id="corn-left-icon" src={cornLeftIcon} alt="" />
+
         <div className="services__top">
           <h4>Təcrübələrimiz</h4>
           <h1>

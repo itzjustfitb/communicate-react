@@ -3,7 +3,29 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  #circle-bg-left {
+    position: absolute;
+    height: 127px;
+    top: 207px;
+    left: 0;
+    animation: moveRight 1s ease-in-out infinite alternate;
+  }
+  #half-circle-left {
+    height: 42px;
+    top: 170px;
+    left: 13px;
+    position: absolute;
+    animation: moveTop 1s ease-in-out infinite alternate;
+  }
+  #corn-left-icon {
+    position: absolute;
+    animation: moveTop 2s ease-in-out infinite alternate;
+    bottom: 250px;
+    right: 25px;
+  }
   .services__container {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;

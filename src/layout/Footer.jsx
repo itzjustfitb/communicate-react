@@ -7,27 +7,27 @@ function Footer() {
   const navigations = [
     {
       label: "Ana səhifə",
-      value: "/",
+      value: "#",
     },
     {
       label: "Haqqımızda",
-      value: "/about",
+      value: "#about",
     },
     {
       label: "Cibinizə uyğun",
-      value: "/choices",
+      value: "#choices",
     },
     {
       label: "Portfolio",
-      value: "/portfolio",
+      value: "#portfolio",
     },
     {
       label: "Bloq",
-      value: "/bloq",
+      value: "#bloq",
     },
     {
       label: "Əlaqə",
-      value: "/contact",
+      value: "#contact",
     },
   ];
 

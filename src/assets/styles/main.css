@@ -134,6 +134,22 @@ body {
   font-family: "Josefin Sans";
 }
 
+@keyframes moveRight {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-10px);
+  }
+}
+@keyframes moveTop {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
 #hero {
   position: relative;
   background: linear-gradient(33deg, rgb(242, 242, 255) 0%, rgb(235, 249, 255) 100%);
@@ -222,22 +238,6 @@ body {
   right: -12px;
   animation: moveTop 3s ease-in-out infinite alternate;
 }
-@keyframes moveRight {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-10px);
-  }
-}
-@keyframes moveTop {
-  0% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(-20px);
-  }
-}
 
 .hero__socials {
   position: absolute;
@@ -254,8 +254,30 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+}
+#services #circle-bg-left {
+  position: absolute;
+  height: 127px;
+  top: 207px;
+  left: 0;
+  animation: moveRight 1s ease-in-out infinite alternate;
+}
+#services #half-circle-left {
+  height: 42px;
+  top: 170px;
+  left: 13px;
+  position: absolute;
+  animation: moveTop 1s ease-in-out infinite alternate;
+}
+#services #corn-left-icon {
+  position: absolute;
+  animation: moveTop 2s ease-in-out infinite alternate;
+  bottom: 250px;
+  right: 25px;
 }
 #services .services__container {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -293,7 +315,7 @@ body {
   border-radius: 20px;
   display: flex;
   gap: 20px;
-  background-color: #fff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   transition: 0.4s;
   border: 1px solid transparent;
 }
@@ -304,12 +326,15 @@ body {
   height: -moz-fit-content;
   height: fit-content;
   background-color: #f2f2ff;
-  padding: 20px;
+  padding: 30px;
+}
+.services__card .services__card-logo img {
+  transition: 0.4s;
 }
 .services__card .services__card-content {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  justify-content: space-between;
 }
 .services__card .services__card-content h1 {
   color: #3f396d;
@@ -320,11 +345,35 @@ body {
   color: #9692b0;
 }
 .services__card .services__card-content span {
+  width: -moz-fit-content;
+  width: fit-content;
   color: #fca61f;
+  cursor: pointer;
+  position: relative;
+  transition: 0.4s;
+}
+.services__card .services__card-content span::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  height: 2px;
+  background-color: #3f396d;
+  width: 0%;
+  transition: 0.4s;
+}
+.services__card .services__card-content span:hover {
+  color: #3f396d;
+}
+.services__card .services__card-content span:hover::after {
+  width: 100%;
 }
 .services__card:hover {
   transform: rotate(-1deg);
   border: 1px solid #6f34fe;
+}
+.services__card:hover .services__card-logo img {
+  transform: translateY(-5px);
 }
 
 header {

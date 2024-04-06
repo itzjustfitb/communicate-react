@@ -5,7 +5,7 @@
   border-radius: 20px;
   display: flex;
   gap: 20px;
-  background-color: $white-color;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   transition: 0.4s;
   border: 1px solid transparent;
   .services__card-logo {
@@ -13,12 +13,15 @@
     width: fit-content;
     height: fit-content;
     background-color: $light-grey-color;
-    padding: 20px;
+    padding: 30px;
+    img {
+      transition: 0.4s;
+    }
   }
   .services__card-content {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    justify-content: space-between;
     h1 {
       color: $primary-color;
       font-weight: 700;
@@ -28,11 +31,36 @@
       color: $text-color;
     }
     span {
+      width: fit-content;
       color: $accent;
+      cursor: pointer;
+      position: relative;
+      transition: 0.4s;
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        height: 2px;
+        background-color: $primary-color;
+        width: 0%;
+        transition: 0.4s;
+      }
+      &:hover {
+        color: $primary-color;
+        &::after {
+          width: 100%;
+        }
+      }
     }
   }
   &:hover {
     transform: rotate(-1deg);
     border: 1px solid $light-purple-color;
+    .services__card-logo {
+      img {
+        transform: translateY(-5px);
+      }
+    }
   }
 }
