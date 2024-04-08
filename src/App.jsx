@@ -4,6 +4,7 @@ import Footer from "./layout/Footer";
 import "remixicon/fonts/remixicon.css";
 import Hero from "./components/Hero/Hero";
 import Services from "./components/Services/Services";
+import Experience from "./components/Portfolio/Portfolio";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       {/* // ? ------- APP STARTS HERE ------- */}
       <Hero />
       <Services />
+      <Experience />
       {/* // ? ------- APP ENDS HERE ------- */}
 
       <Footer />
