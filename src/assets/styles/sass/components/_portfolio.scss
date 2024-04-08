@@ -1,0 +1,117 @@
+#portfolio {
+  padding: 40px 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 544px;
+    background-color: $light-purple-color;
+  }
+
+  #portfolio-right,
+  #portfolio-left,
+  #corn-left {
+    position: absolute;
+    z-index: 1;
+  }
+  #portfolio-left {
+    height: 244px;
+    top: 0;
+    left: 0;
+  }
+  #portfolio-right {
+    height: 244px;
+    bottom: 0;
+    right: 0;
+  }
+  #corn-left {
+    top: 470px;
+    right: 116px;
+    animation: moveTop 1s ease-in-out infinite alternate;
+  }
+
+  .portfolio__container {
+    min-height: 544px;
+    z-index: 1;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    .portfolio__top {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+      color: $white-color;
+      h1 {
+        font-size: 2.625rem;
+        font-weight: 700;
+      }
+      h2 {
+        font-weight: 600;
+        font-size: 1.375rem;
+      }
+    }
+    .portfolio__bottom {
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      .portfolio__nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        ul {
+          display: flex;
+          font-size: 1.25rem;
+          font-weight: 600;
+          color: $white-color;
+          .active-nav {
+            color: $accent;
+            &::after {
+              width: 100%;
+            }
+          }
+          li {
+            cursor: pointer;
+            margin: 0 25px;
+            position: relative;
+            transition: 0.4s;
+            &::after {
+              content: "";
+              position: absolute;
+              left: 0;
+              bottom: -8px;
+              background-color: $accent;
+              height: 3px;
+              width: 0%;
+              transition: 0.4s;
+            }
+            &:hover {
+              color: $accent;
+              &::after {
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+      .portfolio__projects {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 20px;
+      }
+      .MuiPagination-ul {
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+}

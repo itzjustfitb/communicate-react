@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&family=Lato&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
 html,
 body,
 div,
@@ -374,6 +378,161 @@ body {
 }
 .services__card:hover .services__card-logo img {
   transform: translateY(-5px);
+}
+
+.portfolio__card {
+  width: 320px;
+  height: 320px;
+  position: relative;
+  border-radius: 16px;
+}
+.portfolio__card img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 16px;
+  height: 100%;
+}
+.portfolio__card:hover .portfolio__card-content {
+  visibility: visible;
+  opacity: 1;
+}
+.portfolio__card .portfolio__card-content {
+  background-color: rgba(255, 255, 255, 0.195);
+  border-radius: 16px;
+  transition: 0.4s;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: end;
+  padding: 20px;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+}
+.portfolio__card .portfolio__card-content .portfolio__card-left h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+#portfolio {
+  padding: 40px 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#portfolio::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 544px;
+  background-color: #6f34fe;
+}
+#portfolio #portfolio-right,
+#portfolio #portfolio-left,
+#portfolio #corn-left {
+  position: absolute;
+  z-index: 1;
+}
+#portfolio #portfolio-left {
+  height: 244px;
+  top: 0;
+  left: 0;
+}
+#portfolio #portfolio-right {
+  height: 244px;
+  bottom: 0;
+  right: 0;
+}
+#portfolio #corn-left {
+  top: 470px;
+  right: 116px;
+  animation: moveTop 1s ease-in-out infinite alternate;
+}
+#portfolio .portfolio__container {
+  min-height: 544px;
+  z-index: 1;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+#portfolio .portfolio__container .portfolio__top {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  color: #fff;
+}
+#portfolio .portfolio__container .portfolio__top h1 {
+  font-size: 2.625rem;
+  font-weight: 700;
+}
+#portfolio .portfolio__container .portfolio__top h2 {
+  font-weight: 600;
+  font-size: 1.375rem;
+}
+#portfolio .portfolio__container .portfolio__bottom {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+#portfolio .portfolio__container .portfolio__bottom .portfolio__nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#portfolio .portfolio__container .portfolio__bottom .portfolio__nav ul {
+  display: flex;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #fff;
+}
+#portfolio .portfolio__container .portfolio__bottom .portfolio__nav ul .active-nav {
+  color: #fca61f;
+}
+#portfolio .portfolio__container .portfolio__bottom .portfolio__nav ul .active-nav::after {
+  width: 100%;
+}
+#portfolio .portfolio__container .portfolio__bottom .portfolio__nav ul li {
+  cursor: pointer;
+  margin: 0 25px;
+  position: relative;
+  transition: 0.4s;
+}
+#portfolio .portfolio__container .portfolio__bottom .portfolio__nav ul li::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  background-color: #fca61f;
+  height: 3px;
+  width: 0%;
+  transition: 0.4s;
+}
+#portfolio .portfolio__container .portfolio__bottom .portfolio__nav ul li:hover {
+  color: #fca61f;
+}
+#portfolio .portfolio__container .portfolio__bottom .portfolio__nav ul li:hover::after {
+  width: 100%;
+}
+#portfolio .portfolio__container .portfolio__bottom .portfolio__projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+#portfolio .portfolio__container .portfolio__bottom .MuiPagination-ul {
+  display: flex;
+  justify-content: center;
 }
 
 header {

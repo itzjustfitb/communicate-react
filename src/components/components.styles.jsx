@@ -33,3 +33,19 @@ export const SocialItem = styled.button(({ color }) => ({
     transform: "translateY(-5px)",
   },
 }));
+
+export const ArrowButton = styled.button(({ direction }) => ({
+  cursor: "pointer",
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+  fontSize: "1.3rem",
+  backgroundColor: "#fca61f",
+  padding: 20,
+  border: "none",
+  borderRadius: "50%",
+  width: 50,
+  height: 50,
+  color: "#fff",
+  transform: direction !== "right" && " rotate(180deg)",
+}));
