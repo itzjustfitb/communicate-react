@@ -42,13 +42,13 @@ function Services() {
       <div className="services__container">
         <img id="corn-left-icon" src={cornLeftIcon} alt="" />
 
-        <div className="services__top">
+        <div className="services__top" data-aos="fade-up">
           <h4>Təcrübələrimiz</h4>
           <h1>
             Ən geniş Əhatə Dairəsinə Sahib Rəqəmsal Xidmətləri Sizə Təmin Edirik
           </h1>
         </div>
-        <div className="services__bottom">
+        <div className="services__bottom" data-aos="fade-up">
           {services.map((service, index) => (
             <ServicesCard
               key={index}

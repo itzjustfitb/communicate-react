@@ -49,18 +49,18 @@ function portfolio() {
       <img id="portfolio-right" src={portfolioRight} alt="" />
       <img id="corn-left" src={cornLeftIcon} alt="" />
       <div className="portfolio__container">
-        <div className="portfolio__top">
+        <div className="portfolio__top" data-aos="fade-up">
           <h1>Təcrübələrimiz</h1>
           <h2>
             Ən Geniş Əhatə Dairəsinə Sahib Rəqəmsal Xidmətləri Sizə Təmin Edirik
           </h2>
         </div>
         <div className="portfolio__bottom">
-          <nav className="portfolio__nav">
+          <nav className="portfolio__nav" data-aos="fade-up">
             <ul>
               {navigations.map((navigation, index) => (
                 <li
-                  className={activeNav === navigation.label && "active-nav"}
+                  className={activeNav === navigation.label ? "active-nav" : ""}
                   onClick={() => setActiveNav(navigation.label)}
                   key={index}
                 >
@@ -69,12 +69,12 @@ function portfolio() {
               ))}
             </ul>
           </nav>
-          <div className="portfolio__projects">
+          <div className="portfolio__projects" data-aos="fade-up">
             {currentPosts.map((item) => (
               <PortfolioCard key={item.label} item={item} />
             ))}
           </div>
-          <Stack spacing={2}>
+          <Stack spacing={2} data-aos="fade-up">
             <Pagination
               count={pageCount}
               page={currentPage}

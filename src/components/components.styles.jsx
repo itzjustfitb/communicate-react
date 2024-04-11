@@ -35,6 +35,7 @@ export const SocialItem = styled.button(({ color }) => ({
 }));
 
 export const ArrowButton = styled.button(({ direction }) => ({
+  transition: "0.4s",
   cursor: "pointer",
   display: "flex",
   justifyContent: "center",
@@ -47,5 +48,12 @@ export const ArrowButton = styled.button(({ direction }) => ({
   width: 50,
   height: 50,
   color: "#fff",
-  transform: direction !== "right" && " rotate(180deg)",
+  "&:hover": {
+    transform:
+      direction === "right"
+        ? "translateX(5px)"
+        : direction === "left"
+        ? "translateX(-5px)"
+        : "",
+  },
 }));

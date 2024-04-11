@@ -18,7 +18,7 @@ function PortfolioCard({ item }) {
         </div>
         <div className="portfolio__card-right">
           <ArrowButton direction="right">
-            <i class="ri-arrow-right-line"></i>
+            <i className="ri-arrow-right-line"></i>
           </ArrowButton>
         </div>
       </div>

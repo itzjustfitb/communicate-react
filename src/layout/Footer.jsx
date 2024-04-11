@@ -50,13 +50,13 @@ function Footer() {
         </nav>
         <div className="footer__socials">
           <SocialItem color="#1d74b1">
-            <i class="ri-behance-fill"></i>
+            <i className="ri-behance-fill"></i>
           </SocialItem>
           <SocialItem color="#f33a7e">
-            <i class="ri-dribbble-line"></i>
+            <i className="ri-dribbble-line"></i>
           </SocialItem>
           <SocialItem color="#1d74b1">
-            <i class="ri-linkedin-fill"></i>
+            <i className="ri-linkedin-fill"></i>
           </SocialItem>
         </div>
         <p className="footer__description">blueCat</p>
