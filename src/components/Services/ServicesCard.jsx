@@ -2,7 +2,7 @@ import React from "react";
 
 function ServicesCard({ img, title, description }) {
   return (
-    <div className="services__card">
+    <div className="services__card" data-aos="fade-left">
       <div className="services__card-logo">
         <img src={img} alt="" />
       </div>
