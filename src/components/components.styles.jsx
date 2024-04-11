@@ -17,6 +17,22 @@ export const DefaultBtn = styled.button({
   },
 });
 
+
+export const SumbitBtn = styled.button({
+  cursor: "pointer",
+  backgroundColor: "#fca61f",
+  padding: " 14px 40px",
+  border: "none",
+  borderRadius: 45,
+  color: "#fff",
+  fontWeight: 400,
+  fontSize: 20,
+  fontFamily: "Josefin Sans",
+  transition: "0.4s",
+ marginTop:"43%",
+ marginLeft:"-8%"
+});
+
 export const SocialItem = styled.button(({ color }) => ({
   cursor: "pointer",
   fontSize: 24,
