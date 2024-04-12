@@ -5,9 +5,9 @@ import cornLeftIcon from "../../assets/image/corn-left-icon.png";
 import PortfolioCard from "./PortfolioCard";
 import Pagination from "@mui/material/Pagination";
 import PaginationItem from "@mui/material/PaginationItem";
-
 import Stack from "@mui/material/Stack";
-function portfolio() {
+import ContentModal from "../ContentModal";
+function Portfolio({ modalActive, setModalActive }) {
   const navigations = [
     {
       label: "All",
@@ -55,7 +55,7 @@ function portfolio() {
             Ən Geniş Əhatə Dairəsinə Sahib Rəqəmsal Xidmətləri Sizə Təmin Edirik
           </h2>
         </div>
-        <div className="portfolio__bottom">
+        <div className="portfolio__bottom" data-aos="fade-up">
           <nav className="portfolio__nav" data-aos="fade-up">
             <ul>
               {navigations.map((navigation, index) => (
@@ -71,10 +71,14 @@ function portfolio() {
           </nav>
           <div className="portfolio__projects" data-aos="fade-up">
             {currentPosts.map((item) => (
-              <PortfolioCard key={item.label} item={item} />
+              <PortfolioCard
+                setModalActive={setModalActive}
+                key={item.label}
+                item={item}
+              />
             ))}
           </div>
-          <Stack spacing={2} data-aos="fade-up">
+          <Stack spacing={2}>
             <Pagination
               count={pageCount}
               page={currentPage}
@@ -96,4 +100,4 @@ function portfolio() {
   );
 }
 
-export default portfolio;
+export default Portfolio;
