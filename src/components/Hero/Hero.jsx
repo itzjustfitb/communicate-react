@@ -1,10 +1,10 @@
-import React from "react";
 import HeroSocials from "./HeroSocials";
 import { DefaultBtn } from "../components.styles";
 import blueCat from "../../assets/image/blue-cat-cut.png";
 import curnIcon from "../../assets/image/curn-icon.png";
 import triangleIcon from "../../assets/image/triangle-icon.png";
 import { Typewriter } from "react-simple-typewriter";
+
 function Hero() {
   return (
     <section id="hero">

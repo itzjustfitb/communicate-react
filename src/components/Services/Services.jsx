@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import ServicesCard from "./ServicesCard";
 import serviceIcon1 from "../../assets/image/service-icon1.png";
 import serviceIcon2 from "../../assets/image/service-icon2.png";
@@ -7,8 +7,9 @@ import serviceIcon4 from "../../assets/image/service-icon4.png";
 import circleBgLeft from "../../assets/image/circle-bg-left-img.png";
 import halfCircleLeft from "../../assets/image/half-circle-left-icon.png";
 import cornLeftIcon from "../../assets/image/corn-left-icon.png";
+import ContentModal from "../ContentModal";
 
-function Services() {
+function Services({ modalActive, setModalActive }) {
   const services = [
     {
       image: serviceIcon1,
@@ -35,12 +36,13 @@ function Services() {
         "Məhsullarınızı ən yaxşı şəkildə sosial media hesablarınıza yansıtmaq və müştəri...",
     },
   ];
+
   return (
     <section id="services">
-      <img id="circle-bg-left" src={circleBgLeft} alt="" />
-      <img id="half-circle-left" src={halfCircleLeft} alt="" />
+      <img id="circle-bg-left" src={circleBgLeft} alt="Circle Left" />
+      <img id="half-circle-left" src={halfCircleLeft} alt="Half Circle" />
       <div className="services__container">
-        <img id="corn-left-icon" src={cornLeftIcon} alt="" />
+        <img id="corn-left-icon" src={cornLeftIcon} alt="Corn Left" />
 
         <div className="services__top" data-aos="fade-up">
           <h4>Təcrübələrimiz</h4>
@@ -51,6 +53,7 @@ function Services() {
         <div className="services__bottom" data-aos="fade-up">
           {services.map((service, index) => (
             <ServicesCard
+              setModalActive={setModalActive}
               key={index}
               title={service.title}
               description={service.description}

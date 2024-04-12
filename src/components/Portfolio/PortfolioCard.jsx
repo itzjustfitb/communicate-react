@@ -1,7 +1,7 @@
 import React from "react";
 import { ArrowButton } from "../components.styles";
 
-function PortfolioCard({ item }) {
+function PortfolioCard({ item, setModalActive }) {
   return (
     <div className="portfolio__card">
       <img
@@ -17,7 +17,7 @@ function PortfolioCard({ item }) {
           </p>
         </div>
         <div className="portfolio__card-right">
-          <ArrowButton direction="right">
+          <ArrowButton onClick={() => setModalActive(true)} direction="right">
             <i className="ri-arrow-right-line"></i>
           </ArrowButton>
         </div>
