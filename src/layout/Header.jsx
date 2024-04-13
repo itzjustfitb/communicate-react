@@ -1,26 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 import siteLogo from "../assets/image/communicate_logo-removebg-preview.png";
 import { DefaultBtn } from "../components/components.styles";
+import { Divide as Hamburger } from "hamburger-react";
+
 function Header() {
   const navigations = [
     {
-      label: "HAQQIMIZDA",
+      label: "Haqqımızda",
       value: "#about",
     },
     {
-      label: "CİBİNİZƏ UYĞUN",
+      label: "Cibinizə uyğun",
       value: "#choices",
     },
     {
-      label: "PORTFOLİO",
+      label: "Portfolio",
       value: "#portfolio",
     },
     {
-      label: "KOMANDAMIZ",
+      label: "Komandamız",
       value: "#team",
     },
     {
-      label: "BLOQ",
+      label: "Bloq",
       value: "#bloq",
     },
     {
@@ -28,6 +30,9 @@ function Header() {
       value: "#contact",
     },
   ];
+
+  const [menuActive, setMenuActive] = useState(false);
+  const [navActive, setNavActive] = useState("");
 
   return (
     <header>
@@ -39,7 +44,7 @@ function Header() {
           </a>
         </div>
         <nav>
-          <ul>
+          <ul className={menuActive ? "active-menu" : ""}>
             {navigations.map((navigation, index) => (
               <li key={index}>
                 {navigation.label === "ƏLAQƏ" ? (
@@ -47,11 +52,20 @@ function Header() {
                     <DefaultBtn>ƏLAQƏ</DefaultBtn>
                   </a>
                 ) : (
-                  <a href={navigation.value}>{navigation.label}</a>
+                  <a
+                    onClick={() => setNavActive(navigation.label)}
+                    className={
+                      navigation.label === navActive ? "nav-active" : ""
+                    }
+                    href={navigation.value}
+                  >
+                    {navigation.label}
+                  </a>
                 )}
               </li>
             ))}
           </ul>
+          <Hamburger onToggle={() => setMenuActive(!menuActive)} />
         </nav>
       </div>
     </header>
