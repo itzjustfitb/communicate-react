@@ -181,6 +181,7 @@ body {
 }
 
 .services__card {
+  overflow: hidden;
   width: 100%;
   background-color: #fff;
   padding: 30px;
@@ -676,6 +677,7 @@ footer .footer__container .footer__description {
 }
 
 #hero {
+  overflow: hidden;
   position: relative;
   background: linear-gradient(33deg, rgb(242, 242, 255) 0%, rgb(235, 249, 255) 100%);
   display: flex;
@@ -689,6 +691,7 @@ footer .footer__container .footer__description {
   align-items: center;
 }
 #hero .hero__container .hero__left {
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -1064,6 +1067,7 @@ footer .footer__container .footer__description {
   }
 }
 #services {
+  overflow: hidden;
   padding: 50px 0;
   display: flex;
   justify-content: center;
@@ -1095,7 +1099,7 @@ footer .footer__container .footer__description {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 75%;
+  width: 80%;
   gap: 20px;
 }
 #services .services__container .services__top {
@@ -1242,6 +1246,7 @@ footer .footer__container .footer__description {
   }
 }
 #portfolio {
+  overflow: hidden;
   padding: 40px 0;
   position: relative;
   display: flex;
@@ -1545,6 +1550,7 @@ footer .footer__container .footer__description {
   }
 }
 #team {
+  overflow: hidden;
   padding: 40px 0;
   display: flex;
   justify-content: center;

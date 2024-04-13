@@ -10,7 +10,7 @@ function Hero() {
     <section id="hero">
       <HeroSocials />
       <div className="hero__container">
-        <div className="hero__left" data-aos="fade-right">
+        <div className="hero__left" data-aos="slide-right">
           <div className="hero__title">
             <h1>Hello, I Am</h1>
             <span>
@@ -27,7 +27,7 @@ function Hero() {
             <a href="#portfolio">İşlərimizə baxın</a>
           </div>
         </div>
-        <div className="hero__right" data-aos="fade-left">
+        <div className="hero__right" data-aos="slide-left">
           <img id="curn-icon" src={curnIcon} alt="" />
           <img id="blue-cat" src={blueCat} alt="" />
           <img id="triangle-icon" src={triangleIcon} alt="" />

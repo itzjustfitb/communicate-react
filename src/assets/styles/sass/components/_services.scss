@@ -1,4 +1,5 @@
 #services {
+  overflow: hidden;
   padding: 50px 0;
   display: flex;
   justify-content: center;
@@ -6,7 +7,6 @@
   position: relative;
   #circle-bg-left {
     position: absolute;
-    // height: 127px;
     top: 207px;
     left: 0;
     animation: moveRight 1s ease-in-out infinite alternate;
@@ -30,7 +30,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 75%;
+    width: 80%;
     gap: 20px;
     .services__top {
       display: flex;
