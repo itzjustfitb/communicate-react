@@ -2,8 +2,9 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 10px;
   .header__container {
-    width: 90%;
+    width: 95%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -13,7 +14,7 @@ header {
         align-items: center;
         text-decoration: none;
         img {
-          width: 100px;
+          width: 80px;
         }
         p {
           font-size: 1.5rem;
@@ -26,18 +27,107 @@ header {
       ul {
         align-items: center;
         display: flex;
-        gap: 10px;
+        justify-content: center;
+        gap: 15px;
         li {
-          padding: 0 10px;
           a {
             text-decoration: none;
             transition: 0.4s;
+            font-size: 1.1rem;
             color: $primary-color;
             font-weight: 600;
             &:hover {
               color: $accent;
             }
           }
+        }
+      }
+      .hamburger-react {
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    .header__container {
+      width: 95%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .header__logo {
+        a {
+          display: flex;
+          align-items: center;
+          text-decoration: none;
+          img {
+            width: 80px;
+          }
+          p {
+            font-size: 1.5rem;
+            color: $primary-color;
+          }
+        }
+      }
+      .active-menu {
+        visibility: visible;
+        opacity: 1;
+        transform: translate(0px);
+      }
+      nav {
+        display: flex;
+        ul {
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: $white-color;
+          position: fixed;
+          transform: translate(-20px);
+          transition: 0.4s;
+          visibility: hidden;
+          opacity: 0;
+          align-items: center;
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          li {
+            .nav-active {
+              color: $light-purple-color !important;
+              &::after {
+                width: 100%;
+              }
+            }
+            a {
+              font-size: 2rem;
+              text-decoration: none;
+              transition: 0.4s;
+              color: $primary-color;
+              font-weight: 600;
+              position: relative;
+              &::after {
+                content: "";
+                bottom: -7px;
+                left: 0;
+                height: 4px;
+                position: absolute;
+                background-color: $accent;
+                width: 0%;
+              }
+              &:hover {
+                color: $accent;
+              }
+            }
+          }
+        }
+        .hamburger-react {
+          color: $accent;
+          display: flex;
         }
       }
     }

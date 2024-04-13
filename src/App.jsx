@@ -39,10 +39,10 @@ function App() {
       <Team />
       {/* // ? ------- APP ENDS HERE ------- */}
 
-      <AnimCursor />
-      <ContentModal modalActive={modalActive} setModalActive={setModalActive} />
-      <ScrollTopBtn />
-      <Footer />
+      {/* <AnimCursor /> */}
+      {/* <ContentModal modalActive={modalActive} setModalActive={setModalActive} /> */}
+      {/* <ScrollTopBtn /> */}
+      {/* <Footer /> */}
     </>
   );
 }
