@@ -167,6 +167,7 @@ body {
   }
 }
 .hero__socials {
+  z-index: 10;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -174,6 +175,9 @@ body {
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+.hero__socials button {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
 .services__card {
@@ -470,6 +474,7 @@ header .header__container nav .hamburger-react {
     width: 100%;
     height: 100%;
     background-color: #fff;
+    z-index: 100;
     position: fixed;
     transform: translate(-20px);
     transition: 0.4s;
@@ -509,6 +514,9 @@ header .header__container nav .hamburger-react {
   header .header__container nav .hamburger-react {
     color: rgb(252, 166, 31);
     display: flex;
+  }
+  header .header__container .hamburger-react {
+    z-index: 100;
   }
 }
 footer {
@@ -681,6 +689,305 @@ footer .footer__container .footer__description {
   animation: moveTop 3s ease-in-out infinite alternate;
 }
 
+@media screen and (max-width: 1200px) {
+  #hero {
+    position: relative;
+    background: linear-gradient(33deg, rgb(242, 242, 255) 0%, rgb(235, 249, 255) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #hero .hero__container {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #hero .hero__container .hero__left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  #hero .hero__container .hero__left .hero__title {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  #hero .hero__container .hero__left .hero__title h1 {
+    color: #3f396d;
+    font-size: 2.625rem;
+    font-weight: 600;
+  }
+  #hero .hero__container .hero__left .hero__title span {
+    color: #6f34fe;
+    font-weight: 800;
+    font-size: 4.625rem;
+  }
+  #hero .hero__container .hero__left p {
+    font-size: 1.2rem;
+  }
+  #hero .hero__container .hero__left .hero__buttons {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  #hero .hero__container .hero__left .hero__buttons a {
+    text-decoration: none;
+    color: #3f396d;
+    font-size: 1.2rem;
+    position: relative;
+    transition: 0.4s;
+  }
+  #hero .hero__container .hero__left .hero__buttons a::after, #hero .hero__container .hero__left .hero__buttons a::before {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #3f396d;
+    transition: 0.4s;
+  }
+  #hero .hero__container .hero__left .hero__buttons a::after {
+    width: 0;
+  }
+  #hero .hero__container .hero__left .hero__buttons a:hover {
+    color: rgb(252, 166, 31);
+  }
+  #hero .hero__container .hero__left .hero__buttons a:hover::after {
+    width: 100%;
+    background-color: rgb(252, 166, 31);
+  }
+  #hero .hero__container .hero__right {
+    position: relative;
+    display: flex;
+    align-items: end;
+  }
+  #hero .hero__container .hero__right #blue-cat {
+    width: 350px;
+    animation: moveRight 1s ease-in-out infinite alternate;
+  }
+  #hero .hero__container .hero__right #curn-icon {
+    top: 25%;
+    left: 0;
+    position: absolute;
+    animation: moveTop 1s ease-in-out infinite alternate;
+  }
+  #hero .hero__container .hero__right #triangle-icon {
+    position: absolute;
+    bottom: 6px;
+    right: -12px;
+    animation: moveTop 3s ease-in-out infinite alternate;
+  }
+}
+@media screen and (max-width: 1000px) {
+  #hero {
+    position: relative;
+    background: linear-gradient(33deg, rgb(242, 242, 255) 0%, rgb(235, 249, 255) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #hero .hero__socials {
+    display: flex;
+  }
+  #hero .hero__container {
+    padding: 40px 0;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    gap: 50px;
+    align-items: center;
+  }
+  #hero .hero__container .hero__left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  #hero .hero__container .hero__left .hero__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  #hero .hero__container .hero__left .hero__title h1 {
+    color: #3f396d;
+    font-size: 2.625rem;
+    font-weight: 600;
+  }
+  #hero .hero__container .hero__left .hero__title span {
+    color: #6f34fe;
+    font-weight: 800;
+    font-size: 4rem;
+  }
+  #hero .hero__container .hero__left p {
+    text-align: center;
+    font-size: 1.4rem;
+  }
+  #hero .hero__container .hero__left .hero__buttons {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  #hero .hero__container .hero__left .hero__buttons a {
+    text-decoration: none;
+    color: #3f396d;
+    font-size: 1.2rem;
+    position: relative;
+    transition: 0.4s;
+  }
+  #hero .hero__container .hero__left .hero__buttons a::after, #hero .hero__container .hero__left .hero__buttons a::before {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #3f396d;
+    transition: 0.4s;
+  }
+  #hero .hero__container .hero__left .hero__buttons a::after {
+    width: 0;
+  }
+  #hero .hero__container .hero__left .hero__buttons a:hover {
+    color: rgb(252, 166, 31);
+  }
+  #hero .hero__container .hero__left .hero__buttons a:hover::after {
+    width: 100%;
+    background-color: rgb(252, 166, 31);
+  }
+  #hero .hero__container .hero__left .hero__buttons button {
+    font-size: 1rem;
+    padding: 10px;
+  }
+  #hero .hero__container .hero__right {
+    position: relative;
+    display: flex;
+    align-items: end;
+  }
+  #hero .hero__container .hero__right #blue-cat {
+    width: 100%;
+    animation: moveRight 1s ease-in-out infinite alternate;
+  }
+  #hero .hero__container .hero__right #curn-icon {
+    top: 25%;
+    left: 0;
+    position: absolute;
+    animation: moveTop 1s ease-in-out infinite alternate;
+  }
+  #hero .hero__container .hero__right #triangle-icon {
+    position: absolute;
+    bottom: 6px;
+    right: -12px;
+    animation: moveTop 3s ease-in-out infinite alternate;
+  }
+}
+@media screen and (max-width: 575px) {
+  #hero {
+    position: relative;
+    background: linear-gradient(33deg, rgb(242, 242, 255) 0%, rgb(235, 249, 255) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #hero .hero__socials {
+    display: none;
+  }
+  #hero .hero__container {
+    padding: 40px 0;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    gap: 50px;
+    align-items: center;
+  }
+  #hero .hero__container .hero__left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  #hero .hero__container .hero__left .hero__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  #hero .hero__container .hero__left .hero__title h1 {
+    color: #3f396d;
+    font-size: 2.625rem;
+    font-weight: 600;
+  }
+  #hero .hero__container .hero__left .hero__title span {
+    color: #6f34fe;
+    font-weight: 800;
+    font-size: 2.5rem;
+  }
+  #hero .hero__container .hero__left p {
+    text-align: center;
+    font-size: 1rem;
+  }
+  #hero .hero__container .hero__left .hero__buttons {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  #hero .hero__container .hero__left .hero__buttons a {
+    text-decoration: none;
+    color: #3f396d;
+    font-size: 0.9rem;
+    position: relative;
+    transition: 0.4s;
+  }
+  #hero .hero__container .hero__left .hero__buttons a::after, #hero .hero__container .hero__left .hero__buttons a::before {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #3f396d;
+    transition: 0.4s;
+  }
+  #hero .hero__container .hero__left .hero__buttons a::after {
+    width: 0;
+  }
+  #hero .hero__container .hero__left .hero__buttons a:hover {
+    color: rgb(252, 166, 31);
+  }
+  #hero .hero__container .hero__left .hero__buttons a:hover::after {
+    width: 100%;
+    background-color: rgb(252, 166, 31);
+  }
+  #hero .hero__container .hero__left .hero__buttons button {
+    font-size: 1rem;
+    padding: 10px;
+  }
+  #hero .hero__container .hero__right {
+    position: relative;
+    display: flex;
+    align-items: end;
+  }
+  #hero .hero__container .hero__right #blue-cat {
+    width: 100%;
+    animation: moveRight 1s ease-in-out infinite alternate;
+  }
+  #hero .hero__container .hero__right #curn-icon {
+    top: 25%;
+    left: 0;
+    position: absolute;
+    animation: moveTop 1s ease-in-out infinite alternate;
+  }
+  #hero .hero__container .hero__right #triangle-icon {
+    position: absolute;
+    bottom: 6px;
+    right: -12px;
+    animation: moveTop 3s ease-in-out infinite alternate;
+  }
+}
 #services {
   padding: 50px 0;
   display: flex;
