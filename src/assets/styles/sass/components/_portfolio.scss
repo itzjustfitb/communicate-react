@@ -39,7 +39,7 @@
   .portfolio__container {
     min-height: 544px;
     z-index: 1;
-    width: 80%;
+    width: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -60,16 +60,21 @@
       }
     }
     .portfolio__bottom {
-      width: 80%;
+      width: 100%;
       display: flex;
+      align-items: center;
       flex-direction: column;
       gap: 30px;
       .portfolio__nav {
         display: flex;
         justify-content: center;
         align-items: center;
+        .portfolio__select {
+          display: none;
+        }
         ul {
           display: flex;
+          gap: 30px;
           font-size: 1.25rem;
           font-weight: 600;
           color: $white-color;
@@ -81,7 +86,6 @@
           }
           li {
             cursor: pointer;
-            margin: 0 25px;
             position: relative;
             transition: 0.4s;
             &::after {
@@ -104,13 +108,197 @@
         }
       }
       .portfolio__projects {
+        width: 70%;
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
         gap: 20px;
       }
-      .MuiPagination-ul {
+      .MuiPagination-ul,
+      .css-19xm0h7-MuiButtonBase-root-MuiPaginationItem-root {
         display: flex;
         justify-content: center;
+        font-family: $font-1 !important;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #portfolio {
+    padding: 40px 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      min-height: 544px;
+      background-color: $light-purple-color;
+    }
+
+    #portfolio-right,
+    #portfolio-left,
+    #corn-left {
+      position: absolute;
+      z-index: 1;
+    }
+    #portfolio-left {
+      height: 244px;
+      top: 0;
+      left: 0;
+    }
+    #portfolio-right {
+      height: 244px;
+      bottom: 0;
+      right: 0;
+    }
+    #corn-left {
+      top: 470px;
+      right: 116px;
+      animation: moveTop 1s ease-in-out infinite alternate;
+    }
+
+    .portfolio__container {
+      min-height: 544px;
+      z-index: 1;
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      .portfolio__top {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        color: $white-color;
+        text-align: center;
+        h1 {
+          font-size: 2rem;
+          font-weight: 700;
+        }
+        h2 {
+          font-weight: 600;
+          line-height: 1.4;
+          font-size: 1.3rem;
+        }
+      }
+      .portfolio__bottom {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        .portfolio__nav {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          position: relative;
+          gap: 5px;
+          .portfolio__select {
+            width: 100%;
+            padding: 10px;
+            border-radius: 10px;
+            display: flex;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            color: $white-color;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            .dropdown-icon-active {
+              transform: rotate(180deg);
+            }
+            i {
+              transition: 0.4s;
+            }
+          }
+          .ul-active {
+            height: 290px;
+            visibility: visible;
+            opacity: 1;
+            padding: 0 10px;
+            li {
+              opacity: 1;
+              visibility: visible;
+            }
+          }
+          ul {
+            transition: 0.4s;
+            visibility: hidden;
+            padding: 0;
+            opacity: 0;
+            width: 100%;
+            height: 0px;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            align-items: center;
+            font-size: 1rem;
+            font-weight: 600;
+            color: $white-color;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            .active-nav {
+              color: $accent;
+              &::after {
+                width: 0%;
+              }
+            }
+            li {
+              opacity: 0;
+              visibility: hidden;
+              padding: 10px;
+              width: 100%;
+              cursor: pointer;
+              margin: 0;
+              position: relative;
+              transition: 0.4s;
+              border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+              &:last-child {
+                border-bottom: 1px solid transparent;
+              }
+              &::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: -8px;
+                background-color: $accent;
+                height: 3px;
+                width: 0%;
+                transition: 0.4s;
+              }
+              &:hover {
+                color: $accent;
+                &::after {
+                  width: 0%;
+                }
+              }
+            }
+          }
+        }
+        .portfolio__projects {
+          width: 100%;
+          display: grid;
+          place-items: center;
+          grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+          gap: 20px;
+        }
+        .MuiPagination-ul {
+          margin-top: 10px;
+          display: flex;
+          justify-content: center;
+        }
       }
     }
   }
