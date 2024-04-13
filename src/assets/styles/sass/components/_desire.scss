@@ -1,0 +1,427 @@
+
+
+
+
+
+
+
+
+.desire{
+    background: linear-gradient(33deg, rgba(242,242,255,1) 0%, rgba(235,249,255,1) 100%);
+    overflow: hidden;
+padding: 30px;
+ &::after{
+    content: "";
+    width: 127px;
+    height: 404px;
+    position: absolute;
+    top: 87%;
+    right: 0;
+    background: url(../image/circle-bg-img.png) no-repeat top right;
+    animation: left-mover 1s infinite alternate;
+    -webkit-animation: left-mover 1s infinite alternate;
+ }
+
+ &::before{
+    content: "";
+    width: 52px;
+    height: 59px;
+    position: absolute;
+    top: 85%;
+    right: 42px;
+    background: url(../image/half-circle-right-icon.png) no-repeat top left;
+    animation: moveTop 1s ease-in-out infinite alternate;
+ }
+
+
+.desiresections{
+
+.desireiconcontainer{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    .packageH2{
+        font-size: 30px;
+        color: #6F34FE;
+    }
+}
+.reuqstcenters{
+    display: flex;
+    flex-direction: row !important;
+    align-items: center;
+ 
+   width: 90%;
+   .colchildsall{
+   
+       width: 82%;
+       
+      .svgtext{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 3px;
+      }
+      #item1Counter{
+        margin-top: 35px;
+    }
+    #item1Span{
+        margin-top: 5px;
+    }
+    .colchild1{
+        margin-top: 20px;
+  font-size: 20px;
+    }
+    .colchild2{
+        margin-top: 30px;
+        font-size: 20px;
+    }
+    .colchild3{
+        margin-top: 40px;
+        font-size: 20px;
+    }
+    .colchild4{
+        margin-top: 40px;
+        font-size: 20px;
+    }
+    .slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 62px; /* Thumb genişliği */
+        height:42px; /* Thumb yüksekliği */
+        background: url('../image/stock.jpg') center center no-repeat; /* Fotoğraf yolunu belirtin */
+        background-size: cover; /* Fotoğrafı kaplayacak şekilde boyutlandırın */
+        cursor: pointer;
+        border-radius: 70%;
+        padding: 5px;
+      }
+      input[type="range"] {
+        appearance: none;
+        margin-bottom: 7px;
+        background: transparent;
+        background-color: black;
+        width: 83%;
+        background-color: rgb(0, 0, 0);
+        height: 30px;
+        border-radius: 50px;
+        background-color: #333fe7;;
+        margin-top: 15px;
+      
+      }
+      
+}
+
+.chechkboxalls{
+    flex-direction: column;
+    display: flex;
+    left: 65%;
+    position: absolute;
+    right: 0;
+    gap: 65px;
+    top: 87%;
+
+    .checkbox-container{
+        display: flex;
+        flex-direction: row !important;
+        align-items: center !important;
+        gap: 1px;
+       
+        .labeltext {
+            &::before{
+
+                content: "";
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                background-color: #6F34FE;
+                border-radius: 5px;
+                transition: background-color 0.3s;
+            }
+          }
+          &::after{
+            content: "";
+              position: absolute;
+              left: 2px;
+              top: -2px;
+              width: 14px;
+              height: 8px;
+              border: solid white;
+              border-width: 0 2px 3px 0;
+              opacity: 0;
+          }
+          .labeltexttwo {
+            &::before{
+
+                content: "";
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                background-color: #6F34FE;
+                border-radius: 5px;
+                transition: background-color 0.3s;
+            }
+          }
+          &::after{
+            content: "";
+              position: absolute;
+              left: 2px;
+              top: -2px;
+              width: 14px;
+              height: 8px;
+              border: solid white;
+              border-width: 0 2px 3px 0;
+              opacity: 0;
+          }
+          .labeltextthree{
+            &::before{
+
+                content: "";
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                background-color: #6F34FE;
+                border-radius: 5px;
+                transition: background-color 0.3s;
+            }
+          }
+          &::after{
+            content: "";
+              position: absolute;
+              left: 2px;
+              top: -2px;
+              width: 14px;
+              height: 8px;
+              border: solid white;
+              border-width: 0 2px 3px 0;
+              opacity: 0;
+          }
+          .labeltextfor{
+            &::before{
+
+                content: "";
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                background-color: #6F34FE;
+                border-radius: 5px;
+                transition: background-color 0.3s;
+            }
+          }
+          &::after{
+            content: "";
+              position: absolute;
+              left: 2px;
+              top: -2px;
+              width: 14px;
+              height: 8px;
+              border: solid white;
+              border-width: 0 2px 3px 0;
+              opacity: 0;
+          }
+        .labeltexts{
+  margin-top: 5px;
+  margin-left: 25px;
+  font-family: inherit;
+  font-size: 14px;
+}
+.report:hover ~ .messagetwo {
+    display: block;
+  }
+  
+  .report:hover ~ .message {
+    display: block;
+  }
+  
+  
+  .report:hover ~ .messagethree {
+    display: block;
+  }
+  .labeltexts{
+    margin-top: 5px;
+    margin-left: 25px;
+    font-family: inherit;
+    font-size: 14px;
+  }
+  .message {
+    position: absolute;
+    top: 21%;
+    
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    width: 130px;
+    height: 255px;
+    padding: 17px;
+    border-radius: 3px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: none;
+    background-color: black;
+    color: white;
+    left: 38%;
+  }
+  .messagethree{
+    position: absolute;
+    top: 30%;
+    
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    width: 130px;
+    height: 255px;
+    padding: 17px;
+    border-radius: 3px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: none;
+    background-color: black;
+    color: white;
+    left: 38%;
+  }
+  .messagetwo{
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    width: 100px;
+    height: 75px;
+    padding: 10px;
+    
+    border-radius: 15%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: none;
+    background-color: black;
+    color: white;
+  }
+  
+  input[type=checkbox] {
+    opacity: 0;
+ position: absolute;
+   width: 5px;
+    height: 5px;
+  }
+  
+ 
+ input[type=checkbox]:checked + .labeltext::before {
+    content: "✔"; /* İşaret içeriği */
+    position: absolute;
+    top: 4%;
+    left: 7%;
+    transform: translate(-50%, -50%);
+    color: white; /* İşaret rengi */
+    font-size: 20px; /* İşaret boyutu */
+    text-align: center;
+  }
+  
+  input[type=checkbox]:not(:checked) + .labeltext::before {
+    content: ""; /* İşaret içeriği */
+  }
+ input[type=checkbox]:checked + .labeltext::before {
+    background-color: blue;
+  }
+
+  input[type=checkbox]:checked + .labeltexttwo::before {
+    content: "✔"; /* İşaret içeriği */
+    position: absolute;
+    top: 35%;
+    left: 7%;
+    transform: translate(-50%, -50%);
+    color: white; /* İşaret rengi */
+    font-size: 20px; /* İşaret boyutu */
+    text-align: center;
+  }
+  
+  input[type=checkbox]:not(:checked) + .labeltexttwo::before {
+    content: ""; /* İşaret içeriği */
+  }
+ input[type=checkbox]:checked + .labeltexttwo::before {
+    background-color: blue;
+  }
+
+  input[type=checkbox]:checked + .labeltextthree::before {
+    content: "✔"; /* İşaret içeriği */
+    position: absolute;
+    top: 65%;
+    left: 7%;
+    transform: translate(-50%, -50%);
+    color: white; /* İşaret rengi */
+    font-size: 20px; /* İşaret boyutu */
+    text-align: center;
+  }
+  
+  input[type=checkbox]:not(:checked) + .labeltextthree::before {
+    content: ""; /* İşaret içeriği */
+  }
+ input[type=checkbox]:checked + .labeltextthree::before {
+    background-color: blue;
+  }
+
+
+
+  input[type=checkbox]:checked + .labeltextfor::before {
+    content: "✔"; /* İşaret içeriği */
+    position: absolute;
+    top: 96%;
+    left: 7%;
+    transform: translate(-50%, -50%);
+    color: white; /* İşaret rengi */
+    font-size: 20px; /* İşaret boyutu */
+    text-align: center;
+  }
+  
+  input[type=checkbox]:not(:checked) + .labeltextfor::before {
+    content: ""; /* İşaret içeriği */
+  }
+ input[type=checkbox]:checked + .labeltextfor::before {
+    background-color: blue;
+  }
+
+
+
+
+
+
+
+
+
+  
+ input[type=checkbox]:checked + .labeltext::before::after {
+    content: "✔";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: red;
+    font-size: 14px; /* Yazı boyutunu ayarla */
+  }
+  
+          }      
+      
+    
+     
+    }
+    .totalscro{
+       margin-top: 40%;
+        font-size: 23px;
+        margin-left: -10%;
+    }
+}
+
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
