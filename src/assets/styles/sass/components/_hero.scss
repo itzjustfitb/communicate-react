@@ -91,3 +91,320 @@
     }
   }
 }
+
+@media screen and (max-width: 1200px) {
+  #hero {
+    position: relative;
+    background: linear-gradient(
+      33deg,
+      rgba(242, 242, 255, 1) 0%,
+      rgba(235, 249, 255, 1) 100%
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .hero__container {
+      width: 80%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .hero__left {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        .hero__title {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          h1 {
+            color: $primary-color;
+            font-size: 2.625rem;
+            font-weight: 600;
+          }
+          span {
+            color: $light-purple-color;
+            font-weight: 800;
+            font-size: 4.625rem;
+          }
+        }
+        p {
+          font-size: 1.2rem;
+        }
+        .hero__buttons {
+          display: flex;
+          gap: 20px;
+          align-items: center;
+          a {
+            text-decoration: none;
+            color: $primary-color;
+            font-size: 1.2rem;
+            position: relative;
+            transition: 0.4s;
+            &::after,
+            &::before {
+              content: "";
+              position: absolute;
+              bottom: -10px;
+              left: 0;
+              width: 100%;
+              height: 2px;
+              background-color: $primary-color;
+              transition: 0.4s;
+            }
+            &::after {
+              width: 0;
+            }
+            &:hover {
+              color: $accent;
+              &::after {
+                width: 100%;
+                background-color: $accent;
+              }
+            }
+          }
+        }
+      }
+      .hero__right {
+        position: relative;
+        display: flex;
+        align-items: end;
+        #blue-cat {
+          width: 350px;
+          animation: moveRight 1s ease-in-out infinite alternate;
+        }
+        #curn-icon {
+          top: 25%;
+          left: 0;
+          position: absolute;
+          animation: moveTop 1s ease-in-out infinite alternate;
+        }
+        #triangle-icon {
+          position: absolute;
+          bottom: 6px;
+          right: -12px;
+          animation: moveTop 3s ease-in-out infinite alternate;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #hero {
+    position: relative;
+    background: linear-gradient(
+      33deg,
+      rgba(242, 242, 255, 1) 0%,
+      rgba(235, 249, 255, 1) 100%
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .hero__socials {
+      display: flex;
+    }
+    .hero__container {
+      padding: 40px 0;
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+      justify-content: baseline;
+      gap: 50px;
+      align-items: center;
+      .hero__left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        .hero__title {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 10px;
+          h1 {
+            color: $primary-color;
+            font-size: 2.625rem;
+            font-weight: 600;
+          }
+          span {
+            color: $light-purple-color;
+            font-weight: 800;
+            font-size: 4rem;
+          }
+        }
+        p {
+          text-align: center;
+          font-size: 1.4rem;
+        }
+        .hero__buttons {
+          display: flex;
+          gap: 20px;
+          align-items: center;
+          a {
+            text-decoration: none;
+            color: $primary-color;
+            font-size: 1.2rem;
+            position: relative;
+            transition: 0.4s;
+            &::after,
+            &::before {
+              content: "";
+              position: absolute;
+              bottom: -10px;
+              left: 0;
+              width: 100%;
+              height: 2px;
+              background-color: $primary-color;
+              transition: 0.4s;
+            }
+            &::after {
+              width: 0;
+            }
+            &:hover {
+              color: $accent;
+              &::after {
+                width: 100%;
+                background-color: $accent;
+              }
+            }
+          }
+          button {
+            font-size: 1rem;
+            padding: 10px;
+          }
+        }
+      }
+      .hero__right {
+        position: relative;
+        display: flex;
+        align-items: end;
+        #blue-cat {
+          width: 100%;
+          animation: moveRight 1s ease-in-out infinite alternate;
+        }
+        #curn-icon {
+          top: 25%;
+          left: 0;
+          position: absolute;
+          animation: moveTop 1s ease-in-out infinite alternate;
+        }
+        #triangle-icon {
+          position: absolute;
+          bottom: 6px;
+          right: -12px;
+          animation: moveTop 3s ease-in-out infinite alternate;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+  #hero {
+    position: relative;
+    background: linear-gradient(
+      33deg,
+      rgba(242, 242, 255, 1) 0%,
+      rgba(235, 249, 255, 1) 100%
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .hero__socials {
+      display: none;
+    }
+    .hero__container {
+      padding: 40px 0;
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+      justify-content: baseline;
+      gap: 50px;
+      align-items: center;
+      .hero__left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        .hero__title {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 10px;
+          h1 {
+            color: $primary-color;
+            font-size: 2.625rem;
+            font-weight: 600;
+          }
+          span {
+            color: $light-purple-color;
+            font-weight: 800;
+            font-size: 2.5rem;
+          }
+        }
+        p {
+          text-align: center;
+          font-size: 1rem;
+        }
+        .hero__buttons {
+          display: flex;
+          gap: 20px;
+          align-items: center;
+          a {
+            text-decoration: none;
+            color: $primary-color;
+            font-size: 0.9rem;
+            position: relative;
+            transition: 0.4s;
+            &::after,
+            &::before {
+              content: "";
+              position: absolute;
+              bottom: -10px;
+              left: 0;
+              width: 100%;
+              height: 2px;
+              background-color: $primary-color;
+              transition: 0.4s;
+            }
+            &::after {
+              width: 0;
+            }
+            &:hover {
+              color: $accent;
+              &::after {
+                width: 100%;
+                background-color: $accent;
+              }
+            }
+          }
+          button {
+            font-size: 1rem;
+            padding: 10px;
+          }
+        }
+      }
+      .hero__right {
+        position: relative;
+        display: flex;
+        align-items: end;
+        #blue-cat {
+          width: 100%;
+          animation: moveRight 1s ease-in-out infinite alternate;
+        }
+        #curn-icon {
+          top: 25%;
+          left: 0;
+          position: absolute;
+          animation: moveTop 1s ease-in-out infinite alternate;
+        }
+        #triangle-icon {
+          position: absolute;
+          bottom: 6px;
+          right: -12px;
+          animation: moveTop 3s ease-in-out infinite alternate;
+        }
+      }
+    }
+  }
+}

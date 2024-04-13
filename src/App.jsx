@@ -34,9 +34,9 @@ function App() {
 
       {/* // ? ------- APP STARTS HERE ------- */}
       <Hero />
-      <Services modalActive={modalActive} setModalActive={setModalActive} />
-      <Portfolio modalActive={modalActive} setModalActive={setModalActive} />
-      <Team />
+      {/* <Services modalActive={modalActive} setModalActive={setModalActive} /> */}
+      {/* <Portfolio modalActive={modalActive} setModalActive={setModalActive} /> */}
+      {/* <Team /> */}
       {/* // ? ------- APP ENDS HERE ------- */}
 
       {/* <AnimCursor /> */}
