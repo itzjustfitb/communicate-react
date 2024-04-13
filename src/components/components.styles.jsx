@@ -33,7 +33,7 @@ export const SumbitBtn = styled.button({
     transform: "translateY(-5px)",
   },
   marginTop:"50%",
-marginLeft:"-83px"
+marginLeft:"-10%"
 });
 
 export const SocialItem = styled.button(({ color }) => ({

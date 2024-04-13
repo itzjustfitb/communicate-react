@@ -1712,7 +1712,7 @@ footer .footer__container .footer__description {
   width: 127px;
   height: 404px;
   position: absolute;
-  top: 298%;
+  top: 87%;
   right: 0;
   background: url(../image/circle-bg-img.png) no-repeat top right;
   animation: left-mover 1s infinite alternate;
@@ -1723,7 +1723,7 @@ footer .footer__container .footer__description {
   width: 52px;
   height: 59px;
   position: absolute;
-  top: 290%;
+  top: 85%;
   right: 42px;
   background: url(../image/half-circle-right-icon.png) no-repeat top left;
   animation: moveTop 1s ease-in-out infinite alternate;
@@ -1792,7 +1792,7 @@ footer .footer__container .footer__description {
   margin-bottom: 7px;
   background: transparent;
   background-color: black;
-  width: 100%;
+  width: 83%;
   background-color: rgb(0, 0, 0);
   height: 30px;
   border-radius: 50px;
@@ -1802,7 +1802,7 @@ footer .footer__container .footer__description {
 .desire .desiresections .reuqstcenters .chechkboxalls {
   flex-direction: column;
   display: flex;
-  left: 74%;
+  left: 65%;
   position: absolute;
   right: 0;
   gap: 65px;
@@ -1917,7 +1917,7 @@ footer .footer__container .footer__description {
 }
 .desire .desiresections .reuqstcenters .chechkboxalls .checkbox-container .message {
   position: absolute;
-  top: 28%;
+  top: 21%;
   background-color: #f9f9f9;
   border: 1px solid #ccc;
   width: 130px;
@@ -1928,11 +1928,11 @@ footer .footer__container .footer__description {
   display: none;
   background-color: black;
   color: white;
-  left: 51%;
+  left: 38%;
 }
 .desire .desiresections .reuqstcenters .chechkboxalls .checkbox-container .messagethree {
   position: absolute;
-  top: 50%;
+  top: 30%;
   background-color: #f9f9f9;
   border: 1px solid #ccc;
   width: 130px;
@@ -1943,12 +1943,12 @@ footer .footer__container .footer__description {
   display: none;
   background-color: black;
   color: white;
-  left: 51%;
+  left: 38%;
 }
 .desire .desiresections .reuqstcenters .chechkboxalls .checkbox-container .messagetwo {
   position: absolute;
   top: 50%;
-  left: 60%;
+  left: 40%;
   background-color: #f9f9f9;
   border: 1px solid #ccc;
   width: 100px;
@@ -2042,5 +2042,5 @@ footer .footer__container .footer__description {
 .desire .desiresections .reuqstcenters .totalscro {
   margin-top: 40%;
   font-size: 23px;
-  margin-left: 20px;
+  margin-left: -10%;
 }/*# sourceMappingURL=main.css.map */
