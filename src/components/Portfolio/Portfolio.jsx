@@ -35,11 +35,11 @@ function Portfolio({ modalActive, setModalActive }) {
   const [activeNav, setActiveNav] = useState("All");
   const [currentPage, setCurrentPage] = useState(1);
   const [postsPerPage, setPostsPerPage] = useState(6);
+  const [showNav, setShowNav] = useState(false);
   const lastPostIndex = currentPage * postsPerPage;
   const firstPostIndex = lastPostIndex - postsPerPage;
   const currentPosts = navigations.slice(firstPostIndex, lastPostIndex);
   const pageCount = Math.ceil(navigations.length / postsPerPage);
-
   const handlePageChange = (event, page) => {
     setCurrentPage(page);
   };
@@ -57,11 +57,26 @@ function Portfolio({ modalActive, setModalActive }) {
         </div>
         <div className="portfolio__bottom" data-aos="fade-up">
           <nav className="portfolio__nav" data-aos="fade-up">
-            <ul>
+            <div
+              onClick={() => setShowNav(!showNav)}
+              className="portfolio__select"
+            >
+              <p>{activeNav}</p>
+              <i
+                className={`ri-arrow-down-line ${
+                  showNav ? "dropdown-icon-active" : ""
+                }`}
+              ></i>
+            </div>
+
+            <ul className={showNav ? "ul-active" : ""}>
               {navigations.map((navigation, index) => (
                 <li
                   className={activeNav === navigation.label ? "active-nav" : ""}
-                  onClick={() => setActiveNav(navigation.label)}
+                  onClick={() => {
+                    setActiveNav(navigation.label);
+                    setShowNav(false);
+                  }}
                   key={index}
                 >
                   {navigation.label}
