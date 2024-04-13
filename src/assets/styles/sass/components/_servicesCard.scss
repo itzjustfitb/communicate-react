@@ -1,5 +1,6 @@
 .services__card {
-  width: 540px;
+  width: 100%;
+  background-color: $white-color;
   padding: 30px;
   box-sizing: border-box;
   border-radius: 20px;
@@ -60,6 +61,80 @@
     .services__card-logo {
       img {
         transform: translateY(-5px);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .services__card {
+    width: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: 0.4s;
+    border: 1px solid transparent;
+    .services__card-logo {
+      border-radius: 50%;
+      width: fit-content;
+      height: fit-content;
+      background-color: $light-grey-color;
+      padding: 30px;
+      img {
+        transition: 0.4s;
+      }
+    }
+    .services__card-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      text-align: center;
+      h1 {
+        color: $primary-color;
+        font-weight: 700;
+        font-size: 1.375rem;
+      }
+      p {
+        line-height: 1.3;
+        color: $text-color;
+      }
+      span {
+        width: fit-content;
+        color: $accent;
+        cursor: pointer;
+        position: relative;
+        transition: 0.4s;
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: -10px;
+          left: 0;
+          height: 2px;
+          background-color: $primary-color;
+          width: 0%;
+          transition: 0.4s;
+        }
+        &:hover {
+          color: $primary-color;
+          &::after {
+            width: 100%;
+          }
+        }
+      }
+    }
+    &:hover {
+      transform: rotate(-1deg);
+      border: 1px solid $light-purple-color;
+      .services__card-logo {
+        img {
+          transform: translateY(-5px);
+        }
       }
     }
   }

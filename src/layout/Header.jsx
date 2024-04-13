@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import siteLogo from "../assets/image/communicate_logo-removebg-preview.png";
 import { DefaultBtn } from "../components/components.styles";
 import { Divide as Hamburger } from "hamburger-react";
@@ -33,6 +33,14 @@ function Header() {
 
   const [menuActive, setMenuActive] = useState(false);
   const [navActive, setNavActive] = useState("");
+
+  useEffect(() => {
+    if (menuActive) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+  }, [menuActive]);
 
   return (
     <header>
