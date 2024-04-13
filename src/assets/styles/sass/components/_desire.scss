@@ -293,8 +293,8 @@ padding: 30px;
  input[type=checkbox]:checked + .labeltext::before {
     content: "✔"; /* İşaret içeriği */
     position: absolute;
-    top: 5%;
-    left: 10%;
+    top: 4%;
+    left: 7%;
     transform: translate(-50%, -50%);
     color: white; /* İşaret rengi */
     font-size: 20px; /* İşaret boyutu */
@@ -312,7 +312,7 @@ padding: 30px;
     content: "✔"; /* İşaret içeriği */
     position: absolute;
     top: 35%;
-    left: 10%;
+    left: 7%;
     transform: translate(-50%, -50%);
     color: white; /* İşaret rengi */
     font-size: 20px; /* İşaret boyutu */
@@ -330,7 +330,7 @@ padding: 30px;
     content: "✔"; /* İşaret içeriği */
     position: absolute;
     top: 65%;
-    left: 10%;
+    left: 7%;
     transform: translate(-50%, -50%);
     color: white; /* İşaret rengi */
     font-size: 20px; /* İşaret boyutu */
@@ -350,7 +350,7 @@ padding: 30px;
     content: "✔"; /* İşaret içeriği */
     position: absolute;
     top: 96%;
-    left: 10%;
+    left: 7%;
     transform: translate(-50%, -50%);
     color: white; /* İşaret rengi */
     font-size: 20px; /* İşaret boyutu */
