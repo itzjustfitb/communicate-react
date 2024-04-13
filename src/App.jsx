@@ -11,6 +11,7 @@ import { useEffect, useState } from "react";
 import ScrollTopBtn from "./components/ScrollTopBtn";
 import Portfolio from "./components/Portfolio/Portfolio";
 import ContentModal from "./components/ContentModal";
+import Desire from "./components/Desire/Desire";
 
 function App() {
   const [modalActive, setModalActive] = useState(false);
@@ -35,6 +36,7 @@ function App() {
       <Hero />
       <Services modalActive={modalActive} setModalActive={setModalActive} />
       <Portfolio modalActive={modalActive} setModalActive={setModalActive} />
+      <Desire/>
       {/* <Team /> */}
       {/* // ? ------- APP ENDS HERE ------- */}
 
