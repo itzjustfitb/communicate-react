@@ -62,14 +62,7 @@
         margin-top: 20px;
   font-size: 20px;
     }
-    .senduser{
-      margin-top: 20px;
-    }
-    .senduser{
-      display: flex;
-      flex-direction: column;
-      gap: 5px;
-    }
+   
     input[type=text]{
       background-color: #777ee7;
       color: white;
@@ -121,8 +114,30 @@
     position: absolute;
     right: 0;
     gap: 75px;
-    top: 85%;
+    top: 86%;
 
+    .desire__bottom{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 15px;
+      .senduser{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+      }
+      .submitsneds{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        input[type=text]{
+          background-color: #777ee7;
+          color: white;
+          width: 200px;
+        }
+      }
+    }
     .checkbox-container{
         display: flex;
         flex-direction: row !important;
@@ -263,7 +278,7 @@
   }
   .messagethree{
     position: absolute;
-    top: 30%;
+    top: 20%;
     
     background-color: #f9f9f9;
     border: 1px solid #ccc;

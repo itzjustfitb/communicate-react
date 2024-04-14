@@ -256,10 +256,6 @@ const Desire = () => {
                             </div>
 
 
-<div className="senduser">
-    <h3>Number</h3>
-    <input type="text" />
-</div>
 
 
 
@@ -320,13 +316,21 @@ const Desire = () => {
 
 
 
-                        <div className="desirebottom">
+                        <div className="desire__bottom">
 
                         <p className="totalscro">Total:50</p>
+
+                        <div className="submitsneds">
+
+<div className="senduser">
+    <h3>Number</h3>
+    <input type="text" />
+</div>
 
                         <SumbitBtn >
                             Submit
                         </SumbitBtn>
+                        </div>
                         </div>
                         </div>
 

@@ -1755,14 +1755,6 @@ footer .footer__container .footer__description {
   margin-top: 20px;
   font-size: 20px;
 }
-.desire .desire__container .desire__centers .desire__left .senduser {
-  margin-top: 20px;
-}
-.desire .desire__container .desire__centers .desire__left .senduser {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-}
 .desire .desire__container .desire__centers .desire__left input[type=text] {
   background-color: #777ee7;
   color: white;
@@ -1810,7 +1802,28 @@ footer .footer__container .footer__description {
   position: absolute;
   right: 0;
   gap: 75px;
-  top: 85%;
+  top: 86%;
+}
+.desire .desire__container .desire__centers .desire__right .desire__bottom {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+}
+.desire .desire__container .desire__centers .desire__right .desire__bottom .senduser {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.desire .desire__container .desire__centers .desire__right .desire__bottom .submitsneds {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.desire .desire__container .desire__centers .desire__right .desire__bottom .submitsneds input[type=text] {
+  background-color: #777ee7;
+  color: white;
+  width: 200px;
 }
 .desire .desire__container .desire__centers .desire__right .checkbox-container {
   display: flex;
@@ -1936,7 +1949,7 @@ footer .footer__container .footer__description {
 }
 .desire .desire__container .desire__centers .desire__right .checkbox-container .messagethree {
   position: absolute;
-  top: 30%;
+  top: 20%;
   background-color: #f9f9f9;
   border: 1px solid #ccc;
   width: 130px;
