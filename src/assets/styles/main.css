@@ -178,7 +178,8 @@ body {
   gap: 20px;
 }
 .hero__socials button {
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
 .services__card {
@@ -334,7 +335,7 @@ body {
 .portfolio__card img {
   width: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 16px;
   height: 100%;
 }
@@ -426,7 +427,7 @@ body {
   width: 95%;
   height: 400px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 20px;
 }
 .content__modal .content__modal-container .content__modal-content {
@@ -627,7 +628,7 @@ footer .footer__container {
 footer .footer__container .footer__logo img {
   width: 200px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 footer .footer__container nav ul {
   display: flex;
@@ -680,7 +681,11 @@ footer .footer__container .footer__description {
 #hero {
   overflow: hidden;
   position: relative;
-  background: linear-gradient(33deg, rgb(242, 242, 255) 0%, rgb(235, 249, 255) 100%);
+  background: linear-gradient(
+    33deg,
+    rgb(242, 242, 255) 0%,
+    rgb(235, 249, 255) 100%
+  );
   display: flex;
   justify-content: center;
   align-items: center;
@@ -727,7 +732,8 @@ footer .footer__container .footer__description {
   position: relative;
   transition: 0.4s;
 }
-#hero .hero__container .hero__left .hero__buttons a::after, #hero .hero__container .hero__left .hero__buttons a::before {
+#hero .hero__container .hero__left .hero__buttons a::after,
+#hero .hero__container .hero__left .hero__buttons a::before {
   content: "";
   position: absolute;
   bottom: -10px;
@@ -771,7 +777,11 @@ footer .footer__container .footer__description {
 @media screen and (max-width: 1200px) {
   #hero {
     position: relative;
-    background: linear-gradient(33deg, rgb(242, 242, 255) 0%, rgb(235, 249, 255) 100%);
+    background: linear-gradient(
+      33deg,
+      rgb(242, 242, 255) 0%,
+      rgb(235, 249, 255) 100%
+    );
     display: flex;
     justify-content: center;
     align-items: center;
@@ -817,7 +827,8 @@ footer .footer__container .footer__description {
     position: relative;
     transition: 0.4s;
   }
-  #hero .hero__container .hero__left .hero__buttons a::after, #hero .hero__container .hero__left .hero__buttons a::before {
+  #hero .hero__container .hero__left .hero__buttons a::after,
+  #hero .hero__container .hero__left .hero__buttons a::before {
     content: "";
     position: absolute;
     bottom: -10px;
@@ -862,7 +873,11 @@ footer .footer__container .footer__description {
 @media screen and (max-width: 1000px) {
   #hero {
     position: relative;
-    background: linear-gradient(33deg, rgb(242, 242, 255) 0%, rgb(235, 249, 255) 100%);
+    background: linear-gradient(
+      33deg,
+      rgb(242, 242, 255) 0%,
+      rgb(235, 249, 255) 100%
+    );
     display: flex;
     justify-content: center;
     align-items: center;
@@ -917,7 +932,8 @@ footer .footer__container .footer__description {
     position: relative;
     transition: 0.4s;
   }
-  #hero .hero__container .hero__left .hero__buttons a::after, #hero .hero__container .hero__left .hero__buttons a::before {
+  #hero .hero__container .hero__left .hero__buttons a::after,
+  #hero .hero__container .hero__left .hero__buttons a::before {
     content: "";
     position: absolute;
     bottom: -10px;
@@ -966,7 +982,11 @@ footer .footer__container .footer__description {
 @media screen and (max-width: 575px) {
   #hero {
     position: relative;
-    background: linear-gradient(33deg, rgb(242, 242, 255) 0%, rgb(235, 249, 255) 100%);
+    background: linear-gradient(
+      33deg,
+      rgb(242, 242, 255) 0%,
+      rgb(235, 249, 255) 100%
+    );
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1021,7 +1041,8 @@ footer .footer__container .footer__description {
     position: relative;
     transition: 0.4s;
   }
-  #hero .hero__container .hero__left .hero__buttons a::after, #hero .hero__container .hero__left .hero__buttons a::before {
+  #hero .hero__container .hero__left .hero__buttons a::after,
+  #hero .hero__container .hero__left .hero__buttons a::before {
     content: "";
     position: absolute;
     bottom: -10px;
@@ -1320,7 +1341,11 @@ footer .footer__container .footer__description {
   justify-content: center;
   align-items: center;
 }
-#portfolio .portfolio__container .portfolio__bottom .portfolio__nav .portfolio__select {
+#portfolio
+  .portfolio__container
+  .portfolio__bottom
+  .portfolio__nav
+  .portfolio__select {
   display: none;
 }
 #portfolio .portfolio__container .portfolio__bottom .portfolio__nav ul {
@@ -1330,10 +1355,20 @@ footer .footer__container .footer__description {
   font-weight: 600;
   color: #fff;
 }
-#portfolio .portfolio__container .portfolio__bottom .portfolio__nav ul .active-nav {
+#portfolio
+  .portfolio__container
+  .portfolio__bottom
+  .portfolio__nav
+  ul
+  .active-nav {
   color: rgb(252, 166, 31);
 }
-#portfolio .portfolio__container .portfolio__bottom .portfolio__nav ul .active-nav::after {
+#portfolio
+  .portfolio__container
+  .portfolio__bottom
+  .portfolio__nav
+  ul
+  .active-nav::after {
   width: 100%;
 }
 #portfolio .portfolio__container .portfolio__bottom .portfolio__nav ul li {
@@ -1341,7 +1376,12 @@ footer .footer__container .footer__description {
   position: relative;
   transition: 0.4s;
 }
-#portfolio .portfolio__container .portfolio__bottom .portfolio__nav ul li::after {
+#portfolio
+  .portfolio__container
+  .portfolio__bottom
+  .portfolio__nav
+  ul
+  li::after {
   content: "";
   position: absolute;
   left: 0;
@@ -1351,10 +1391,20 @@ footer .footer__container .footer__description {
   width: 0%;
   transition: 0.4s;
 }
-#portfolio .portfolio__container .portfolio__bottom .portfolio__nav ul li:hover {
+#portfolio
+  .portfolio__container
+  .portfolio__bottom
+  .portfolio__nav
+  ul
+  li:hover {
   color: rgb(252, 166, 31);
 }
-#portfolio .portfolio__container .portfolio__bottom .portfolio__nav ul li:hover::after {
+#portfolio
+  .portfolio__container
+  .portfolio__bottom
+  .portfolio__nav
+  ul
+  li:hover::after {
   width: 100%;
 }
 #portfolio .portfolio__container .portfolio__bottom .portfolio__projects {
@@ -1364,7 +1414,10 @@ footer .footer__container .footer__description {
   gap: 20px;
 }
 #portfolio .portfolio__container .portfolio__bottom .MuiPagination-ul,
-#portfolio .portfolio__container .portfolio__bottom .css-19xm0h7-MuiButtonBase-root-MuiPaginationItem-root {
+#portfolio
+  .portfolio__container
+  .portfolio__bottom
+  .css-19xm0h7-MuiButtonBase-root-MuiPaginationItem-root {
   display: flex;
   justify-content: center;
   font-family: "Josefin Sans" !important;
@@ -1448,7 +1501,11 @@ footer .footer__container .footer__description {
     position: relative;
     gap: 5px;
   }
-  #portfolio .portfolio__container .portfolio__bottom .portfolio__nav .portfolio__select {
+  #portfolio
+    .portfolio__container
+    .portfolio__bottom
+    .portfolio__nav
+    .portfolio__select {
     width: 100%;
     padding: 10px;
     border-radius: 10px;
@@ -1457,26 +1514,45 @@ footer .footer__container .footer__description {
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     -webkit-backdrop-filter: blur(5px);
-            backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.3);
     color: #fff;
     justify-content: space-between;
     align-items: center;
     position: relative;
   }
-  #portfolio .portfolio__container .portfolio__bottom .portfolio__nav .portfolio__select .dropdown-icon-active {
+  #portfolio
+    .portfolio__container
+    .portfolio__bottom
+    .portfolio__nav
+    .portfolio__select
+    .dropdown-icon-active {
     transform: rotate(180deg);
   }
-  #portfolio .portfolio__container .portfolio__bottom .portfolio__nav .portfolio__select i {
+  #portfolio
+    .portfolio__container
+    .portfolio__bottom
+    .portfolio__nav
+    .portfolio__select
+    i {
     transition: 0.4s;
   }
-  #portfolio .portfolio__container .portfolio__bottom .portfolio__nav .ul-active {
+  #portfolio
+    .portfolio__container
+    .portfolio__bottom
+    .portfolio__nav
+    .ul-active {
     height: 290px;
     visibility: visible;
     opacity: 1;
     padding: 0 10px;
   }
-  #portfolio .portfolio__container .portfolio__bottom .portfolio__nav .ul-active li {
+  #portfolio
+    .portfolio__container
+    .portfolio__bottom
+    .portfolio__nav
+    .ul-active
+    li {
     opacity: 1;
     visibility: visible;
   }
@@ -1498,13 +1574,23 @@ footer .footer__container .footer__description {
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     -webkit-backdrop-filter: blur(5px);
-            backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.3);
   }
-  #portfolio .portfolio__container .portfolio__bottom .portfolio__nav ul .active-nav {
+  #portfolio
+    .portfolio__container
+    .portfolio__bottom
+    .portfolio__nav
+    ul
+    .active-nav {
     color: rgb(252, 166, 31);
   }
-  #portfolio .portfolio__container .portfolio__bottom .portfolio__nav ul .active-nav::after {
+  #portfolio
+    .portfolio__container
+    .portfolio__bottom
+    .portfolio__nav
+    ul
+    .active-nav::after {
     width: 0%;
   }
   #portfolio .portfolio__container .portfolio__bottom .portfolio__nav ul li {
@@ -1518,10 +1604,20 @@ footer .footer__container .footer__description {
     transition: 0.4s;
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   }
-  #portfolio .portfolio__container .portfolio__bottom .portfolio__nav ul li:last-child {
+  #portfolio
+    .portfolio__container
+    .portfolio__bottom
+    .portfolio__nav
+    ul
+    li:last-child {
     border-bottom: 1px solid transparent;
   }
-  #portfolio .portfolio__container .portfolio__bottom .portfolio__nav ul li::after {
+  #portfolio
+    .portfolio__container
+    .portfolio__bottom
+    .portfolio__nav
+    ul
+    li::after {
     content: "";
     position: absolute;
     left: 0;
@@ -1531,10 +1627,20 @@ footer .footer__container .footer__description {
     width: 0%;
     transition: 0.4s;
   }
-  #portfolio .portfolio__container .portfolio__bottom .portfolio__nav ul li:hover {
+  #portfolio
+    .portfolio__container
+    .portfolio__bottom
+    .portfolio__nav
+    ul
+    li:hover {
     color: rgb(252, 166, 31);
   }
-  #portfolio .portfolio__container .portfolio__bottom .portfolio__nav ul li:hover::after {
+  #portfolio
+    .portfolio__container
+    .portfolio__bottom
+    .portfolio__nav
+    ul
+    li:hover::after {
     width: 0%;
   }
   #portfolio .portfolio__container .portfolio__bottom .portfolio__projects {
@@ -1608,7 +1714,7 @@ footer .footer__container .footer__description {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 50%;
 }
 #team .team__container .team__images .active-img {
@@ -1635,7 +1741,11 @@ footer .footer__container .footer__description {
   overflow: hidden;
   height: 300px;
 }
-#team .team__container .team__content .team__content-testimonials .active-testimonial {
+#team
+  .team__container
+  .team__content
+  .team__content-testimonials
+  .active-testimonial {
   opacity: 1 !important;
   visibility: visible !important;
   right: 0 !important;
@@ -1652,46 +1762,107 @@ footer .footer__container .footer__description {
   flex-direction: column;
   gap: 16px;
 }
-#team .team__container .team__content .team__content-testimonials .testimonial > h1 {
+#team
+  .team__container
+  .team__content
+  .team__content-testimonials
+  .testimonial
+  > h1 {
   font-weight: 600;
   font-size: 1.375rem;
   color: #6f34fe;
 }
-#team .team__container .team__content .team__content-testimonials .testimonial .testimonial-carousel {
+#team
+  .team__container
+  .team__content
+  .team__content-testimonials
+  .testimonial
+  .testimonial-carousel {
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
-#team .team__container .team__content .team__content-testimonials .testimonial .testimonial-carousel > h1 {
+#team
+  .team__container
+  .team__content
+  .team__content-testimonials
+  .testimonial
+  .testimonial-carousel
+  > h1 {
   color: #3f396d;
   font-weight: 700;
   font-size: 2.625rem;
 }
-#team .team__container .team__content .team__content-testimonials .testimonial .testimonial-carousel > .testimonial__content {
+#team
+  .team__container
+  .team__content
+  .team__content-testimonials
+  .testimonial
+  .testimonial-carousel
+  > .testimonial__content {
   display: flex;
   gap: 10px;
 }
-#team .team__container .team__content .team__content-testimonials .testimonial .testimonial-carousel > .testimonial__content > i {
+#team
+  .team__container
+  .team__content
+  .team__content-testimonials
+  .testimonial
+  .testimonial-carousel
+  > .testimonial__content
+  > i {
   font-size: 3rem;
   color: rgb(252, 166, 31);
 }
-#team .team__container .team__content .team__content-testimonials .testimonial .testimonial-carousel > .testimonial__content .testimonial__datas {
+#team
+  .team__container
+  .team__content
+  .team__content-testimonials
+  .testimonial
+  .testimonial-carousel
+  > .testimonial__content
+  .testimonial__datas {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-#team .team__container .team__content .team__content-testimonials .testimonial .testimonial-carousel > .testimonial__content .testimonial__datas p {
+#team
+  .team__container
+  .team__content
+  .team__content-testimonials
+  .testimonial
+  .testimonial-carousel
+  > .testimonial__content
+  .testimonial__datas
+  p {
   font-size: 1.125rem;
   line-height: 1.875rem;
   color: #9692b0;
   font-family: "Lato";
 }
-#team .team__container .team__content .team__content-testimonials .testimonial .testimonial-carousel > .testimonial__content .testimonial__datas .testimonial-bottom {
+#team
+  .team__container
+  .team__content
+  .team__content-testimonials
+  .testimonial
+  .testimonial-carousel
+  > .testimonial__content
+  .testimonial__datas
+  .testimonial-bottom {
   display: flex;
   flex-direction: column;
   gap: 5px;
 }
-#team .team__container .team__content .team__content-testimonials .testimonial .testimonial-carousel > .testimonial__content .testimonial__datas .testimonial-bottom h1 {
+#team
+  .team__container
+  .team__content
+  .team__content-testimonials
+  .testimonial
+  .testimonial-carousel
+  > .testimonial__content
+  .testimonial__datas
+  .testimonial-bottom
+  h1 {
   font-size: 1.25rem;
   color: #3f396d;
   font-weight: 600;
@@ -1709,7 +1880,11 @@ footer .footer__container .footer__description {
 }
 
 .desire {
-  background: linear-gradient(33deg, rgb(242, 242, 255) 0%, rgb(235, 249, 255) 100%);
+  background: linear-gradient(
+    33deg,
+    rgb(242, 242, 255) 0%,
+    rgb(235, 249, 255) 100%
+  );
   overflow: hidden;
   padding: 30px;
 }
@@ -1734,66 +1909,61 @@ footer .footer__container .footer__description {
   background: url(../image/half-circle-right-icon.png) no-repeat top left;
   animation: moveTop 1s ease-in-out infinite alternate;
 }
-.desire .desiresections .desireiconcontainer {
+.desire .desire__container .desire__sections {
   display: flex;
   justify-content: center;
   flex-direction: row;
 }
-.desire .desiresections .desireiconcontainer .packageH2 {
+.desire .desire__container .desire__sections .desire__top {
   font-size: 30px;
   color: #6f34fe;
 }
-.desire .desiresections .reuqstcenters {
+.desire .desire__container .desire__centers {
   display: flex;
   flex-direction: row !important;
   align-items: center;
-  width: 90%;
 }
-.desire .desiresections .reuqstcenters .colchildsall {
-  width: 82%;
+.desire .desire__container .desire__centers .desire__left {
+  width: 78%;
 }
-.desire .desiresections .reuqstcenters .colchildsall .svgtext {
+.desire .desire__container .desire__centers .desire__left .svgtext {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 3px;
 }
-.desire .desiresections .reuqstcenters .colchildsall #item1Counter {
+.desire .desire__container .desire__centers .desire__left #item1Counter {
   margin-top: 35px;
 }
-.desire .desiresections .reuqstcenters .colchildsall #item1Span {
+.desire .desire__container .desire__centers .desire__left #item1Span {
   margin-top: 5px;
 }
-.desire .desiresections .reuqstcenters .colchildsall .colchild1 {
+.desire .desire__container .desire__centers .desire__left .colchild1 {
   margin-top: 20px;
   font-size: 20px;
 }
-.desire .desiresections .reuqstcenters .colchildsall .senduser {
-  margin-top: 20px;
-}
-.desire .desiresections .reuqstcenters .colchildsall .senduser {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-}
-.desire .desiresections .reuqstcenters .colchildsall input[type=text] {
+.desire .desire__container .desire__centers .desire__left input[type="text"] {
   background-color: #777ee7;
   color: white;
   width: 200px;
 }
-.desire .desiresections .reuqstcenters .colchildsall .colchild2 {
+.desire .desire__container .desire__centers .desire__left .colchild2 {
   margin-top: 30px;
   font-size: 20px;
 }
-.desire .desiresections .reuqstcenters .colchildsall .colchild3 {
+.desire .desire__container .desire__centers .desire__left .colchild3 {
   margin-top: 40px;
   font-size: 20px;
 }
-.desire .desiresections .reuqstcenters .colchildsall .colchild4 {
+.desire .desire__container .desire__centers .desire__left .colchild4 {
   margin-top: 40px;
   font-size: 20px;
 }
-.desire .desiresections .reuqstcenters .colchildsall .slider::-webkit-slider-thumb {
+.desire
+  .desire__container
+  .desire__centers
+  .desire__left
+  .slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
   width: 62px; /* Thumb genişliği */
@@ -1804,10 +1974,8 @@ footer .footer__container .footer__description {
   border-radius: 70%;
   padding: 5px;
 }
-.desire .desiresections .reuqstcenters .colchildsall input[type=range] {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+.desire .desiresections .reuqstcenters .colchildsall input[type="range"] {
+  appearance: none;
   margin-bottom: 7px;
   background: transparent;
   background-color: black;
@@ -1817,22 +1985,64 @@ footer .footer__container .footer__description {
   border-radius: 50px;
   margin-top: 15px;
 }
-.desire .desiresections .reuqstcenters .chechkboxalls {
+.desire .desire__container .desire__centers .desire__right {
   flex-direction: column;
   display: flex;
   left: 65%;
   position: absolute;
   right: 0;
-  gap: 65px;
-  top: 87%;
+  gap: 75px;
+  top: 86%;
 }
-.desire .desiresections .reuqstcenters .chechkboxalls .checkbox-container {
+.desire .desire__container .desire__centers .desire__right .desire__bottom {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+}
+.desire
+  .desire__container
+  .desire__centers
+  .desire__right
+  .desire__bottom
+  .senduser {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.desire
+  .desire__container
+  .desire__centers
+  .desire__right
+  .desire__bottom
+  .submitsneds {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.desire
+  .desire__container
+  .desire__centers
+  .desire__right
+  .desire__bottom
+  .submitsneds
+  input[type="text"] {
+  background-color: #777ee7;
+  color: white;
+  width: 200px;
+}
+.desire .desire__container .desire__centers .desire__right .checkbox-container {
   display: flex;
   flex-direction: row !important;
   align-items: center !important;
   gap: 1px;
 }
-.desire .desiresections .reuqstcenters .chechkboxalls .checkbox-container .labeltext::before {
+.desire
+  .desire__container
+  .desire__centers
+  .desire__right
+  .checkbox-container
+  .labeltext::before {
   content: "";
   position: absolute;
   width: 20px;
@@ -1841,7 +2051,11 @@ footer .footer__container .footer__description {
   border-radius: 5px;
   transition: background-color 0.3s;
 }
-.desire .desiresections .reuqstcenters .chechkboxalls .checkbox-container::after {
+.desire
+  .desire__container
+  .desire__centers
+  .desire__right
+  .checkbox-container::after {
   content: "";
   position: absolute;
   left: 2px;
@@ -1852,7 +2066,12 @@ footer .footer__container .footer__description {
   border-width: 0 2px 3px 0;
   opacity: 0;
 }
-.desire .desiresections .reuqstcenters .chechkboxalls .checkbox-container .labeltexttwo::before {
+.desire
+  .desire__container
+  .desire__centers
+  .desire__right
+  .checkbox-container
+  .labeltexttwo::before {
   content: "";
   position: absolute;
   width: 20px;
@@ -1861,7 +2080,11 @@ footer .footer__container .footer__description {
   border-radius: 5px;
   transition: background-color 0.3s;
 }
-.desire .desiresections .reuqstcenters .chechkboxalls .checkbox-container::after {
+.desire
+  .desire__container
+  .desire__centers
+  .desire__right
+  .checkbox-container::after {
   content: "";
   position: absolute;
   left: 2px;
@@ -1872,7 +2095,12 @@ footer .footer__container .footer__description {
   border-width: 0 2px 3px 0;
   opacity: 0;
 }
-.desire .desiresections .reuqstcenters .chechkboxalls .checkbox-container .labeltextthree::before {
+.desire
+  .desire__container
+  .desire__centers
+  .desire__right
+  .checkbox-container
+  .labeltextthree::before {
   content: "";
   position: absolute;
   width: 20px;
@@ -1881,7 +2109,11 @@ footer .footer__container .footer__description {
   border-radius: 5px;
   transition: background-color 0.3s;
 }
-.desire .desiresections .reuqstcenters .chechkboxalls .checkbox-container::after {
+.desire
+  .desire__container
+  .desire__centers
+  .desire__right
+  .checkbox-container::after {
   content: "";
   position: absolute;
   left: 2px;
@@ -1892,7 +2124,12 @@ footer .footer__container .footer__description {
   border-width: 0 2px 3px 0;
   opacity: 0;
 }
-.desire .desiresections .reuqstcenters .chechkboxalls .checkbox-container .labeltextfor::before {
+.desire
+  .desire__container
+  .desire__centers
+  .desire__right
+  .checkbox-container
+  .labeltextfor::before {
   content: "";
   position: absolute;
   width: 20px;
@@ -1901,7 +2138,11 @@ footer .footer__container .footer__description {
   border-radius: 5px;
   transition: background-color 0.3s;
 }
-.desire .desiresections .reuqstcenters .chechkboxalls .checkbox-container::after {
+.desire
+  .desire__container
+  .desire__centers
+  .desire__right
+  .checkbox-container::after {
   content: "";
   position: absolute;
   left: 2px;
@@ -1912,30 +2153,83 @@ footer .footer__container .footer__description {
   border-width: 0 2px 3px 0;
   opacity: 0;
 }
-.desire .desiresections .reuqstcenters .chechkboxalls .checkbox-container .labeltexts {
+.desire
+  .desire__container
+  .desire__centers
+  .desire__right
+  .checkbox-container
+  .labeltexts {
   margin-top: 5px;
   margin-left: 25px;
   font-family: inherit;
   font-size: 14px;
 }
-.desire .desiresections .reuqstcenters .chechkboxalls .checkbox-container .report:hover ~ .messagetwo {
+.desire
+  .desire__container
+  .desire__centers
+  .desire__right
+  .checkbox-container
+  .report:hover
+  ~ .messagetwo {
   display: block;
 }
-.desire .desiresections .reuqstcenters .chechkboxalls .checkbox-container .report:hover ~ .message {
+.desire
+  .desire__container
+  .desire__centers
+  .desire__right
+  .checkbox-container
+  .report:hover
+  ~ .message {
   display: block;
 }
-.desire .desiresections .reuqstcenters .chechkboxalls .checkbox-container .report:hover ~ .messagethree {
+.desire
+  .desire__container
+  .desire__centers
+  .desire__right
+  .checkbox-container
+  .report:hover
+  ~ .messagethree {
   display: block;
 }
-.desire .desiresections .reuqstcenters .chechkboxalls .checkbox-container .labeltexts {
+.desire
+  .desire__container
+  .desire__centers
+  .desire__right
+  .checkbox-container
+  .labeltexts {
   margin-top: 5px;
   margin-left: 25px;
   font-family: inherit;
   font-size: 14px;
 }
-.desire .desiresections .reuqstcenters .chechkboxalls .checkbox-container .message {
+.desire
+  .desire__container
+  .desire__centers
+  .desire__right
+  .checkbox-container
+  .message {
   position: absolute;
-  top: 21%;
+  top: 5%;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  width: 120px;
+  height: 275px;
+  padding: 20px;
+  border-radius: 3px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: none;
+  background-color: black;
+  color: white;
+  left: 38%;
+}
+.desire
+  .desire__container
+  .desire__centers
+  .desire__right
+  .checkbox-container
+  .messagethree {
+  position: absolute;
+  top: 20%;
   background-color: #f9f9f9;
   border: 1px solid #ccc;
   width: 130px;
@@ -1948,22 +2242,12 @@ footer .footer__container .footer__description {
   color: white;
   left: 38%;
 }
-.desire .desiresections .reuqstcenters .chechkboxalls .checkbox-container .messagethree {
-  position: absolute;
-  top: 30%;
-  background-color: #f9f9f9;
-  border: 1px solid #ccc;
-  width: 130px;
-  height: 255px;
-  padding: 17px;
-  border-radius: 3px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  display: none;
-  background-color: black;
-  color: white;
-  left: 38%;
-}
-.desire .desiresections .reuqstcenters .chechkboxalls .checkbox-container .messagetwo {
+.desire
+  .desire__container
+  .desire__centers
+  .desire__right
+  .checkbox-container
+  .messagetwo {
   position: absolute;
   top: 50%;
   left: 40%;
@@ -1978,13 +2262,24 @@ footer .footer__container .footer__description {
   background-color: black;
   color: white;
 }
-.desire .desiresections .reuqstcenters .chechkboxalls .checkbox-container input[type=checkbox] {
+.desire
+  .desire__container
+  .desire__centers
+  .desire__right
+  .checkbox-container
+  input[type="checkbox"] {
   opacity: 0;
   position: absolute;
   width: 5px;
   height: 5px;
 }
-.desire .desiresections .reuqstcenters .chechkboxalls .checkbox-container input[type=checkbox]:checked + .labeltext::before {
+.desire
+  .desire__container
+  .desire__centers
+  .desire__right
+  .checkbox-container
+  input[type="checkbox"]:checked
+  + .labeltext::before {
   content: "✔"; /* İşaret içeriği */
   position: absolute;
   top: 4%;
@@ -1994,13 +2289,31 @@ footer .footer__container .footer__description {
   font-size: 20px; /* İşaret boyutu */
   text-align: center;
 }
-.desire .desiresections .reuqstcenters .chechkboxalls .checkbox-container input[type=checkbox]:not(:checked) + .labeltext::before {
+.desire
+  .desire__container
+  .desire__centers
+  .desire__right
+  .checkbox-container
+  input[type="checkbox"]:not(:checked)
+  + .labeltext::before {
   content: ""; /* İşaret içeriği */
 }
-.desire .desiresections .reuqstcenters .chechkboxalls .checkbox-container input[type=checkbox]:checked + .labeltext::before {
+.desire
+  .desire__container
+  .desire__centers
+  .desire__right
+  .checkbox-container
+  input[type="checkbox"]:checked
+  + .labeltext::before {
   background-color: blue;
 }
-.desire .desiresections .reuqstcenters .chechkboxalls .checkbox-container input[type=checkbox]:checked + .labeltexttwo::before {
+.desire
+  .desire__container
+  .desire__centers
+  .desire__right
+  .checkbox-container
+  input[type="checkbox"]:checked
+  + .labeltexttwo::before {
   content: "✔"; /* İşaret içeriği */
   position: absolute;
   top: 35%;
@@ -2010,13 +2323,31 @@ footer .footer__container .footer__description {
   font-size: 20px; /* İşaret boyutu */
   text-align: center;
 }
-.desire .desiresections .reuqstcenters .chechkboxalls .checkbox-container input[type=checkbox]:not(:checked) + .labeltexttwo::before {
+.desire
+  .desire__container
+  .desire__centers
+  .desire__right
+  .checkbox-container
+  input[type="checkbox"]:not(:checked)
+  + .labeltexttwo::before {
   content: ""; /* İşaret içeriği */
 }
-.desire .desiresections .reuqstcenters .chechkboxalls .checkbox-container input[type=checkbox]:checked + .labeltexttwo::before {
+.desire
+  .desire__container
+  .desire__centers
+  .desire__right
+  .checkbox-container
+  input[type="checkbox"]:checked
+  + .labeltexttwo::before {
   background-color: blue;
 }
-.desire .desiresections .reuqstcenters .chechkboxalls .checkbox-container input[type=checkbox]:checked + .labeltextthree::before {
+.desire
+  .desire__container
+  .desire__centers
+  .desire__right
+  .checkbox-container
+  input[type="checkbox"]:checked
+  + .labeltextthree::before {
   content: "✔"; /* İşaret içeriği */
   position: absolute;
   top: 65%;
@@ -2026,13 +2357,31 @@ footer .footer__container .footer__description {
   font-size: 20px; /* İşaret boyutu */
   text-align: center;
 }
-.desire .desiresections .reuqstcenters .chechkboxalls .checkbox-container input[type=checkbox]:not(:checked) + .labeltextthree::before {
+.desire
+  .desire__container
+  .desire__centers
+  .desire__right
+  .checkbox-container
+  input[type="checkbox"]:not(:checked)
+  + .labeltextthree::before {
   content: ""; /* İşaret içeriği */
 }
-.desire .desiresections .reuqstcenters .chechkboxalls .checkbox-container input[type=checkbox]:checked + .labeltextthree::before {
+.desire
+  .desire__container
+  .desire__centers
+  .desire__right
+  .checkbox-container
+  input[type="checkbox"]:checked
+  + .labeltextthree::before {
   background-color: blue;
 }
-.desire .desiresections .reuqstcenters .chechkboxalls .checkbox-container input[type=checkbox]:checked + .labeltextfor::before {
+.desire
+  .desire__container
+  .desire__centers
+  .desire__right
+  .checkbox-container
+  input[type="checkbox"]:checked
+  + .labeltextfor::before {
   content: "✔"; /* İşaret içeriği */
   position: absolute;
   top: 96%;
@@ -2042,13 +2391,31 @@ footer .footer__container .footer__description {
   font-size: 20px; /* İşaret boyutu */
   text-align: center;
 }
-.desire .desiresections .reuqstcenters .chechkboxalls .checkbox-container input[type=checkbox]:not(:checked) + .labeltextfor::before {
+.desire
+  .desire__container
+  .desire__centers
+  .desire__right
+  .checkbox-container
+  input[type="checkbox"]:not(:checked)
+  + .labeltextfor::before {
   content: ""; /* İşaret içeriği */
 }
-.desire .desiresections .reuqstcenters .chechkboxalls .checkbox-container input[type=checkbox]:checked + .labeltextfor::before {
+.desire
+  .desire__container
+  .desire__centers
+  .desire__right
+  .checkbox-container
+  input[type="checkbox"]:checked
+  + .labeltextfor::before {
   background-color: blue;
 }
-.desire .desiresections .reuqstcenters .chechkboxalls .checkbox-container input[type=checkbox]:checked + .labeltext::before::after {
+.desire
+  .desire__container
+  .desire__centers
+  .desire__right
+  .checkbox-container
+  input[type="checkbox"]:checked
+  + .labeltext::before::after {
   content: "✔";
   position: absolute;
   top: 50%;
@@ -2057,8 +2424,7 @@ footer .footer__container .footer__description {
   color: red;
   font-size: 14px; /* Yazı boyutunu ayarla */
 }
-.desire .desiresections .reuqstcenters .totalscro {
-  margin-top: 40%;
+.desire .desire__container .desire__centers .totalscro {
+  margin-top: 1%;
   font-size: 23px;
-  margin-left: -10%;
 }
