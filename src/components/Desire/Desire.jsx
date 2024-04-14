@@ -83,11 +83,11 @@ const Desire = () => {
         <>
             <section className="desire">
 
-                <div className="desiresections">
+                <div className="desire__container">
+                
+                    <div className="desire__sections">
 
-                    <div className="desireiconcontainer">
-
-                        <h2 className="packageH2">Öz istəyinə görə seç</h2>
+                        <h2 className="desire__top">Öz istəyinə görə seç</h2>
 
                         <div className="circlesbox">
 
@@ -95,9 +95,9 @@ const Desire = () => {
 
                     </div>
 
-                    <div className="reuqstcenters">
+                    <div className="desire__centers">
 
-                        <div className="colchildsall">
+                        <div className="desire__left">
 
 
 
@@ -272,7 +272,7 @@ const Desire = () => {
 
 
 
-                        <div className="chechkboxalls">
+                        <div className="desire__right">
                             <div class="checkbox-container">
                                 <p className="report">
                                     <ReportGmailerrorredIcon />
@@ -320,12 +320,16 @@ const Desire = () => {
 
 
 
-                        </div>
+                        <div className="desirebottom">
+
                         <p className="totalscro">Total:50</p>
 
                         <SumbitBtn >
                             Submit
                         </SumbitBtn>
+                        </div>
+                        </div>
+
 
 
 

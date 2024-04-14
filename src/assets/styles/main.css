@@ -1722,66 +1722,65 @@ footer .footer__container .footer__description {
   background: url(../image/half-circle-right-icon.png) no-repeat top left;
   animation: moveTop 1s ease-in-out infinite alternate;
 }
-.desire .desiresections .desireiconcontainer {
+.desire .desire__container .desire__sections {
   display: flex;
   justify-content: center;
   flex-direction: row;
 }
-.desire .desiresections .desireiconcontainer .packageH2 {
+.desire .desire__container .desire__sections .desire__top {
   font-size: 30px;
   color: #6F34FE;
 }
-.desire .desiresections .reuqstcenters {
+.desire .desire__container .desire__centers {
   display: flex;
   flex-direction: row !important;
   align-items: center;
-  width: 90%;
 }
-.desire .desiresections .reuqstcenters .colchildsall {
-  width: 82%;
+.desire .desire__container .desire__centers .desire__left {
+  width: 78%;
 }
-.desire .desiresections .reuqstcenters .colchildsall .svgtext {
+.desire .desire__container .desire__centers .desire__left .svgtext {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 3px;
 }
-.desire .desiresections .reuqstcenters .colchildsall #item1Counter {
+.desire .desire__container .desire__centers .desire__left #item1Counter {
   margin-top: 35px;
 }
-.desire .desiresections .reuqstcenters .colchildsall #item1Span {
+.desire .desire__container .desire__centers .desire__left #item1Span {
   margin-top: 5px;
 }
-.desire .desiresections .reuqstcenters .colchildsall .colchild1 {
+.desire .desire__container .desire__centers .desire__left .colchild1 {
   margin-top: 20px;
   font-size: 20px;
 }
-.desire .desiresections .reuqstcenters .colchildsall .senduser {
+.desire .desire__container .desire__centers .desire__left .senduser {
   margin-top: 20px;
 }
-.desire .desiresections .reuqstcenters .colchildsall .senduser {
+.desire .desire__container .desire__centers .desire__left .senduser {
   display: flex;
   flex-direction: column;
   gap: 5px;
 }
-.desire .desiresections .reuqstcenters .colchildsall input[type=text] {
+.desire .desire__container .desire__centers .desire__left input[type=text] {
   background-color: #777ee7;
   color: white;
   width: 200px;
 }
-.desire .desiresections .reuqstcenters .colchildsall .colchild2 {
+.desire .desire__container .desire__centers .desire__left .colchild2 {
   margin-top: 30px;
   font-size: 20px;
 }
-.desire .desiresections .reuqstcenters .colchildsall .colchild3 {
+.desire .desire__container .desire__centers .desire__left .colchild3 {
   margin-top: 40px;
   font-size: 20px;
 }
-.desire .desiresections .reuqstcenters .colchildsall .colchild4 {
+.desire .desire__container .desire__centers .desire__left .colchild4 {
   margin-top: 40px;
   font-size: 20px;
 }
-.desire .desiresections .reuqstcenters .colchildsall .slider::-webkit-slider-thumb {
+.desire .desire__container .desire__centers .desire__left .slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
   width: 62px; /* Thumb genişliği */
@@ -1792,7 +1791,7 @@ footer .footer__container .footer__description {
   border-radius: 70%;
   padding: 5px;
 }
-.desire .desiresections .reuqstcenters .colchildsall input[type=range] {
+.desire .desire__container .desire__centers .desire__left input[type=range] {
   appearance: none;
   margin-bottom: 7px;
   background: transparent;
@@ -1804,22 +1803,22 @@ footer .footer__container .footer__description {
   background-color: #333fe7;
   margin-top: 15px;
 }
-.desire .desiresections .reuqstcenters .chechkboxalls {
+.desire .desire__container .desire__centers .desire__right {
   flex-direction: column;
   display: flex;
   left: 65%;
   position: absolute;
   right: 0;
-  gap: 65px;
-  top: 87%;
+  gap: 75px;
+  top: 85%;
 }
-.desire .desiresections .reuqstcenters .chechkboxalls .checkbox-container {
+.desire .desire__container .desire__centers .desire__right .checkbox-container {
   display: flex;
   flex-direction: row !important;
   align-items: center !important;
   gap: 1px;
 }
-.desire .desiresections .reuqstcenters .chechkboxalls .checkbox-container .labeltext::before {
+.desire .desire__container .desire__centers .desire__right .checkbox-container .labeltext::before {
   content: "";
   position: absolute;
   width: 20px;
@@ -1828,7 +1827,7 @@ footer .footer__container .footer__description {
   border-radius: 5px;
   transition: background-color 0.3s;
 }
-.desire .desiresections .reuqstcenters .chechkboxalls .checkbox-container::after {
+.desire .desire__container .desire__centers .desire__right .checkbox-container::after {
   content: "";
   position: absolute;
   left: 2px;
@@ -1839,7 +1838,7 @@ footer .footer__container .footer__description {
   border-width: 0 2px 3px 0;
   opacity: 0;
 }
-.desire .desiresections .reuqstcenters .chechkboxalls .checkbox-container .labeltexttwo::before {
+.desire .desire__container .desire__centers .desire__right .checkbox-container .labeltexttwo::before {
   content: "";
   position: absolute;
   width: 20px;
@@ -1848,7 +1847,7 @@ footer .footer__container .footer__description {
   border-radius: 5px;
   transition: background-color 0.3s;
 }
-.desire .desiresections .reuqstcenters .chechkboxalls .checkbox-container::after {
+.desire .desire__container .desire__centers .desire__right .checkbox-container::after {
   content: "";
   position: absolute;
   left: 2px;
@@ -1859,7 +1858,7 @@ footer .footer__container .footer__description {
   border-width: 0 2px 3px 0;
   opacity: 0;
 }
-.desire .desiresections .reuqstcenters .chechkboxalls .checkbox-container .labeltextthree::before {
+.desire .desire__container .desire__centers .desire__right .checkbox-container .labeltextthree::before {
   content: "";
   position: absolute;
   width: 20px;
@@ -1868,7 +1867,7 @@ footer .footer__container .footer__description {
   border-radius: 5px;
   transition: background-color 0.3s;
 }
-.desire .desiresections .reuqstcenters .chechkboxalls .checkbox-container::after {
+.desire .desire__container .desire__centers .desire__right .checkbox-container::after {
   content: "";
   position: absolute;
   left: 2px;
@@ -1879,7 +1878,7 @@ footer .footer__container .footer__description {
   border-width: 0 2px 3px 0;
   opacity: 0;
 }
-.desire .desiresections .reuqstcenters .chechkboxalls .checkbox-container .labeltextfor::before {
+.desire .desire__container .desire__centers .desire__right .checkbox-container .labeltextfor::before {
   content: "";
   position: absolute;
   width: 20px;
@@ -1888,7 +1887,7 @@ footer .footer__container .footer__description {
   border-radius: 5px;
   transition: background-color 0.3s;
 }
-.desire .desiresections .reuqstcenters .chechkboxalls .checkbox-container::after {
+.desire .desire__container .desire__centers .desire__right .checkbox-container::after {
   content: "";
   position: absolute;
   left: 2px;
@@ -1899,35 +1898,35 @@ footer .footer__container .footer__description {
   border-width: 0 2px 3px 0;
   opacity: 0;
 }
-.desire .desiresections .reuqstcenters .chechkboxalls .checkbox-container .labeltexts {
+.desire .desire__container .desire__centers .desire__right .checkbox-container .labeltexts {
   margin-top: 5px;
   margin-left: 25px;
   font-family: inherit;
   font-size: 14px;
 }
-.desire .desiresections .reuqstcenters .chechkboxalls .checkbox-container .report:hover ~ .messagetwo {
+.desire .desire__container .desire__centers .desire__right .checkbox-container .report:hover ~ .messagetwo {
   display: block;
 }
-.desire .desiresections .reuqstcenters .chechkboxalls .checkbox-container .report:hover ~ .message {
+.desire .desire__container .desire__centers .desire__right .checkbox-container .report:hover ~ .message {
   display: block;
 }
-.desire .desiresections .reuqstcenters .chechkboxalls .checkbox-container .report:hover ~ .messagethree {
+.desire .desire__container .desire__centers .desire__right .checkbox-container .report:hover ~ .messagethree {
   display: block;
 }
-.desire .desiresections .reuqstcenters .chechkboxalls .checkbox-container .labeltexts {
+.desire .desire__container .desire__centers .desire__right .checkbox-container .labeltexts {
   margin-top: 5px;
   margin-left: 25px;
   font-family: inherit;
   font-size: 14px;
 }
-.desire .desiresections .reuqstcenters .chechkboxalls .checkbox-container .message {
+.desire .desire__container .desire__centers .desire__right .checkbox-container .message {
   position: absolute;
-  top: 21%;
+  top: 5%;
   background-color: #f9f9f9;
   border: 1px solid #ccc;
-  width: 130px;
-  height: 255px;
-  padding: 17px;
+  width: 120px;
+  height: 275px;
+  padding: 20px;
   border-radius: 3px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   display: none;
@@ -1935,7 +1934,7 @@ footer .footer__container .footer__description {
   color: white;
   left: 38%;
 }
-.desire .desiresections .reuqstcenters .chechkboxalls .checkbox-container .messagethree {
+.desire .desire__container .desire__centers .desire__right .checkbox-container .messagethree {
   position: absolute;
   top: 30%;
   background-color: #f9f9f9;
@@ -1950,7 +1949,7 @@ footer .footer__container .footer__description {
   color: white;
   left: 38%;
 }
-.desire .desiresections .reuqstcenters .chechkboxalls .checkbox-container .messagetwo {
+.desire .desire__container .desire__centers .desire__right .checkbox-container .messagetwo {
   position: absolute;
   top: 50%;
   left: 40%;
@@ -1965,13 +1964,13 @@ footer .footer__container .footer__description {
   background-color: black;
   color: white;
 }
-.desire .desiresections .reuqstcenters .chechkboxalls .checkbox-container input[type=checkbox] {
+.desire .desire__container .desire__centers .desire__right .checkbox-container input[type=checkbox] {
   opacity: 0;
   position: absolute;
   width: 5px;
   height: 5px;
 }
-.desire .desiresections .reuqstcenters .chechkboxalls .checkbox-container input[type=checkbox]:checked + .labeltext::before {
+.desire .desire__container .desire__centers .desire__right .checkbox-container input[type=checkbox]:checked + .labeltext::before {
   content: "✔"; /* İşaret içeriği */
   position: absolute;
   top: 4%;
@@ -1981,13 +1980,13 @@ footer .footer__container .footer__description {
   font-size: 20px; /* İşaret boyutu */
   text-align: center;
 }
-.desire .desiresections .reuqstcenters .chechkboxalls .checkbox-container input[type=checkbox]:not(:checked) + .labeltext::before {
+.desire .desire__container .desire__centers .desire__right .checkbox-container input[type=checkbox]:not(:checked) + .labeltext::before {
   content: ""; /* İşaret içeriği */
 }
-.desire .desiresections .reuqstcenters .chechkboxalls .checkbox-container input[type=checkbox]:checked + .labeltext::before {
+.desire .desire__container .desire__centers .desire__right .checkbox-container input[type=checkbox]:checked + .labeltext::before {
   background-color: blue;
 }
-.desire .desiresections .reuqstcenters .chechkboxalls .checkbox-container input[type=checkbox]:checked + .labeltexttwo::before {
+.desire .desire__container .desire__centers .desire__right .checkbox-container input[type=checkbox]:checked + .labeltexttwo::before {
   content: "✔"; /* İşaret içeriği */
   position: absolute;
   top: 35%;
@@ -1997,13 +1996,13 @@ footer .footer__container .footer__description {
   font-size: 20px; /* İşaret boyutu */
   text-align: center;
 }
-.desire .desiresections .reuqstcenters .chechkboxalls .checkbox-container input[type=checkbox]:not(:checked) + .labeltexttwo::before {
+.desire .desire__container .desire__centers .desire__right .checkbox-container input[type=checkbox]:not(:checked) + .labeltexttwo::before {
   content: ""; /* İşaret içeriği */
 }
-.desire .desiresections .reuqstcenters .chechkboxalls .checkbox-container input[type=checkbox]:checked + .labeltexttwo::before {
+.desire .desire__container .desire__centers .desire__right .checkbox-container input[type=checkbox]:checked + .labeltexttwo::before {
   background-color: blue;
 }
-.desire .desiresections .reuqstcenters .chechkboxalls .checkbox-container input[type=checkbox]:checked + .labeltextthree::before {
+.desire .desire__container .desire__centers .desire__right .checkbox-container input[type=checkbox]:checked + .labeltextthree::before {
   content: "✔"; /* İşaret içeriği */
   position: absolute;
   top: 65%;
@@ -2013,13 +2012,13 @@ footer .footer__container .footer__description {
   font-size: 20px; /* İşaret boyutu */
   text-align: center;
 }
-.desire .desiresections .reuqstcenters .chechkboxalls .checkbox-container input[type=checkbox]:not(:checked) + .labeltextthree::before {
+.desire .desire__container .desire__centers .desire__right .checkbox-container input[type=checkbox]:not(:checked) + .labeltextthree::before {
   content: ""; /* İşaret içeriği */
 }
-.desire .desiresections .reuqstcenters .chechkboxalls .checkbox-container input[type=checkbox]:checked + .labeltextthree::before {
+.desire .desire__container .desire__centers .desire__right .checkbox-container input[type=checkbox]:checked + .labeltextthree::before {
   background-color: blue;
 }
-.desire .desiresections .reuqstcenters .chechkboxalls .checkbox-container input[type=checkbox]:checked + .labeltextfor::before {
+.desire .desire__container .desire__centers .desire__right .checkbox-container input[type=checkbox]:checked + .labeltextfor::before {
   content: "✔"; /* İşaret içeriği */
   position: absolute;
   top: 96%;
@@ -2029,13 +2028,13 @@ footer .footer__container .footer__description {
   font-size: 20px; /* İşaret boyutu */
   text-align: center;
 }
-.desire .desiresections .reuqstcenters .chechkboxalls .checkbox-container input[type=checkbox]:not(:checked) + .labeltextfor::before {
+.desire .desire__container .desire__centers .desire__right .checkbox-container input[type=checkbox]:not(:checked) + .labeltextfor::before {
   content: ""; /* İşaret içeriği */
 }
-.desire .desiresections .reuqstcenters .chechkboxalls .checkbox-container input[type=checkbox]:checked + .labeltextfor::before {
+.desire .desire__container .desire__centers .desire__right .checkbox-container input[type=checkbox]:checked + .labeltextfor::before {
   background-color: blue;
 }
-.desire .desiresections .reuqstcenters .chechkboxalls .checkbox-container input[type=checkbox]:checked + .labeltext::before::after {
+.desire .desire__container .desire__centers .desire__right .checkbox-container input[type=checkbox]:checked + .labeltext::before::after {
   content: "✔";
   position: absolute;
   top: 50%;
@@ -2044,8 +2043,7 @@ footer .footer__container .footer__description {
   color: red;
   font-size: 14px; /* Yazı boyutunu ayarla */
 }
-.desire .desiresections .reuqstcenters .totalscro {
-  margin-top: 40%;
+.desire .desire__container .desire__centers .totalscro {
+  margin-top: 1%;
   font-size: 23px;
-  margin-left: -10%;
 }
