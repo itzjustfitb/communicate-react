@@ -196,7 +196,9 @@ body {
 }
 .services__card .services__card-logo {
   border-radius: 50%;
+  width: -moz-fit-content;
   width: fit-content;
+  height: -moz-fit-content;
   height: fit-content;
   background-color: #f2f2ff;
   padding: 30px;
@@ -218,6 +220,7 @@ body {
   color: #9692b0;
 }
 .services__card .services__card-content span {
+  width: -moz-fit-content;
   width: fit-content;
   color: rgb(252, 166, 31);
   cursor: pointer;
@@ -264,7 +267,9 @@ body {
   }
   .services__card .services__card-logo {
     border-radius: 50%;
+    width: -moz-fit-content;
     width: fit-content;
+    height: -moz-fit-content;
     height: fit-content;
     background-color: #f2f2ff;
     padding: 30px;
@@ -289,6 +294,7 @@ body {
     color: #9692b0;
   }
   .services__card .services__card-content span {
+    width: -moz-fit-content;
     width: fit-content;
     color: rgb(252, 166, 31);
     cursor: pointer;
@@ -327,7 +333,8 @@ body {
 }
 .portfolio__card img {
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 16px;
   height: 100%;
 }
@@ -418,7 +425,8 @@ body {
 .content__modal .content__modal-container img {
   width: 95%;
   height: 400px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 20px;
 }
 .content__modal .content__modal-container .content__modal-content {
@@ -618,7 +626,8 @@ footer .footer__container {
 }
 footer .footer__container .footer__logo img {
   width: 200px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 footer .footer__container nav ul {
   display: flex;
@@ -1447,7 +1456,8 @@ footer .footer__container .footer__description {
     background: rgba(255, 255, 255, 0.2);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.3);
     color: #fff;
     justify-content: space-between;
@@ -1487,7 +1497,8 @@ footer .footer__container .footer__description {
     background: rgba(255, 255, 255, 0.2);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.3);
   }
   #portfolio .portfolio__container .portfolio__bottom .portfolio__nav ul .active-nav {
@@ -1596,7 +1607,8 @@ footer .footer__container .footer__description {
 #team .team__container .team__images .team__image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 50%;
 }
 #team .team__container .team__images .active-img {
@@ -1729,7 +1741,7 @@ footer .footer__container .footer__description {
 }
 .desire .desiresections .desireiconcontainer .packageH2 {
   font-size: 30px;
-  color: #6F34FE;
+  color: #6f34fe;
 }
 .desire .desiresections .reuqstcenters {
   display: flex;
@@ -1793,7 +1805,9 @@ footer .footer__container .footer__description {
   padding: 5px;
 }
 .desire .desiresections .reuqstcenters .colchildsall input[type=range] {
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   margin-bottom: 7px;
   background: transparent;
   background-color: black;
@@ -1801,7 +1815,6 @@ footer .footer__container .footer__description {
   background-color: rgb(0, 0, 0);
   height: 30px;
   border-radius: 50px;
-  background-color: #333fe7;
   margin-top: 15px;
 }
 .desire .desiresections .reuqstcenters .chechkboxalls {
@@ -1824,7 +1837,7 @@ footer .footer__container .footer__description {
   position: absolute;
   width: 20px;
   height: 20px;
-  background-color: #6F34FE;
+  background-color: #6f34fe;
   border-radius: 5px;
   transition: background-color 0.3s;
 }
@@ -1844,7 +1857,7 @@ footer .footer__container .footer__description {
   position: absolute;
   width: 20px;
   height: 20px;
-  background-color: #6F34FE;
+  background-color: #6f34fe;
   border-radius: 5px;
   transition: background-color 0.3s;
 }
@@ -1864,7 +1877,7 @@ footer .footer__container .footer__description {
   position: absolute;
   width: 20px;
   height: 20px;
-  background-color: #6F34FE;
+  background-color: #6f34fe;
   border-radius: 5px;
   transition: background-color 0.3s;
 }
@@ -1884,7 +1897,7 @@ footer .footer__container .footer__description {
   position: absolute;
   width: 20px;
   height: 20px;
-  background-color: #6F34FE;
+  background-color: #6f34fe;
   border-radius: 5px;
   transition: background-color 0.3s;
 }
