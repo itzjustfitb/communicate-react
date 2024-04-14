@@ -27,26 +27,24 @@
   }
   
   
-  .desiresections{
+  .desire__container{
   
-  .desireiconcontainer{
+  .desire__sections{
     display: flex;
     justify-content: center;
     flex-direction: row;
-    .packageH2{
+    .desire__top{
         font-size: 30px;
         color: #6F34FE;
     }
   }
-  .reuqstcenters{
+  .desire__centers{
     display: flex;
     flex-direction: row !important;
     align-items: center;
-  
-   width: 90%;
-   .colchildsall{
+   .desire__left{
    
-       width: 82%;
+       width: 78%;
        
       .svgtext{
         display: flex;
@@ -64,14 +62,7 @@
         margin-top: 20px;
   font-size: 20px;
     }
-    .senduser{
-      margin-top: 20px;
-    }
-    .senduser{
-      display: flex;
-      flex-direction: column;
-      gap: 5px;
-    }
+   
     input[type=text]{
       background-color: #777ee7;
       color: white;
@@ -116,15 +107,37 @@
       
   }
   
-  .chechkboxalls{
+  .desire__right{
     flex-direction: column;
     display: flex;
     left: 65%;
     position: absolute;
     right: 0;
-    gap: 65px;
-    top: 87%;
-  
+    gap: 75px;
+    top: 86%;
+
+    .desire__bottom{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 15px;
+      .senduser{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+      }
+      .submitsneds{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        input[type=text]{
+          background-color: #777ee7;
+          color: white;
+          width: 200px;
+        }
+      }
+    }
     .checkbox-container{
         display: flex;
         flex-direction: row !important;
@@ -249,13 +262,13 @@
   }
   .message {
     position: absolute;
-    top: 21%;
-    
+    top: 5%;
+  
     background-color: #f9f9f9;
     border: 1px solid #ccc;
-    width: 130px;
-    height: 255px;
-    padding: 17px;
+    width: 120px;
+    height: 275px;
+    padding: 20px;
     border-radius: 3px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     display: none;
@@ -265,7 +278,7 @@
   }
   .messagethree{
     position: absolute;
-    top: 30%;
+    top: 20%;
     
     background-color: #f9f9f9;
     border: 1px solid #ccc;
@@ -403,9 +416,9 @@
      
     }
     .totalscro{
-       margin-top: 40%;
+       margin-top: 1%;
         font-size: 23px;
-        margin-left: -10%;
+     
     }
   }
   

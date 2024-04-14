@@ -20,7 +20,7 @@ export const DefaultBtn = styled.button({
 export const SumbitBtn = styled.button({
   cursor: "pointer",
   backgroundColor: "#fca61f",
-  padding: " 14px 38px",
+  padding: " 14px 48px",
   border: "none",
   borderRadius: 35,
   color: "#fff",
@@ -32,8 +32,8 @@ export const SumbitBtn = styled.button({
     backgroundColor: "#6f34fe",
     transform: "translateY(-5px)",
   },
-  marginTop:"50%",
-  marginLeft:"-85px"
+  marginTop:"2%",
+ 
 });
 
 
