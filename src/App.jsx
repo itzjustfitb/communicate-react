@@ -36,13 +36,13 @@ function App() {
       <Hero />
       <Services modalActive={modalActive} setModalActive={setModalActive} />
       <Portfolio modalActive={modalActive} setModalActive={setModalActive} />
-      <Desire/>
+      <Desire />
       {/* <Team /> */}
       {/* // ? ------- APP ENDS HERE ------- */}
 
       {/* <ContentModal modalActive={modalActive} setModalActive={setModalActive} /> */}
       <ScrollTopBtn />
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }

@@ -195,7 +195,9 @@ body {
 }
 .services__card .services__card-logo {
   border-radius: 50%;
+  width: -moz-fit-content;
   width: fit-content;
+  height: -moz-fit-content;
   height: fit-content;
   background-color: #f2f2ff;
   padding: 30px;
@@ -217,6 +219,7 @@ body {
   color: #9692b0;
 }
 .services__card .services__card-content span {
+  width: -moz-fit-content;
   width: fit-content;
   color: rgb(252, 166, 31);
   cursor: pointer;
@@ -263,7 +266,9 @@ body {
   }
   .services__card .services__card-logo {
     border-radius: 50%;
+    width: -moz-fit-content;
     width: fit-content;
+    height: -moz-fit-content;
     height: fit-content;
     background-color: #f2f2ff;
     padding: 30px;
@@ -288,6 +293,7 @@ body {
     color: #9692b0;
   }
   .services__card .services__card-content span {
+    width: -moz-fit-content;
     width: fit-content;
     color: rgb(252, 166, 31);
     cursor: pointer;
@@ -326,7 +332,8 @@ body {
 }
 .portfolio__card img {
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 16px;
   height: 100%;
 }
@@ -417,7 +424,8 @@ body {
 .content__modal .content__modal-container img {
   width: 95%;
   height: 400px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 20px;
 }
 .content__modal .content__modal-container .content__modal-content {
@@ -617,7 +625,8 @@ footer .footer__container {
 }
 footer .footer__container .footer__logo img {
   width: 200px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 footer .footer__container nav ul {
   display: flex;
@@ -667,6 +676,95 @@ footer .footer__container .footer__description {
   color: #9692b0;
 }
 
+@media screen and (max-width: 1000px) {
+  footer {
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #211e39;
+    min-height: 400px;
+    position: relative;
+  }
+  footer #footer__left {
+    width: 200px;
+    top: 0;
+    left: 0;
+    position: absolute;
+  }
+  footer #footer__right {
+    width: 200px;
+    bottom: 0;
+    right: 0;
+    transform: rotate(180deg);
+    position: absolute;
+  }
+  footer .footer__container {
+    z-index: 1;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+  }
+  footer .footer__container .footer__logo img {
+    width: 100px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  footer .footer__container nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+  footer .footer__container nav ul li {
+    padding: 20px 0px;
+    text-align: center;
+    border-bottom: 1px solid rgb(56, 53, 77);
+    border-right: none;
+  }
+  footer .footer__container nav ul li:last-child {
+    border-right: none;
+    border-bottom: none;
+  }
+  footer .footer__container nav ul li a {
+    transition: 0.4s;
+    text-decoration: none;
+    color: #9692b0;
+    position: relative;
+    font-size: 1.3rem;
+  }
+  footer .footer__container nav ul li a::before {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    height: 2px;
+    background-color: rgb(252, 166, 31);
+    width: 0;
+    transition: 0.4s;
+  }
+  footer .footer__container nav ul li:hover a {
+    color: rgb(252, 166, 31);
+  }
+  footer .footer__container nav ul li:hover a::before {
+    width: 100%;
+  }
+  footer .footer__container .footer__socials {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+  }
+  footer .footer__container .footer__description {
+    margin-top: 20px;
+    width: 90%;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid rgb(56, 53, 77);
+    color: #9692b0;
+  }
+}
 #hero {
   overflow: hidden;
   position: relative;
@@ -1446,7 +1544,8 @@ footer .footer__container .footer__description {
     background: rgba(255, 255, 255, 0.2);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.3);
     color: #fff;
     justify-content: space-between;
@@ -1486,7 +1585,8 @@ footer .footer__container .footer__description {
     background: rgba(255, 255, 255, 0.2);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.3);
   }
   #portfolio .portfolio__container .portfolio__bottom .portfolio__nav ul .active-nav {
@@ -1595,7 +1695,8 @@ footer .footer__container .footer__description {
 #team .team__container .team__images .team__image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 50%;
 }
 #team .team__container .team__images .active-img {
@@ -1758,7 +1859,9 @@ footer .footer__container .footer__description {
   margin-top: -5px;
 }
 .desire .desire__container .desire__bottom .desire__left .desire__input-row input[type=range] {
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   width: 100%;
   height: 30px;
   border-radius: 50px;
@@ -1896,7 +1999,9 @@ footer .footer__container .footer__description {
     margin-top: -5px;
   }
   .desire .desire__container .desire__bottom .desire__left .desire__input-row input[type=range] {
-    appearance: none;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
     width: 100%;
     height: 30px;
     border-radius: 50px;
@@ -2034,7 +2139,9 @@ footer .footer__container .footer__description {
     margin-top: -5px;
   }
   .desire .desire__container .desire__bottom .desire__left .desire__input-row input[type=range] {
-    appearance: none;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
     width: 100%;
     height: 30px;
     border-radius: 50px;
