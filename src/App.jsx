@@ -15,10 +15,18 @@ import Desire from "./components/Desire/Desire";
 
 function App() {
   const [modalActive, setModalActive] = useState(false);
+  const [scrollVisible, setScrollVisible] = useState(false);
+
+  const handleScroll = () => {
+    window.scrollY > 100 ? setScrollVisible(true) : setScrollVisible(false);
+  };
+
   useEffect(() => {
     Aos.init({
       offset: 200,
     });
+
+    window.addEventListener("scroll", handleScroll);
   }, []);
 
   useEffect(() => {
@@ -41,7 +49,8 @@ function App() {
       {/* // ? ------- APP ENDS HERE ------- */}
 
       {/* <ContentModal modalActive={modalActive} setModalActive={setModalActive} /> */}
-      <ScrollTopBtn />
+
+      {scrollVisible ? <ScrollTopBtn /> : ""}
       <Footer />
     </>
   );

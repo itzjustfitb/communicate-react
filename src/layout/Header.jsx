@@ -11,7 +11,7 @@ function Header() {
     },
     {
       label: "Cibinizə uyğun",
-      value: "#choices",
+      value: "#desire",
     },
     {
       label: "Portfolio",

@@ -1796,7 +1796,7 @@ footer .footer__container .footer__description {
   background-color: #6f34fe;
 }
 
-.desire {
+#desire {
   background: linear-gradient(33deg, rgb(242, 242, 255) 0%, rgb(235, 249, 255) 100%);
   overflow: hidden;
   padding: 30px;
@@ -1805,60 +1805,60 @@ footer .footer__container .footer__description {
   justify-content: center;
   align-items: center;
 }
-.desire #desireBgLeft {
+#desire #desireBgLeft {
   position: absolute;
   top: 100px;
   right: -10px;
   animation: moveRight 1s ease-in-out infinite alternate;
 }
-.desire #desireHalfCircle {
+#desire #desireHalfCircle {
   position: absolute;
   right: 40px;
   top: 50px;
   animation: moveTop 1s ease-in-out infinite alternate;
 }
-.desire .desire__container {
+#desire .desire__container {
   width: 80%;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-.desire .desire__container .desire__top {
+#desire .desire__container .desire__top {
   display: flex;
   justify-content: center;
 }
-.desire .desire__container .desire__top h1 {
+#desire .desire__container .desire__top h1 {
   font-size: 2.625rem;
   color: #3f396d;
   text-align: center;
 }
-.desire .desire__container .desire__bottom {
+#desire .desire__container .desire__bottom {
   display: flex;
   align-items: center;
   gap: 50px;
 }
-.desire .desire__container .desire__bottom .desire__left {
+#desire .desire__container .desire__bottom .desire__left {
   width: 70%;
   display: flex;
   flex-direction: column;
   gap: 40px;
 }
-.desire .desire__container .desire__bottom .desire__left .desire__input-row {
+#desire .desire__container .desire__bottom .desire__left .desire__input-row {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-.desire .desire__container .desire__bottom .desire__left .desire__input-row .desire__input-title {
+#desire .desire__container .desire__bottom .desire__left .desire__input-row .desire__input-title {
   display: flex;
   align-items: center;
   gap: 5px;
   font-size: 1.4rem;
 }
-.desire .desire__container .desire__bottom .desire__left .desire__input-row .desire__input-title i {
+#desire .desire__container .desire__bottom .desire__left .desire__input-row .desire__input-title i {
   color: #3f396d;
   margin-top: -5px;
 }
-.desire .desire__container .desire__bottom .desire__left .desire__input-row input[type=range] {
+#desire .desire__container .desire__bottom .desire__left .desire__input-row input[type=range] {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -1867,7 +1867,7 @@ footer .footer__container .footer__description {
   border-radius: 50px;
   background-color: #6f34fe;
 }
-.desire .desire__container .desire__bottom .desire__left .desire__input-row input[type=range]::-webkit-slider-thumb {
+#desire .desire__container .desire__bottom .desire__left .desire__input-row input[type=range]::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
   width: 30px;
@@ -1878,34 +1878,34 @@ footer .footer__container .footer__description {
   border-radius: 50%;
   padding: 5px;
 }
-.desire .desire__container .desire__bottom .desire__left .desire__input-row .desire__input-description {
+#desire .desire__container .desire__bottom .desire__left .desire__input-row .desire__input-description {
   display: flex;
   gap: 5px;
   font-size: 20px;
 }
-.desire .desire__container .desire__bottom .desire__left .desire__input-row .desire__input-description span {
+#desire .desire__container .desire__bottom .desire__left .desire__input-row .desire__input-description span {
   display: flex;
   gap: 5px;
 }
-.desire .desire__container .desire__bottom .desire__right {
+#desire .desire__container .desire__bottom .desire__right {
   flex-direction: column;
   display: flex;
   gap: 30px;
 }
-.desire .desire__container .desire__bottom .desire__right .desire__checkboxes {
+#desire .desire__container .desire__bottom .desire__right .desire__checkboxes {
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
-.desire .desire__container .desire__bottom .desire__right .desire__checkboxes .desire__checkbox-row {
+#desire .desire__container .desire__bottom .desire__right .desire__checkboxes .desire__checkbox-row {
   position: relative;
   display: flex;
   align-items: center;
 }
-.desire .desire__container .desire__bottom .desire__right .desire__checkboxes .desire__checkbox-row .report:hover ~ .message {
+#desire .desire__container .desire__bottom .desire__right .desire__checkboxes .desire__checkbox-row .report:hover ~ .message {
   display: block;
 }
-.desire .desire__container .desire__bottom .desire__right .desire__checkboxes .desire__checkbox-row .message {
+#desire .desire__container .desire__bottom .desire__right .desire__checkboxes .desire__checkbox-row .message {
   position: absolute;
   top: 0;
   right: -40px;
@@ -1920,29 +1920,29 @@ footer .footer__container .footer__description {
   color: #fff;
   line-height: 1.2;
 }
-.desire .desire__container .desire__bottom .desire__right .desire__checkboxes .desire__checkbox-row label {
+#desire .desire__container .desire__bottom .desire__right .desire__checkboxes .desire__checkbox-row label {
   display: flex;
   align-items: center;
   gap: 5px;
 }
-.desire .desire__container .desire__bottom .desire__right .desire__checkboxes .desire__checkbox-row label input {
+#desire .desire__container .desire__bottom .desire__right .desire__checkboxes .desire__checkbox-row label input {
   accent-color: #6f34fe;
   width: 20px;
   height: 20px;
 }
-.desire .desire__container .desire__bottom .desire__right .desire__result {
+#desire .desire__container .desire__bottom .desire__right .desire__result {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
-.desire .desire__container .desire__bottom .desire__right .desire__result p {
+#desire .desire__container .desire__bottom .desire__right .desire__result p {
   font-size: 1.3rem;
   display: flex;
   gap: 5px;
 }
 
 @media screen and (max-width: 1000px) {
-  .desire {
+  #desire {
     background: linear-gradient(33deg, rgb(242, 242, 255) 0%, rgb(235, 249, 255) 100%);
     overflow: hidden;
     padding: 30px;
@@ -1951,54 +1951,54 @@ footer .footer__container .footer__description {
     justify-content: center;
     align-items: center;
   }
-  .desire #desireBgLeft {
+  #desire #desireBgLeft {
     display: none;
   }
-  .desire #desireHalfCircle {
+  #desire #desireHalfCircle {
     display: none;
   }
-  .desire .desire__container {
+  #desire .desire__container {
     width: 80%;
     display: flex;
     flex-direction: column;
     gap: 20px;
   }
-  .desire .desire__container .desire__top {
+  #desire .desire__container .desire__top {
     display: flex;
     justify-content: center;
   }
-  .desire .desire__container .desire__top h1 {
+  #desire .desire__container .desire__top h1 {
     font-size: 2.625rem;
     color: #3f396d;
   }
-  .desire .desire__container .desire__bottom {
+  #desire .desire__container .desire__bottom {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 50px;
   }
-  .desire .desire__container .desire__bottom .desire__left {
+  #desire .desire__container .desire__bottom .desire__left {
     width: 100%;
     display: flex;
     flex-direction: column;
     gap: 40px;
   }
-  .desire .desire__container .desire__bottom .desire__left .desire__input-row {
+  #desire .desire__container .desire__bottom .desire__left .desire__input-row {
     display: flex;
     flex-direction: column;
     gap: 10px;
   }
-  .desire .desire__container .desire__bottom .desire__left .desire__input-row .desire__input-title {
+  #desire .desire__container .desire__bottom .desire__left .desire__input-row .desire__input-title {
     display: flex;
     align-items: center;
     gap: 5px;
     font-size: 1.4rem;
   }
-  .desire .desire__container .desire__bottom .desire__left .desire__input-row .desire__input-title i {
+  #desire .desire__container .desire__bottom .desire__left .desire__input-row .desire__input-title i {
     color: #3f396d;
     margin-top: -5px;
   }
-  .desire .desire__container .desire__bottom .desire__left .desire__input-row input[type=range] {
+  #desire .desire__container .desire__bottom .desire__left .desire__input-row input[type=range] {
     -webkit-appearance: none;
        -moz-appearance: none;
             appearance: none;
@@ -2007,7 +2007,7 @@ footer .footer__container .footer__description {
     border-radius: 50px;
     background-color: #6f34fe;
   }
-  .desire .desire__container .desire__bottom .desire__left .desire__input-row input[type=range]::-webkit-slider-thumb {
+  #desire .desire__container .desire__bottom .desire__left .desire__input-row input[type=range]::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
     width: 30px;
@@ -2018,34 +2018,34 @@ footer .footer__container .footer__description {
     border-radius: 50%;
     padding: 5px;
   }
-  .desire .desire__container .desire__bottom .desire__left .desire__input-row .desire__input-description {
+  #desire .desire__container .desire__bottom .desire__left .desire__input-row .desire__input-description {
     display: flex;
     gap: 5px;
     font-size: 20px;
   }
-  .desire .desire__container .desire__bottom .desire__left .desire__input-row .desire__input-description span {
+  #desire .desire__container .desire__bottom .desire__left .desire__input-row .desire__input-description span {
     display: flex;
     gap: 5px;
   }
-  .desire .desire__container .desire__bottom .desire__right {
+  #desire .desire__container .desire__bottom .desire__right {
     flex-direction: column;
     display: flex;
     gap: 30px;
   }
-  .desire .desire__container .desire__bottom .desire__right .desire__checkboxes {
+  #desire .desire__container .desire__bottom .desire__right .desire__checkboxes {
     display: flex;
     flex-direction: column;
     gap: 30px;
   }
-  .desire .desire__container .desire__bottom .desire__right .desire__checkboxes .desire__checkbox-row {
+  #desire .desire__container .desire__bottom .desire__right .desire__checkboxes .desire__checkbox-row {
     position: relative;
     display: flex;
     align-items: center;
   }
-  .desire .desire__container .desire__bottom .desire__right .desire__checkboxes .desire__checkbox-row .report:hover ~ .message {
+  #desire .desire__container .desire__bottom .desire__right .desire__checkboxes .desire__checkbox-row .report:hover ~ .message {
     display: block;
   }
-  .desire .desire__container .desire__bottom .desire__right .desire__checkboxes .desire__checkbox-row .message {
+  #desire .desire__container .desire__bottom .desire__right .desire__checkboxes .desire__checkbox-row .message {
     position: absolute;
     top: 0;
     right: -40px;
@@ -2060,29 +2060,29 @@ footer .footer__container .footer__description {
     color: #fff;
     line-height: 1.2;
   }
-  .desire .desire__container .desire__bottom .desire__right .desire__checkboxes .desire__checkbox-row label {
+  #desire .desire__container .desire__bottom .desire__right .desire__checkboxes .desire__checkbox-row label {
     display: flex;
     align-items: center;
     gap: 5px;
   }
-  .desire .desire__container .desire__bottom .desire__right .desire__checkboxes .desire__checkbox-row label input {
+  #desire .desire__container .desire__bottom .desire__right .desire__checkboxes .desire__checkbox-row label input {
     accent-color: #6f34fe;
     width: 20px;
     height: 20px;
   }
-  .desire .desire__container .desire__bottom .desire__right .desire__result {
+  #desire .desire__container .desire__bottom .desire__right .desire__result {
     display: flex;
     flex-direction: column;
     gap: 15px;
   }
-  .desire .desire__container .desire__bottom .desire__right .desire__result p {
+  #desire .desire__container .desire__bottom .desire__right .desire__result p {
     font-size: 1.3rem;
     display: flex;
     gap: 5px;
   }
 }
 @media screen and (max-width: 575px) {
-  .desire {
+  #desire {
     background: linear-gradient(33deg, rgb(242, 242, 255) 0%, rgb(235, 249, 255) 100%);
     overflow: hidden;
     padding: 30px;
@@ -2091,54 +2091,54 @@ footer .footer__container .footer__description {
     justify-content: center;
     align-items: center;
   }
-  .desire #desireBgLeft {
+  #desire #desireBgLeft {
     display: none;
   }
-  .desire #desireHalfCircle {
+  #desire #desireHalfCircle {
     display: none;
   }
-  .desire .desire__container {
+  #desire .desire__container {
     width: 80%;
     display: flex;
     flex-direction: column;
     gap: 20px;
   }
-  .desire .desire__container .desire__top {
+  #desire .desire__container .desire__top {
     display: flex;
     justify-content: center;
   }
-  .desire .desire__container .desire__top h1 {
+  #desire .desire__container .desire__top h1 {
     font-size: 2rem;
     color: #3f396d;
   }
-  .desire .desire__container .desire__bottom {
+  #desire .desire__container .desire__bottom {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 50px;
   }
-  .desire .desire__container .desire__bottom .desire__left {
+  #desire .desire__container .desire__bottom .desire__left {
     width: 100%;
     display: flex;
     flex-direction: column;
     gap: 40px;
   }
-  .desire .desire__container .desire__bottom .desire__left .desire__input-row {
+  #desire .desire__container .desire__bottom .desire__left .desire__input-row {
     display: flex;
     flex-direction: column;
     gap: 10px;
   }
-  .desire .desire__container .desire__bottom .desire__left .desire__input-row .desire__input-title {
+  #desire .desire__container .desire__bottom .desire__left .desire__input-row .desire__input-title {
     display: flex;
     align-items: center;
     gap: 5px;
     font-size: 1.4rem;
   }
-  .desire .desire__container .desire__bottom .desire__left .desire__input-row .desire__input-title i {
+  #desire .desire__container .desire__bottom .desire__left .desire__input-row .desire__input-title i {
     color: #3f396d;
     margin-top: -5px;
   }
-  .desire .desire__container .desire__bottom .desire__left .desire__input-row input[type=range] {
+  #desire .desire__container .desire__bottom .desire__left .desire__input-row input[type=range] {
     -webkit-appearance: none;
        -moz-appearance: none;
             appearance: none;
@@ -2147,7 +2147,7 @@ footer .footer__container .footer__description {
     border-radius: 50px;
     background-color: #6f34fe;
   }
-  .desire .desire__container .desire__bottom .desire__left .desire__input-row input[type=range]::-webkit-slider-thumb {
+  #desire .desire__container .desire__bottom .desire__left .desire__input-row input[type=range]::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
     width: 30px;
@@ -2158,35 +2158,35 @@ footer .footer__container .footer__description {
     border-radius: 50%;
     padding: 5px;
   }
-  .desire .desire__container .desire__bottom .desire__left .desire__input-row .desire__input-description {
+  #desire .desire__container .desire__bottom .desire__left .desire__input-row .desire__input-description {
     display: block;
     line-height: 1.5;
     gap: 5px;
-    font-size: 20px;
+    font-size: 1rem;
   }
-  .desire .desire__container .desire__bottom .desire__left .desire__input-row .desire__input-description span {
+  #desire .desire__container .desire__bottom .desire__left .desire__input-row .desire__input-description span {
     display: flex;
     gap: 5px;
   }
-  .desire .desire__container .desire__bottom .desire__right {
+  #desire .desire__container .desire__bottom .desire__right {
     flex-direction: column;
     display: flex;
     gap: 30px;
   }
-  .desire .desire__container .desire__bottom .desire__right .desire__checkboxes {
+  #desire .desire__container .desire__bottom .desire__right .desire__checkboxes {
     display: flex;
     flex-direction: column;
     gap: 30px;
   }
-  .desire .desire__container .desire__bottom .desire__right .desire__checkboxes .desire__checkbox-row {
+  #desire .desire__container .desire__bottom .desire__right .desire__checkboxes .desire__checkbox-row {
     position: relative;
     display: flex;
     align-items: center;
   }
-  .desire .desire__container .desire__bottom .desire__right .desire__checkboxes .desire__checkbox-row .report:hover ~ .message {
+  #desire .desire__container .desire__bottom .desire__right .desire__checkboxes .desire__checkbox-row .report:hover ~ .message {
     display: block;
   }
-  .desire .desire__container .desire__bottom .desire__right .desire__checkboxes .desire__checkbox-row .message {
+  #desire .desire__container .desire__bottom .desire__right .desire__checkboxes .desire__checkbox-row .message {
     position: absolute;
     top: 0;
     right: -40px;
@@ -2201,22 +2201,22 @@ footer .footer__container .footer__description {
     color: #fff;
     line-height: 1.2;
   }
-  .desire .desire__container .desire__bottom .desire__right .desire__checkboxes .desire__checkbox-row label {
+  #desire .desire__container .desire__bottom .desire__right .desire__checkboxes .desire__checkbox-row label {
     display: flex;
     align-items: center;
     gap: 5px;
   }
-  .desire .desire__container .desire__bottom .desire__right .desire__checkboxes .desire__checkbox-row label input {
+  #desire .desire__container .desire__bottom .desire__right .desire__checkboxes .desire__checkbox-row label input {
     accent-color: #6f34fe;
     width: 20px;
     height: 20px;
   }
-  .desire .desire__container .desire__bottom .desire__right .desire__result {
+  #desire .desire__container .desire__bottom .desire__right .desire__result {
     display: flex;
     flex-direction: column;
     gap: 15px;
   }
-  .desire .desire__container .desire__bottom .desire__right .desire__result p {
+  #desire .desire__container .desire__bottom .desire__right .desire__result p {
     font-size: 1.3rem;
     display: flex;
     gap: 5px;

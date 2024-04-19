@@ -1,81 +1,45 @@
-import circleright from "../../assets/image/half-circle-right-icon.png";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import ReportGmailerrorredIcon from "@mui/icons-material/ReportGmailerrorred";
 import { SumbitBtn } from "../components.styles";
 import desireBgLeft from "../../assets/image/circle-bg-img.png";
 import desireHalfCircle from "../../assets/image/half-circle-right-icon.png";
 const Desire = () => {
-  const [value, setValue] = useState(0); 
+  const [firstValue, setFirstValue] = useState(0);
   const [secondValue, setSecondValue] = useState(0);
-  const [thridValue, setThridValue] = useState(0);
+  const [thirdValue, setThirdValue] = useState(0);
   const [fourthValue, setFourthValue] = useState(0);
-  const [click, setClick] = useState(0); 
-  const [clickSecond, setClickSecond] = useState(0); 
-  const [clickThrid, setClickThrid] = useState(0); 
-  const [clickFourth, setClickFourth] = useState(0); 
 
-  const handleChange = (event) => {
-    setValue(event.target.value);
+  const [firstPrice, setFirstPrice] = useState(0);
+  const [secondPrice, setSecondPrice] = useState(0);
+  const [thirdPrice, setThirdPrice] = useState(0);
+  const [fourthPrice, setFourthPrice] = useState(0);
+  const [totalPrice, setTotalPrice] = useState(0);
+
+  useEffect(() => {
+    const sum = firstPrice + secondPrice + thirdPrice + fourthPrice;
+    setTotalPrice(sum);
+  }, [firstPrice, secondPrice, thirdPrice, fourthPrice]);
+
+  const handleFirstChange = (event) => {
+    setFirstValue(event.target.value);
+    setFirstPrice(event.target.value * 50);
   };
-  const handlesecondChange = (event) => {
+  const handleSecondChange = (event) => {
     setSecondValue(event.target.value);
+    setSecondPrice(event.target.value * 15);
   };
 
-  const handlethridChange = (event) => {
-    setThridValue(event.target.value);
+  const handleThirdChange = (event) => {
+    setThirdValue(event.target.value);
+    setThirdPrice(event.target.value * 150);
   };
-  const handlefourthChange = (event) => {
+  const handleFourthChange = (event) => {
     setFourthValue(event.target.value);
+    setFourthPrice(event.target.value * 15);
   };
-  const handleSlide = () => {
-    setValue((prevValue) => {
-      let newValue = prevValue + (click === 0 ? 0 : 150); // İlk tıklamadan sonra 150 ekleyerek arttır
-      newValue = Math.max(1, Math.min(15, newValue));
-      return newValue;
-    });
-    setClick((prevCount) => prevCount + 1);
-  };
-
-  const handletwoSlide = () => {
-    // Input değerini 1-15 aralığında tut
-    setSecondValue((prevValue) => {
-      let newValue = prevValue + (clickSecond === 0 ? 0 : 15); // İlk tıklamadan sonra 15 ekleyerek arttır
-      // Değer 15'ten büyükse 15'e, 1'den küçükse 1'e sabitle
-      newValue = Math.max(1, Math.min(15, newValue));
-      return newValue;
-    });
-    // Tıklama sayısını bir arttır
-    setClickSecond((prevCount) => prevCount + 1);
-  };
-
-  const handlethreeSlide = () => {
-    // Input değerini 1-15 aralığında tut
-    setThridValue((prevValue) => {
-      let newValue = prevValue + (clickThrid === 0 ? 0 : 15); // İlk tıklamadan sonra 15 ekleyerek arttır
-      // Değer 15'ten büyükse 15'e, 1'den küçükse 1'e sabitle
-      newValue = Math.max(1, Math.min(15, newValue));
-      return newValue;
-    });
-    // Tıklama sayısını bir arttır
-    setClickThrid((prevCount) => prevCount + 1);
-  };
-
-  const handleforeSlide = () => {
-    // Input değerini 1-15 aralığında tut
-    setFourthValue((prevValue) => {
-      let newValue = prevValue + (clickFourth === 0 ? 0 : 15); // İlk tıklamadan sonra 15 ekleyerek arttır
-      // Değer 15'ten büyükse 15'e, 1'den küçükse 1'e sabitle
-      newValue = Math.max(1, Math.min(15, newValue));
-      return newValue;
-    });
-    // Tıklama sayısını bir arttır
-    setClickFourth((prevCount) => prevCount + 1);
-  };
-
- 
 
   return (
-    <section className="desire">
+    <section id="desire">
       <img id="desireBgLeft" src={desireBgLeft} alt="Desire Bg Circle" />
       <img
         id="desireHalfCircle"
@@ -83,31 +47,28 @@ const Desire = () => {
         alt="Desire Half Circle"
       />
       <div className="desire__container">
-        <div className="desire__top">
+        <div className="desire__top" data-aos="fade-up">
           <h1>Öz istəyinə görə seç</h1>
         </div>
         <div className="desire__bottom">
-          <div className="desire__left">
+          <div className="desire__left" data-aos="slide-right">
             <div className="desire__input-row">
               <div className="desire__input-title">
                 <i className="ri-edit-box-line"></i>
                 <h1>Motion video</h1>
               </div>
               <input
-                onChange={handleChange}
+                onChange={handleFirstChange}
                 type="range"
-                id="item1"
-                value={value}
+                value={firstValue}
                 min="0"
                 max="15"
-                name="item1"
-                className="slider"
                 readOnly
               />
               <div className="desire__input-description">
-                Siz {value} seçim etdiniz və xidmət haqqı:
+                Siz {firstValue} seçim etdiniz və xidmət haqqı:
                 <span>
-                  {value * (click === 0 ? 50 : -50)} <p>AZN</p>
+                  {firstPrice} <p>AZN</p>
                 </span>
               </div>
             </div>
@@ -117,20 +78,17 @@ const Desire = () => {
                 <h1>Foto çəkiliş</h1>
               </div>
               <input
-                onChange={handlesecondChange}
+                onChange={handleSecondChange}
                 type="range"
-                id="item1"
                 value={secondValue}
                 min="0"
                 max="15"
-                name="item1"
-                className="slider"
                 readOnly
               />
               <div className="desire__input-description">
                 Siz {secondValue} seçim etdiniz və xidmət haqqı:
                 <span>
-                  {secondValue * (clickSecond === 0 ? 15 : -15)} <p>AZN</p>
+                  {secondPrice} <p>AZN</p>
                 </span>
               </div>
             </div>
@@ -140,20 +98,17 @@ const Desire = () => {
                 <h1>Video çəkiliş</h1>
               </div>
               <input
-                onChange={handlethridChange}
+                onChange={handleThirdChange}
                 type="range"
-                id="item1"
-                value={thridValue}
+                value={thirdValue}
                 min="0"
                 max="15"
-                name="item1"
-                className="slider"
                 readOnly
               />
               <div className="desire__input-description">
-                Siz {thridValue} seçim etdiniz və xidmət haqqı:
+                Siz {thirdValue} seçim etdiniz və xidmət haqqı:
                 <span>
-                  {thridValue * (clickThrid === 0 ? 150 : -150)} <p>AZN</p>
+                  {thirdPrice} <p>AZN</p>
                 </span>
               </div>
             </div>
@@ -163,25 +118,22 @@ const Desire = () => {
                 <h1>Qrafik post</h1>
               </div>
               <input
-                onChange={handlefourthChange}
+                onChange={handleFourthChange}
                 type="range"
-                id="item1"
                 value={fourthValue}
                 min="0"
                 max="15"
-                name="item1"
-                className="slider"
                 readOnly
               />
               <div className="desire__input-description">
                 Siz {fourthValue} seçim etdiniz və xidmət haqqı:
                 <span>
-                  {fourthValue * (clickFourth === 0 ? 15 : -15)} <p>AZN</p>
+                  {fourthPrice} <p>AZN</p>
                 </span>
               </div>
             </div>
           </div>
-          <div className="desire__right">
+          <div className="desire__right" data-aos="slide-left">
             <div className="desire__checkboxes">
               <div className="desire__checkbox-row">
                 <ReportGmailerrorredIcon className="report" />
@@ -227,7 +179,7 @@ const Desire = () => {
 
             <div className="desire__result">
               <p>
-                Total: <span>50</span>
+                Total: <span>{totalPrice} AZN</span>
               </p>
               <SumbitBtn>Submit</SumbitBtn>
             </div>
