@@ -32,11 +32,7 @@ export const SumbitBtn = styled.button({
     backgroundColor: "#6f34fe",
     transform: "translateY(-5px)",
   },
-  marginTop:"2%",
- 
 });
-
-
 
 export const SocialItem = styled.button(({ color }) => ({
   cursor: "pointer",
