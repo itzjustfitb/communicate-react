@@ -5,75 +5,74 @@ import { SumbitBtn } from "../components.styles";
 import desireBgLeft from "../../assets/image/circle-bg-img.png";
 import desireHalfCircle from "../../assets/image/half-circle-right-icon.png";
 const Desire = () => {
-  const [value, setValue] = useState(0); // Varsayılan değer 0
-  const [twovalue, setTwovalue] = useState(0);
-  const [threvalue, setThrevalue] = useState(0);
-  const [forvalue, setForvalue] = useState(0);
-  const [clickCount, setClickCount] = useState(0); // Tıklama sayısını takip etmek için bir state
-  const [clicks, setClicks] = useState(0); // Tıklama sayısını takip etmek için bir state
-  const [clicksthree, setClickThree] = useState(0); // Tıklama sayısını takip etmek için bir state
-  const [clicksfor, setClickFor] = useState(0); // Tıklama sayısını takip etmek için bir state
+  const [value, setValue] = useState(0); 
+  const [secondValue, setSecondValue] = useState(0);
+  const [thridValue, setThridValue] = useState(0);
+  const [fourthValue, setFourthValue] = useState(0);
+  const [click, setClick] = useState(0); 
+  const [clickSecond, setClickSecond] = useState(0); 
+  const [clickThrid, setClickThrid] = useState(0); 
+  const [clickFourth, setClickFourth] = useState(0); 
 
   const handleChange = (event) => {
     setValue(event.target.value);
   };
+  const handlesecondChange = (event) => {
+    setSecondValue(event.target.value);
+  };
 
+  const handlethridChange = (event) => {
+    setThridValue(event.target.value);
+  };
+  const handlefourthChange = (event) => {
+    setFourthValue(event.target.value);
+  };
   const handleSlide = () => {
     setValue((prevValue) => {
-      let newValue = prevValue + (clickCount === 0 ? 0 : 150); // İlk tıklamadan sonra 150 ekleyerek arttır
+      let newValue = prevValue + (click === 0 ? 0 : 150); // İlk tıklamadan sonra 150 ekleyerek arttır
       newValue = Math.max(1, Math.min(15, newValue));
       return newValue;
     });
-    // Tıklama sayısını bir arttır
-    setClickCount((prevCount) => prevCount + 1);
+    setClick((prevCount) => prevCount + 1);
   };
 
   const handletwoSlide = () => {
     // Input değerini 1-15 aralığında tut
-    setTwovalue((prevValue) => {
-      let newValue = prevValue + (clicks === 0 ? 0 : 15); // İlk tıklamadan sonra 15 ekleyerek arttır
+    setSecondValue((prevValue) => {
+      let newValue = prevValue + (clickSecond === 0 ? 0 : 15); // İlk tıklamadan sonra 15 ekleyerek arttır
       // Değer 15'ten büyükse 15'e, 1'den küçükse 1'e sabitle
       newValue = Math.max(1, Math.min(15, newValue));
       return newValue;
     });
     // Tıklama sayısını bir arttır
-    setClicks((prevCount) => prevCount + 1);
+    setClickSecond((prevCount) => prevCount + 1);
   };
 
   const handlethreeSlide = () => {
     // Input değerini 1-15 aralığında tut
-    setThrevalue((prevValue) => {
-      let newValue = prevValue + (clicksthree === 0 ? 0 : 15); // İlk tıklamadan sonra 15 ekleyerek arttır
+    setThridValue((prevValue) => {
+      let newValue = prevValue + (clickThrid === 0 ? 0 : 15); // İlk tıklamadan sonra 15 ekleyerek arttır
       // Değer 15'ten büyükse 15'e, 1'den küçükse 1'e sabitle
       newValue = Math.max(1, Math.min(15, newValue));
       return newValue;
     });
     // Tıklama sayısını bir arttır
-    setClickThree((prevCount) => prevCount + 1);
+    setClickThrid((prevCount) => prevCount + 1);
   };
 
   const handleforeSlide = () => {
     // Input değerini 1-15 aralığında tut
-    setForvalue((prevValue) => {
-      let newValue = prevValue + (clicksfor === 0 ? 0 : 15); // İlk tıklamadan sonra 15 ekleyerek arttır
+    setFourthValue((prevValue) => {
+      let newValue = prevValue + (clickFourth === 0 ? 0 : 15); // İlk tıklamadan sonra 15 ekleyerek arttır
       // Değer 15'ten büyükse 15'e, 1'den küçükse 1'e sabitle
       newValue = Math.max(1, Math.min(15, newValue));
       return newValue;
     });
     // Tıklama sayısını bir arttır
-    setClickFor((prevCount) => prevCount + 1);
+    setClickFourth((prevCount) => prevCount + 1);
   };
 
-  const handletwoChange = (event) => {
-    setTwovalue(event.target.value);
-  };
-
-  const handlethreeChange = (event) => {
-    setThrevalue(event.target.value);
-  };
-  const handleforChange = (event) => {
-    setForvalue(event.target.value);
-  };
+ 
 
   return (
     <section className="desire">
@@ -95,10 +94,10 @@ const Desire = () => {
                 <h1>Motion video</h1>
               </div>
               <input
-                onChange={handleforChange}
+                onChange={handleChange}
                 type="range"
                 id="item1"
-                value={forvalue}
+                value={value}
                 min="0"
                 max="15"
                 name="item1"
@@ -106,9 +105,9 @@ const Desire = () => {
                 readOnly
               />
               <div className="desire__input-description">
-                Siz {forvalue} seçim etdiniz və xidmət haqqı:
+                Siz {value} seçim etdiniz və xidmət haqqı:
                 <span>
-                  {forvalue * (clicksfor === 0 ? 50 : -50)} <p>AZN</p>
+                  {value * (click === 0 ? 50 : -50)} <p>AZN</p>
                 </span>
               </div>
             </div>
@@ -118,10 +117,10 @@ const Desire = () => {
                 <h1>Foto çəkiliş</h1>
               </div>
               <input
-                onChange={handleforChange}
+                onChange={handlesecondChange}
                 type="range"
                 id="item1"
-                value={forvalue}
+                value={secondValue}
                 min="0"
                 max="15"
                 name="item1"
@@ -129,9 +128,9 @@ const Desire = () => {
                 readOnly
               />
               <div className="desire__input-description">
-                Siz {forvalue} seçim etdiniz və xidmət haqqı:
+                Siz {secondValue} seçim etdiniz və xidmət haqqı:
                 <span>
-                  {forvalue * (clicksfor === 0 ? 50 : -50)} <p>AZN</p>
+                  {secondValue * (clickSecond === 0 ? 15 : -15)} <p>AZN</p>
                 </span>
               </div>
             </div>
@@ -141,10 +140,10 @@ const Desire = () => {
                 <h1>Video çəkiliş</h1>
               </div>
               <input
-                onChange={handleforChange}
+                onChange={handlethridChange}
                 type="range"
                 id="item1"
-                value={forvalue}
+                value={thridValue}
                 min="0"
                 max="15"
                 name="item1"
@@ -152,9 +151,9 @@ const Desire = () => {
                 readOnly
               />
               <div className="desire__input-description">
-                Siz {forvalue} seçim etdiniz və xidmət haqqı:
+                Siz {thridValue} seçim etdiniz və xidmət haqqı:
                 <span>
-                  {forvalue * (clicksfor === 0 ? 50 : -50)} <p>AZN</p>
+                  {thridValue * (clickThrid === 0 ? 150 : -150)} <p>AZN</p>
                 </span>
               </div>
             </div>
@@ -164,10 +163,10 @@ const Desire = () => {
                 <h1>Qrafik post</h1>
               </div>
               <input
-                onChange={handleforChange}
+                onChange={handlefourthChange}
                 type="range"
                 id="item1"
-                value={forvalue}
+                value={fourthValue}
                 min="0"
                 max="15"
                 name="item1"
@@ -175,9 +174,9 @@ const Desire = () => {
                 readOnly
               />
               <div className="desire__input-description">
-                Siz {forvalue} seçim etdiniz və xidmət haqqı:
+                Siz {fourthValue} seçim etdiniz və xidmət haqqı:
                 <span>
-                  {forvalue * (clicksfor === 0 ? 50 : -50)} <p>AZN</p>
+                  {fourthValue * (clickFourth === 0 ? 15 : -15)} <p>AZN</p>
                 </span>
               </div>
             </div>
