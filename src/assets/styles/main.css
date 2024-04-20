@@ -2222,3 +2222,337 @@ footer .footer__container .footer__description {
     gap: 5px;
   }
 }
+#contact {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  padding: 40px 0;
+  position: relative;
+}
+#contact #contactCornIcon {
+  position: absolute;
+  right: 40px;
+  bottom: 100px;
+  animation: moveTop 1s ease-in-out infinite alternate;
+}
+#contact .contact__container {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+#contact .contact__container .contact__top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  text-align: center;
+}
+#contact .contact__container .contact__top h3 {
+  font-size: 1.375rem;
+  color: #6f34fe;
+  font-weight: 600;
+}
+#contact .contact__container .contact__top h1 {
+  font-size: 2.625rem;
+  font-weight: 700;
+  color: #3f396d;
+}
+#contact .contact__container .contact__bottom {
+  display: grid;
+  grid-template-columns: 30% 1fr;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+}
+#contact .contact__container .contact__bottom .contact__info {
+  padding: 40px 15px;
+  border-radius: 20px;
+  background-color: #6f34fe;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+#contact .contact__container .contact__bottom .contact__info .contact__info-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+#contact .contact__container .contact__bottom .contact__info .contact__info-row .contact__info-logo {
+  width: 60px;
+  height: 60px;
+  background-color: rgb(252, 166, 31);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#contact .contact__container .contact__bottom .contact__info .contact__info-row .contact__info-logo img {
+  transition: 0.4s;
+}
+#contact .contact__container .contact__bottom .contact__info .contact__info-row .contact__info-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family: Lato;
+}
+#contact .contact__container .contact__bottom .contact__info .contact__info-row .contact__info-content h1 {
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: #fff;
+}
+#contact .contact__container .contact__bottom .contact__info .contact__info-row .contact__info-content a {
+  color: #fff;
+  text-decoration: none;
+}
+#contact .contact__container .contact__bottom .contact__info .contact__info-row .contact__info-content a:hover {
+  text-decoration: underline;
+}
+#contact .contact__container .contact__bottom .contact__info .contact__info-row:hover .contact__info-logo img {
+  transform: translateY(-5px);
+}
+#contact .contact__container .contact__bottom .contact__info .contact__info-row:first-child .contact__info-content a:hover {
+  text-decoration: none;
+  cursor: inherit;
+}
+#contact .contact__container .contact__bottom .contact__inputs {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#contact .contact__container .contact__bottom .contact__inputs .contact__inputs-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+#contact .contact__container .contact__bottom .contact__inputs .contact__inputs-row input::-webkit-outer-spin-button, #contact .contact__container .contact__bottom .contact__inputs .contact__inputs-row input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+#contact .contact__container .contact__bottom .contact__inputs button {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+@media screen and (max-width: 1000px) {
+  #contact {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 40px 0;
+  }
+  #contact #contactCornIcon {
+    display: none;
+  }
+  #contact .contact__container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+  #contact .contact__container .contact__top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  #contact .contact__container .contact__top h3 {
+    font-size: 1.375rem;
+    color: #6f34fe;
+    font-weight: 600;
+  }
+  #contact .contact__container .contact__top h1 {
+    font-size: 2.625rem;
+    font-weight: 700;
+    color: #3f396d;
+  }
+  #contact .contact__container .contact__bottom {
+    display: flex;
+    flex-direction: column-reverse;
+    grid-template-columns: 30% 1fr;
+    gap: 50px;
+  }
+  #contact .contact__container .contact__bottom .contact__info {
+    padding: 40px 15px;
+    border-radius: 20px;
+    background-color: #6f34fe;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 30px;
+  }
+  #contact .contact__container .contact__bottom .contact__info .contact__info-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  #contact .contact__container .contact__bottom .contact__info .contact__info-row .contact__info-logo {
+    width: 60px;
+    height: 60px;
+    background-color: rgb(252, 166, 31);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #contact .contact__container .contact__bottom .contact__info .contact__info-row .contact__info-logo img {
+    transition: 0.4s;
+  }
+  #contact .contact__container .contact__bottom .contact__info .contact__info-row .contact__info-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    font-family: Lato;
+  }
+  #contact .contact__container .contact__bottom .contact__info .contact__info-row .contact__info-content h1 {
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: #fff;
+  }
+  #contact .contact__container .contact__bottom .contact__info .contact__info-row .contact__info-content a {
+    color: #fff;
+    text-decoration: none;
+  }
+  #contact .contact__container .contact__bottom .contact__info .contact__info-row .contact__info-content a:hover {
+    text-decoration: underline;
+  }
+  #contact .contact__container .contact__bottom .contact__info .contact__info-row:hover .contact__info-logo img {
+    transform: translateY(-5px);
+  }
+  #contact .contact__container .contact__bottom .contact__info .contact__info-row:first-child .contact__info-content a:hover {
+    text-decoration: none;
+    cursor: inherit;
+  }
+  #contact .contact__container .contact__bottom .contact__inputs {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  #contact .contact__container .contact__bottom .contact__inputs .contact__inputs-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+  }
+  #contact .contact__container .contact__bottom .contact__inputs .contact__inputs-row input::-webkit-outer-spin-button, #contact .contact__container .contact__bottom .contact__inputs .contact__inputs-row input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  #contact .contact__container .contact__bottom .contact__inputs button {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 575px) {
+  #contact {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 40px 0;
+  }
+  #contact .contact__container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+  #contact .contact__container .contact__top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  #contact .contact__container .contact__top h3 {
+    font-size: 1.375rem;
+    color: #6f34fe;
+    font-weight: 600;
+  }
+  #contact .contact__container .contact__top h1 {
+    font-size: 2.625rem;
+    font-weight: 700;
+    color: #3f396d;
+  }
+  #contact .contact__container .contact__bottom {
+    display: flex;
+    flex-direction: column-reverse;
+    grid-template-columns: 30% 1fr;
+    gap: 50px;
+  }
+  #contact .contact__container .contact__bottom .contact__info {
+    padding: 40px 15px;
+    border-radius: 20px;
+    background-color: #6f34fe;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 30px;
+  }
+  #contact .contact__container .contact__bottom .contact__info .contact__info-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  #contact .contact__container .contact__bottom .contact__info .contact__info-row .contact__info-logo {
+    width: 60px;
+    height: 60px;
+    background-color: rgb(252, 166, 31);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #contact .contact__container .contact__bottom .contact__info .contact__info-row .contact__info-logo img {
+    transition: 0.4s;
+  }
+  #contact .contact__container .contact__bottom .contact__info .contact__info-row .contact__info-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    font-family: Lato;
+  }
+  #contact .contact__container .contact__bottom .contact__info .contact__info-row .contact__info-content h1 {
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: #fff;
+  }
+  #contact .contact__container .contact__bottom .contact__info .contact__info-row .contact__info-content a {
+    color: #fff;
+    text-decoration: none;
+  }
+  #contact .contact__container .contact__bottom .contact__info .contact__info-row .contact__info-content a:hover {
+    text-decoration: underline;
+  }
+  #contact .contact__container .contact__bottom .contact__info .contact__info-row:hover .contact__info-logo img {
+    transform: translateY(-5px);
+  }
+  #contact .contact__container .contact__bottom .contact__info .contact__info-row:first-child .contact__info-content a:hover {
+    text-decoration: none;
+    cursor: inherit;
+  }
+  #contact .contact__container .contact__bottom .contact__inputs {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  #contact .contact__container .contact__bottom .contact__inputs .contact__inputs-row {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  #contact .contact__container .contact__bottom .contact__inputs .contact__inputs-row input::-webkit-outer-spin-button, #contact .contact__container .contact__bottom .contact__inputs .contact__inputs-row input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
