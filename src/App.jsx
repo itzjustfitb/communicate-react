@@ -50,8 +50,7 @@ function App() {
       <Contact />
       {/* // ? ------- APP ENDS HERE ------- */}
 
-      {/* <ContentModal modalActive={modalActive} setModalActive={setModalActive} /> */}
-
+      <ContentModal modalActive={modalActive} setModalActive={setModalActive} />
       {scrollVisible ? <ScrollTopBtn /> : ""}
       <Footer />
     </>
