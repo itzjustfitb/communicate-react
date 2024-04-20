@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import ReportGmailerrorredIcon from "@mui/icons-material/ReportGmailerrorred";
-import { SumbitBtn } from "../components.styles";
+import { DefaultBtn } from "../components.styles";
 import desireBgLeft from "../../assets/image/circle-bg-img.png";
 import desireHalfCircle from "../../assets/image/half-circle-right-icon.png";
 const Desire = () => {
@@ -181,7 +181,7 @@ const Desire = () => {
               <p>
                 Total: <span>{totalPrice} AZN</span>
               </p>
-              <SumbitBtn>Submit</SumbitBtn>
+              <DefaultBtn>Submit</DefaultBtn>
             </div>
           </div>
         </div>

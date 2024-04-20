@@ -17,23 +17,6 @@ export const DefaultBtn = styled.button({
   },
 });
 
-export const SumbitBtn = styled.button({
-  cursor: "pointer",
-  backgroundColor: "#fca61f",
-  padding: " 14px 48px",
-  border: "none",
-  borderRadius: 35,
-  color: "#fff",
-  fontWeight: 400,
-  fontSize: 20,
-  fontFamily: "Josefin Sans",
-  transition: "0.4s",
-  "&:hover": {
-    backgroundColor: "#6f34fe",
-    transform: "translateY(-5px)",
-  },
-});
-
 export const SocialItem = styled.button(({ color }) => ({
   cursor: "pointer",
   fontSize: 24,
@@ -74,3 +57,38 @@ export const ArrowButton = styled.button(({ direction }) => ({
         : "",
   },
 }));
+
+export const DefaultInput = styled.input({
+  background: "#fefeff",
+  border: "none",
+  boxShadow:
+    "rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px",
+  fontSize: " 16px",
+  padding: "17px 30px",
+  borderRadius: "30px",
+  width: "100%",
+  boxSizing: "border-box",
+  fontFamily: "Lato",
+  "&:focus": {
+    outline: "1px solid #6f34fe",
+  },
+});
+
+export const DefaultTextArea = styled.textarea({
+  background: "#fefeff",
+  border: "none",
+  boxShadow:
+    "rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px",
+  fontSize: " 16px",
+  padding: "17px 30px",
+  borderRadius: "30px",
+  width: "100% !important",
+  height: "100% !important",
+  minHeight: "150px",
+  boxSizing: "border-box",
+  fontFamily: "Lato",
+  resize: "none",
+  "&:focus": {
+    outline: "1px solid #6f34fe",
+  },
+});
