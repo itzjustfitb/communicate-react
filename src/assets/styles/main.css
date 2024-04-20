@@ -465,10 +465,17 @@ body {
 }
 
 header {
+  transition: 0.4s;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 10px;
+  position: fixed;
+  width: 100%;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+  z-index: 100;
 }
 header .header__container {
   width: 95%;
@@ -517,6 +524,7 @@ header .header__container nav .hamburger-react {
     justify-content: center;
     align-items: center;
     padding: 10px;
+    box-sizing: border-box;
   }
   header .header__container {
     width: 95%;
@@ -590,11 +598,96 @@ header .header__container nav .hamburger-react {
   header .header__container nav .hamburger-react {
     color: rgb(252, 166, 31);
     display: flex;
-  }
-  header .header__container .hamburger-react {
     z-index: 100;
   }
 }
+@media screen and (max-width: 575px) {
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  header .header__container {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header .header__container .header__logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+  header .header__container .header__logo a img {
+    width: 80px;
+  }
+  header .header__container .header__logo a p {
+    font-size: 1.3rem;
+    color: #3f396d;
+  }
+  header .header__container .active-menu {
+    visibility: visible;
+    opacity: 1;
+    transform: translate(0px);
+  }
+  header .header__container nav {
+    display: flex;
+  }
+  header .header__container nav ul {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 100;
+    position: fixed;
+    transform: translate(-20px);
+    transition: 0.4s;
+    visibility: hidden;
+    opacity: 0;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  header .header__container nav ul li .nav-active {
+    color: #6f34fe !important;
+  }
+  header .header__container nav ul li .nav-active::after {
+    width: 100%;
+  }
+  header .header__container nav ul li a {
+    font-size: 2rem;
+    text-decoration: none;
+    transition: 0.4s;
+    color: #3f396d;
+    font-weight: 600;
+    position: relative;
+  }
+  header .header__container nav ul li a::after {
+    content: "";
+    bottom: -7px;
+    left: 0;
+    height: 4px;
+    position: absolute;
+    background-color: rgb(252, 166, 31);
+    width: 0%;
+  }
+  header .header__container nav ul li a:hover {
+    color: rgb(252, 166, 31);
+  }
+  header .header__container nav .hamburger-react {
+    color: rgb(252, 166, 31);
+    display: flex;
+    z-index: 100;
+  }
+}
+.shadow__header {
+  box-shadow: 0 1px 16px hsla(0, 0%, 0%, 0.2);
+}
+
 footer {
   padding: 20px 0;
   display: flex;
@@ -766,6 +859,7 @@ footer .footer__container .footer__description {
   }
 }
 #hero {
+  padding-top: 100px;
   overflow: hidden;
   position: relative;
   background: linear-gradient(33deg, rgb(242, 242, 255) 0%, rgb(235, 249, 255) 100%);

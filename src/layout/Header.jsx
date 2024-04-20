@@ -33,6 +33,23 @@ function Header() {
 
   const [menuActive, setMenuActive] = useState(false);
   const [navActive, setNavActive] = useState("");
+  const [value, setValue] = useState("");
+
+  const calcScrollValue = () => {
+    const pos = document.documentElement.scrollTop;
+    const calcHeight =
+      document.documentElement.scrollHeight -
+      document.documentElement.clientHeight;
+
+    if (pos > 100) {
+      setValue("shadow__header");
+    } else {
+      setValue("");
+    }
+  };
+
+  window.onscroll = calcScrollValue;
+  window.onload = calcScrollValue;
 
   useEffect(() => {
     if (menuActive) {
@@ -43,7 +60,7 @@ function Header() {
   }, [menuActive]);
 
   return (
-    <header>
+    <header className={value}>
       <div className="header__container">
         <div className="header__logo">
           <a href="./">
@@ -56,12 +73,21 @@ function Header() {
             {navigations.map((navigation, index) => (
               <li key={index}>
                 {navigation.label === "ƏLAQƏ" ? (
-                  <a href={navigation.value}>
+                  <a
+                    onClick={() => {
+                      setNavActive("");
+                      setMenuActive(false);
+                    }}
+                    href={navigation.value}
+                  >
                     <DefaultBtn>ƏLAQƏ</DefaultBtn>
                   </a>
                 ) : (
                   <a
-                    onClick={() => setNavActive(navigation.label)}
+                    onClick={() => {
+                      setNavActive(navigation.label);
+                      setMenuActive(false);
+                    }}
                     className={
                       navigation.label === navActive ? "nav-active" : ""
                     }
@@ -73,7 +99,10 @@ function Header() {
               </li>
             ))}
           </ul>
-          <Hamburger onToggle={() => setMenuActive(!menuActive)} />
+          <Hamburger
+            toggled={menuActive}
+            onToggle={() => setMenuActive(!menuActive)}
+          />
         </nav>
       </div>
     </header>
