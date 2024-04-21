@@ -27,6 +27,9 @@ export const SocialItem = styled.button(({ color }) => ({
   height: 50,
   color: color,
   transition: "0.4s",
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
   "&:hover": {
     backgroundColor: color,
     color: "#fff",

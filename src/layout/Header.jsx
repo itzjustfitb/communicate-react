@@ -6,10 +6,6 @@ import { Divide as Hamburger } from "hamburger-react";
 function Header() {
   const navigations = [
     {
-      label: "Haqqımızda",
-      value: "#about",
-    },
-    {
       label: "Cibinizə uyğun",
       value: "#desire",
     },
@@ -23,7 +19,7 @@ function Header() {
     },
     {
       label: "Bloq",
-      value: "#bloq",
+      value: "#blog",
     },
     {
       label: "ƏLAQƏ",

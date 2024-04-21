@@ -10,10 +10,6 @@ function Footer() {
       value: "#",
     },
     {
-      label: "Haqqımızda",
-      value: "#about",
-    },
-    {
       label: "Cibinizə uyğun",
       value: "#desire",
     },
@@ -23,7 +19,7 @@ function Footer() {
     },
     {
       label: "Bloq",
-      value: "#bloq",
+      value: "#blog",
     },
     {
       label: "Əlaqə",
