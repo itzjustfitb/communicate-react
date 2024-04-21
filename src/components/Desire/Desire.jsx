@@ -13,12 +13,45 @@ const Desire = () => {
   const [secondPrice, setSecondPrice] = useState(0);
   const [thirdPrice, setThirdPrice] = useState(0);
   const [fourthPrice, setFourthPrice] = useState(0);
+  const [firstCheckboxPrice, setFirstCheckboxPrice] = useState({
+    price: 0,
+    isChecked: false,
+  });
+  const [secondCheckboxPrice, setSecondCheckboxPrice] = useState({
+    price: 0,
+    isChecked: false,
+  });
+  const [thirdCheckboxPrice, setThirdCheckboxPrice] = useState({
+    price: 0,
+    isChecked: false,
+  });
+  const [fourthCheckboxPrice, setFourthCheckboxPrice] = useState({
+    price: 0,
+    isChecked: false,
+  });
   const [totalPrice, setTotalPrice] = useState(0);
 
   useEffect(() => {
-    const sum = firstPrice + secondPrice + thirdPrice + fourthPrice;
+    const sum =
+      firstPrice +
+      secondPrice +
+      thirdPrice +
+      fourthPrice +
+      firstCheckboxPrice.price +
+      secondCheckboxPrice.price +
+      thirdCheckboxPrice.price +
+      fourthCheckboxPrice.price;
     setTotalPrice(sum);
-  }, [firstPrice, secondPrice, thirdPrice, fourthPrice]);
+  }, [
+    firstPrice,
+    secondPrice,
+    thirdPrice,
+    fourthPrice,
+    firstCheckboxPrice.price,
+    secondCheckboxPrice.price,
+    thirdCheckboxPrice.price,
+    fourthCheckboxPrice.price,
+  ]);
 
   const handleFirstChange = (event) => {
     setFirstValue(event.target.value);
@@ -138,7 +171,17 @@ const Desire = () => {
               <div className="desire__checkbox-row">
                 <ReportGmailerrorredIcon className="report" />
                 <label htmlFor="checkbox-1">
-                  <input type="checkbox" id="checkbox-1" />
+                  <input
+                    onClick={() => {
+                      setFirstCheckboxPrice((prev) => ({
+                        ...prev,
+                        isChecked: !prev.isChecked,
+                        price: !prev.isChecked ? 50 : 0,
+                      }));
+                    }}
+                    type="checkbox"
+                    id="checkbox-1"
+                  />
                   Location Targeting
                 </label>
                 <div className="message">
@@ -148,7 +191,17 @@ const Desire = () => {
               <div className="desire__checkbox-row">
                 <ReportGmailerrorredIcon className="report" />
                 <label htmlFor="checkbox-2">
-                  <input type="checkbox" id="checkbox-2" />
+                  <input
+                    onClick={() => {
+                      setSecondCheckboxPrice((prev) => ({
+                        ...prev,
+                        isChecked: !prev.isChecked,
+                        price: !prev.isChecked ? 200 : 0,
+                      }));
+                    }}
+                    type="checkbox"
+                    id="checkbox-2"
+                  />
                   Menu Sistem + Edit
                 </label>
                 <div className="message">
@@ -158,7 +211,17 @@ const Desire = () => {
               <div className="desire__checkbox-row">
                 <ReportGmailerrorredIcon className="report" />
                 <label htmlFor="checkbox-3">
-                  <input type="checkbox" id="checkbox-3" />
+                  <input
+                    onClick={() => {
+                      setThirdCheckboxPrice((prev) => ({
+                        ...prev,
+                        isChecked: !prev.isChecked,
+                        price: !prev.isChecked ? 100 : 0,
+                      }));
+                    }}
+                    type="checkbox"
+                    id="checkbox-3"
+                  />
                   Tiktok Management
                 </label>
                 <div className="message">
@@ -168,7 +231,17 @@ const Desire = () => {
               <div className="desire__checkbox-row">
                 <ReportGmailerrorredIcon className="report" />
                 <label htmlFor="checkbox-4">
-                  <input type="checkbox" id="checkbox-4" />
+                  <input
+                    onClick={() => {
+                      setFourthCheckboxPrice((prev) => ({
+                        ...prev,
+                        isChecked: !prev.isChecked,
+                        price: !prev.isChecked ? 50 : 0,
+                      }));
+                    }}
+                    type="checkbox"
+                    id="checkbox-4"
+                  />
                   Branding
                 </label>
                 <div className="message">
