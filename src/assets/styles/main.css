@@ -1813,17 +1813,12 @@ footer .footer__container .footer__description {
   gap: 20px;
 }
 #team .team__container .team__content .team__content-testimonials {
-  width: auto;
-  height: auto;
+  height: -moz-fit-content;
+  height: fit-content;
   transition: 0.4s;
   position: relative;
   overflow: hidden;
-  height: 300px;
-}
-#team .team__container .team__content .team__content-testimonials .active-testimonial {
-  opacity: 1 !important;
-  visibility: visible !important;
-  right: 0 !important;
+  min-height: 280px;
 }
 #team .team__container .team__content .team__content-testimonials .testimonial {
   width: 100%;
@@ -1881,6 +1876,12 @@ footer .footer__container .footer__description {
   color: #3f396d;
   font-weight: 600;
 }
+#team .team__container .team__content .team__content-testimonials .active-testimonial {
+  opacity: 1;
+  visibility: visible;
+  right: 0;
+  position: static;
+}
 #team .team__container .team__content .testimonial__buttons {
   margin-left: 50px;
   display: flex;
@@ -1893,6 +1894,170 @@ footer .footer__container .footer__description {
   background-color: #6f34fe;
 }
 
+@media screen and (max-width: 1000px) {
+  #team {
+    overflow: hidden;
+    padding: 60px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  #team #halfCircle,
+  #team #circleBgLeft {
+    display: none;
+  }
+  #team #circleBgLeft {
+    left: 0;
+    top: 10%;
+    animation: moveRight 1s ease-in-out infinite alternate;
+  }
+  #team #halfCircle {
+    top: 20%;
+    left: 100px;
+    animation: moveTop 1s ease-in-out infinite alternate;
+  }
+  #team .team__container {
+    width: 80%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+  #team .team__container .team__images {
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+  }
+  #team .team__container .team__images .team__images-circle {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    position: relative;
+  }
+  #team .team__container .team__images .team__image {
+    transition: 0.4s;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+  }
+  #team .team__container .team__images .team__image:nth-child(odd) {
+    width: 40px;
+    height: 40px;
+  }
+  #team .team__container .team__images .team__image img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 50%;
+  }
+  #team .team__container .team__images .active-img {
+    position: absolute;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) scale(1.3) !important;
+    width: 100px !important;
+    height: 100px !important;
+  }
+  #team .team__container .team__content {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  #team .team__container .team__content .team__content-testimonials {
+    height: -moz-fit-content;
+    height: fit-content;
+    transition: 0.4s;
+    position: relative;
+    overflow: hidden;
+    min-height: 280px;
+  }
+  #team .team__container .team__content .team__content-testimonials .testimonial {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: -100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  #team .team__container .team__content .team__content-testimonials .testimonial > h1 {
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #6f34fe;
+  }
+  #team .team__container .team__content .team__content-testimonials .testimonial .testimonial-carousel {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  #team .team__container .team__content .team__content-testimonials .testimonial .testimonial-carousel > h1 {
+    color: #3f396d;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+  #team .team__container .team__content .team__content-testimonials .testimonial .testimonial-carousel > .testimonial__content {
+    display: flex;
+    gap: 10px;
+  }
+  #team .team__container .team__content .team__content-testimonials .testimonial .testimonial-carousel > .testimonial__content > i {
+    display: none;
+    font-size: 3rem;
+    color: rgb(252, 166, 31);
+  }
+  #team .team__container .team__content .team__content-testimonials .testimonial .testimonial-carousel > .testimonial__content .testimonial__datas {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  #team .team__container .team__content .team__content-testimonials .testimonial .testimonial-carousel > .testimonial__content .testimonial__datas p {
+    font-size: 1rem;
+    line-height: 1.875rem;
+    color: #9692b0;
+    font-family: "Lato";
+  }
+  #team .team__container .team__content .team__content-testimonials .testimonial .testimonial-carousel > .testimonial__content .testimonial__datas .testimonial-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  #team .team__container .team__content .team__content-testimonials .testimonial .testimonial-carousel > .testimonial__content .testimonial__datas .testimonial-bottom h1 {
+    font-size: 1.25rem;
+    color: #3f396d;
+    font-weight: 600;
+  }
+  #team .team__container .team__content .team__content-testimonials .active-testimonial {
+    opacity: 1;
+    visibility: visible;
+    right: 0;
+    position: static;
+  }
+  #team .team__container .team__content .testimonial__buttons {
+    margin-left: initial;
+    justify-content: center;
+    display: flex;
+    gap: 20px;
+  }
+  #team .team__container .team__content .testimonial__buttons button {
+    padding: 30px;
+    font-size: 2rem;
+  }
+  #team .team__container .team__content .testimonial__buttons button:hover {
+    background-color: #6f34fe;
+  }
+}
 #desire {
   background: linear-gradient(33deg, rgb(242, 242, 255) 0%, rgb(235, 249, 255) 100%);
   overflow: hidden;
@@ -2692,6 +2857,7 @@ footer .footer__container .footer__description {
   flex-direction: column;
   gap: 15px;
   align-items: center;
+  text-align: center;
 }
 #blog .blog__container .blog__top p {
   color: #6f34fe;

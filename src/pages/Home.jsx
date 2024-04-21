@@ -14,7 +14,7 @@ function Home(modalActive, setModalActive) {
       <Services modalActive={modalActive} setModalActive={setModalActive} />
       <Portfolio modalActive={modalActive} setModalActive={setModalActive} />
       <Desire />
-      {/* <Team /> */}
+      <Team />
       <Blog />
       <Contact />
     </main>
