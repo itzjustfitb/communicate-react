@@ -236,7 +236,7 @@ const Desire = () => {
                       setFourthCheckboxPrice((prev) => ({
                         ...prev,
                         isChecked: !prev.isChecked,
-                        price: !prev.isChecked ? 50 : 0,
+                        price: !prev.isChecked ? 150 : 0,
                       }));
                     }}
                     type="checkbox"
