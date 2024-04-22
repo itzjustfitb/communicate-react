@@ -1,12 +1,9 @@
 import React from "react";
-import { ArrowButton } from "../components.styles";
-import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
+import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
 import TeamSliderButtons from "./TeamSliderButtons";
 
-function TeamContent({ data, active, setActive }) {
-  const swiper = useSwiper();
-
+function TeamContent({ data }) {
   return (
     <div className="team__content" data-aos="fade-left">
       <div className="team__content-testimonials">
@@ -18,13 +15,8 @@ function TeamContent({ data, active, setActive }) {
         >
           {data.map((item, index) => {
             return (
-              <SwiperSlide>
-                <div
-                  key={index}
-                  className={`testimonial ${
-                    index === active ? "active-testimonial" : ""
-                  }`}
-                >
+              <SwiperSlide key={index}>
+                <div className="testimonial">
                   <h1>Komandamız</h1>
                   <div className="testimonial-carousel">
                     <h1>Biznesinizi Nirvanaya çatdıran əməkdaşlarımız</h1>
