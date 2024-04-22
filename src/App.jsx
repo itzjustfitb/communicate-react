@@ -10,6 +10,8 @@ import ContentModal from "./components/ContentModal";
 import { Route, Routes } from "react-router-dom";
 import NotFound from "./components/NotFound/NotFound";
 import Home from "./pages/Home";
+import "swiper/css";
+import "swiper/css/navigation";
 
 function App() {
   const [modalActive, setModalActive] = useState(false);
@@ -39,7 +41,12 @@ function App() {
       <Header />
       {/* // ? ------- APP STARTS HERE ------- */}
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route
+          path="/"
+          element={
+            <Home modalActive={modalActive} setModalActive={setModalActive} />
+          }
+        />
         <Route path="*" element={<NotFound />} />
       </Routes>
       {/* // ? ------- APP ENDS HERE ------- */}

@@ -1817,16 +1817,10 @@ footer .footer__container .footer__description {
   height: fit-content;
   transition: 0.4s;
   position: relative;
-  overflow: hidden;
   min-height: 280px;
 }
 #team .team__container .team__content .team__content-testimonials .testimonial {
   width: 100%;
-  position: absolute;
-  top: 0;
-  right: -100%;
-  opacity: 0;
-  visibility: hidden;
   transition: 0.4s;
   display: flex;
   flex-direction: column;
@@ -1876,22 +1870,22 @@ footer .footer__container .footer__description {
   color: #3f396d;
   font-weight: 600;
 }
-#team .team__container .team__content .team__content-testimonials .active-testimonial {
-  opacity: 1;
-  visibility: visible;
-  right: 0;
-  position: static;
-}
-#team .team__container .team__content .testimonial__buttons {
+#team .team__container .team__content .team__content-testimonials .swiper-nav-btns {
   margin-left: 50px;
+  margin-top: 30px;
+  display: flex;
   display: flex;
   gap: 10px;
 }
-#team .team__container .team__content .testimonial__buttons button {
+#team .team__container .team__content .team__content-testimonials .swiper-nav-btns button {
   font-size: 2rem;
 }
-#team .team__container .team__content .testimonial__buttons button:hover {
+#team .team__container .team__content .team__content-testimonials .swiper-nav-btns button:hover {
   background-color: #6f34fe;
+}
+#team .team__container .team__content .team__content-testimonials .swiper-button-prev,
+#team .team__container .team__content .team__content-testimonials .swiper-button-next {
+  display: none;
 }
 
 @media screen and (max-width: 1000px) {
@@ -1982,11 +1976,6 @@ footer .footer__container .footer__description {
   }
   #team .team__container .team__content .team__content-testimonials .testimonial {
     width: 100%;
-    position: absolute;
-    top: 0;
-    right: -100%;
-    opacity: 0;
-    visibility: hidden;
     transition: 0.4s;
     display: flex;
     flex-direction: column;
@@ -1994,7 +1983,7 @@ footer .footer__container .footer__description {
   }
   #team .team__container .team__content .team__content-testimonials .testimonial > h1 {
     font-weight: 600;
-    font-size: 1.5rem;
+    font-size: 1.375rem;
     color: #6f34fe;
   }
   #team .team__container .team__content .team__content-testimonials .testimonial .testimonial-carousel {
@@ -2005,15 +1994,13 @@ footer .footer__container .footer__description {
   #team .team__container .team__content .team__content-testimonials .testimonial .testimonial-carousel > h1 {
     color: #3f396d;
     font-weight: 700;
-    font-size: 2rem;
-    line-height: 1.2;
+    font-size: 2.625rem;
   }
   #team .team__container .team__content .team__content-testimonials .testimonial .testimonial-carousel > .testimonial__content {
     display: flex;
     gap: 10px;
   }
   #team .team__container .team__content .team__content-testimonials .testimonial .testimonial-carousel > .testimonial__content > i {
-    display: none;
     font-size: 3rem;
     color: rgb(252, 166, 31);
   }
@@ -2023,7 +2010,7 @@ footer .footer__container .footer__description {
     gap: 20px;
   }
   #team .team__container .team__content .team__content-testimonials .testimonial .testimonial-carousel > .testimonial__content .testimonial__datas p {
-    font-size: 1rem;
+    font-size: 1.125rem;
     line-height: 1.875rem;
     color: #9692b0;
     font-family: "Lato";
@@ -2038,11 +2025,24 @@ footer .footer__container .footer__description {
     color: #3f396d;
     font-weight: 600;
   }
-  #team .team__container .team__content .team__content-testimonials .active-testimonial {
-    opacity: 1;
-    visibility: visible;
-    right: 0;
-    position: static;
+  #team .team__container .team__content .team__content-testimonials .swiper-nav-btns {
+    display: flex;
+    justify-content: center;
+    margin-left: 50px;
+    margin-top: 20px;
+    display: flex;
+    display: flex;
+    gap: 10px;
+  }
+  #team .team__container .team__content .team__content-testimonials .swiper-nav-btns button {
+    font-size: 2rem;
+  }
+  #team .team__container .team__content .team__content-testimonials .swiper-nav-btns button:hover {
+    background-color: #6f34fe;
+  }
+  #team .team__container .team__content .team__content-testimonials .swiper-button-prev,
+  #team .team__container .team__content .team__content-testimonials .swiper-button-next {
+    display: none;
   }
   #team .team__container .team__content .testimonial__buttons {
     margin-left: initial;

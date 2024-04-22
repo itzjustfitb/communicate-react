@@ -78,15 +78,9 @@
         height: fit-content;
         transition: 0.4s;
         position: relative;
-        overflow: hidden;
         min-height: 280px;
         .testimonial {
           width: 100%;
-          position: absolute;
-          top: 0;
-          right: -100%;
-          opacity: 0;
-          visibility: hidden;
           transition: 0.4s;
           display: flex;
           flex-direction: column;
@@ -136,22 +130,22 @@
             }
           }
         }
-        .active-testimonial {
-          opacity: 1;
-          visibility: visible;
-          right: 0;
-          position: static;
-        }
-      }
-      .testimonial__buttons {
-        margin-left: 50px;
-        display: flex;
-        gap: 10px;
-        button {
-          &:hover {
-            background-color: $light-purple-color;
+        .swiper-nav-btns {
+          margin-left: 50px;
+          margin-top: 30px;
+          display: flex;
+          display: flex;
+          gap: 10px;
+          button {
+            &:hover {
+              background-color: $light-purple-color;
+            }
+            font-size: 2rem;
           }
-          font-size: 2rem;
+        }
+        .swiper-button-prev,
+        .swiper-button-next {
+          display: none;
         }
       }
     }
@@ -242,18 +236,13 @@
           min-height: 280px;
           .testimonial {
             width: 100%;
-            position: absolute;
-            top: 0;
-            right: -100%;
-            opacity: 0;
-            visibility: hidden;
             transition: 0.4s;
             display: flex;
             flex-direction: column;
             gap: 16px;
             > h1 {
               font-weight: 600;
-              font-size: 1.5rem;
+              font-size: 1.375rem;
               color: $light-purple-color;
             }
             .testimonial-carousel {
@@ -263,14 +252,12 @@
               > h1 {
                 color: $primary-color;
                 font-weight: 700;
-                font-size: 2rem;
-                line-height: 1.2;
+                font-size: 2.625rem;
               }
               > .testimonial__content {
                 display: flex;
                 gap: 10px;
                 > i {
-                  display: none;
                   font-size: 3rem;
                   color: $accent;
                 }
@@ -279,7 +266,7 @@
                   flex-direction: column;
                   gap: 20px;
                   p {
-                    font-size: 1rem;
+                    font-size: 1.125rem;
                     line-height: 1.875rem;
                     color: $text-color;
                     font-family: "Lato";
@@ -298,11 +285,24 @@
               }
             }
           }
-          .active-testimonial {
-            opacity: 1;
-            visibility: visible;
-            right: 0;
-            position: static;
+          .swiper-nav-btns {
+            display: flex;
+            justify-content: center;
+            margin-left: 50px;
+            margin-top: 20px;
+            display: flex;
+            display: flex;
+            gap: 10px;
+            button {
+              &:hover {
+                background-color: $light-purple-color;
+              }
+              font-size: 2rem;
+            }
+          }
+          .swiper-button-prev,
+          .swiper-button-next {
+            display: none;
           }
         }
         .testimonial__buttons {

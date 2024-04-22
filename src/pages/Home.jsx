@@ -7,7 +7,7 @@ import Contact from "../components/Contact/Contact";
 import Team from "../components/Team/Team";
 import Blog from "../components/Blog/Blog";
 
-function Home(modalActive, setModalActive) {
+function Home({ modalActive, setModalActive }) {
   return (
     <main>
       <Hero />
