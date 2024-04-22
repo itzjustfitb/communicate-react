@@ -1,15 +1,13 @@
-import React, { useState } from "react";
 import ServicesCard from "./ServicesCard";
 import serviceIcon1 from "../../assets/image/service-icon1.png";
 import serviceIcon2 from "../../assets/image/service-icon2.png";
 import serviceIcon3 from "../../assets/image/service-icon3.png";
 import serviceIcon4 from "../../assets/image/service-icon4.png";
-import circleBgLeft from "../../assets/image/circle-bg-left-img.png";
 import halfCircleLeft from "../../assets/image/half-circle-left-icon.png";
 import cornLeftIcon from "../../assets/image/corn-left-icon.png";
-import ContentModal from "../ContentModal";
+import { DefaultCircle } from "../components.styles";
 
-function Services({ modalActive, setModalActive }) {
+function Services({ setModalActive }) {
   const services = [
     {
       image: serviceIcon1,
@@ -39,7 +37,7 @@ function Services({ modalActive, setModalActive }) {
 
   return (
     <section id="services">
-      <img id="circle-bg-left" src={circleBgLeft} alt="Circle Left" />
+      <DefaultCircle color="#003E68" className="default-circle" />
       <img id="half-circle-left" src={halfCircleLeft} alt="Half Circle" />
       <div className="services__container">
         <img id="corn-left-icon" src={cornLeftIcon} alt="Corn Left" />

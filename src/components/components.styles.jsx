@@ -95,3 +95,11 @@ export const DefaultTextArea = styled.textarea({
     outline: "1px solid #6f34fe",
   },
 });
+
+export const DefaultCircle = styled.div(({ color }) => ({
+  position: "absolute",
+  backgroundColor: color,
+  borderRadius: "50%",
+  width: "200px",
+  height: "200px",
+}));

@@ -5,10 +5,9 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  #circle-bg-left {
-    position: absolute;
-    top: 207px;
-    left: 0;
+  .default-circle {
+    top: 200px;
+    left: -150px;
     animation: moveRight 1s ease-in-out infinite alternate;
   }
   #half-circle-left {
@@ -65,24 +64,9 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    #circle-bg-left {
-      position: absolute;
-      top: 207px;
-      left: 0;
-      animation: moveRight 1s ease-in-out infinite alternate;
-    }
-    #half-circle-left {
-      height: 42px;
-      top: 170px;
-      left: 13px;
-      position: absolute;
-      animation: moveTop 1s ease-in-out infinite alternate;
-    }
-    #corn-left-icon {
-      position: absolute;
-      animation: moveTop 2s ease-in-out infinite alternate;
-      bottom: 250px;
-      right: 25px;
+    #half-circle-left,
+    .default-circle {
+      display: none;
     }
     .services__container {
       z-index: 10;
@@ -126,12 +110,6 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    #circle-bg-left {
-      position: absolute;
-      top: 207px;
-      left: 0;
-      animation: moveRight 1s ease-in-out infinite alternate;
-    }
     #half-circle-left {
       height: 42px;
       top: 170px;

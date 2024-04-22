@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import ReportGmailerrorredIcon from "@mui/icons-material/ReportGmailerrorred";
-import { DefaultBtn } from "../components.styles";
+import { DefaultBtn, DefaultCircle } from "../components.styles";
 import desireBgLeft from "../../assets/image/circle-bg-img.png";
 import desireHalfCircle from "../../assets/image/half-circle-right-icon.png";
 const Desire = () => {
@@ -73,7 +73,7 @@ const Desire = () => {
 
   return (
     <section id="desire">
-      <img id="desireBgLeft" src={desireBgLeft} alt="Desire Bg Circle" />
+      <DefaultCircle color="#003E68" className="default-circle" />
       <img
         id="desireHalfCircle"
         src={desireHalfCircle}

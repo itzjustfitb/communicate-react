@@ -1,6 +1,7 @@
 import blogBgLeft from "../../assets/image/circle-bg-img.png";
 import blogHalfCircle from "../../assets/image/half-circle-right-icon.png";
 import triangleIcon from "../../assets/image/triangle-icon.png";
+import { DefaultCircle } from "../components.styles";
 import BlogCard from "./BlogCard";
 const blogcards = [
   {
@@ -28,8 +29,8 @@ const blogcards = [
 const Blog = () => {
   return (
     <section id="blog">
-      <img id="triangle-icon" src={triangleIcon} alt="" />
-      <img id="blogBgLeft" src={blogBgLeft} alt="Desire Bg Circle" />
+      <img id="triangle-icon" src={triangleIcon} alt="Triangle" />
+      <DefaultCircle color="#003E68" className="default-circle" />
       <img id="blogHalfCircle" src={blogHalfCircle} alt="Desire Half Circle" />
       <div className="blog__container">
         <div className="blog__top" data-aos="fade-up">

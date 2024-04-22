@@ -3,6 +3,7 @@ import TeamImages from "./TeamImages";
 import TeamContent from "./TeamContent";
 import circleBgLeft from "../../assets/image/circle-bg-left-img.png";
 import halfCircle from "../../assets/image/half-circle-left-icon.png";
+import { DefaultCircle } from "../components.styles";
 
 function Team() {
   const MEMBERS = [
@@ -60,7 +61,8 @@ function Team() {
 
   return (
     <section id="team">
-      <img id="circleBgLeft" src={circleBgLeft} alt="circle-bg-left" />
+      <DefaultCircle color="#003E68" className="default-circle" />
+
       <img id="halfCircle" src={halfCircle} alt="half-circle" />
 
       <div className="team__container">

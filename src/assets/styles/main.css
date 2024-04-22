@@ -244,7 +244,7 @@ body {
 }
 .services__card:hover {
   transform: rotate(-1deg);
-  border: 1px solid #6f34fe;
+  border: 1px solid #003e68;
 }
 .services__card:hover .services__card-logo img {
   transform: translateY(-5px);
@@ -318,7 +318,7 @@ body {
   }
   .services__card:hover {
     transform: rotate(-1deg);
-    border: 1px solid #6f34fe;
+    border: 1px solid #003e68;
   }
   .services__card:hover .services__card-logo img {
     transform: translateY(-5px);
@@ -573,7 +573,7 @@ header .header__container nav .hamburger-react {
     gap: 20px;
   }
   header .header__container nav ul li .nav-active {
-    color: #6f34fe !important;
+    color: #003e68 !important;
   }
   header .header__container nav ul li .nav-active::after {
     width: 100%;
@@ -656,7 +656,7 @@ header .header__container nav .hamburger-react {
     gap: 20px;
   }
   header .header__container nav ul li .nav-active {
-    color: #6f34fe !important;
+    color: #003e68 !important;
   }
   header .header__container nav ul li .nav-active::after {
     width: 100%;
@@ -893,7 +893,7 @@ footer .footer__container .footer__description {
   font-weight: 600;
 }
 #hero .hero__container .hero__left .hero__title span {
-  color: #6f34fe;
+  color: #003e68;
   font-weight: 800;
   font-size: 4.625rem;
 }
@@ -983,7 +983,7 @@ footer .footer__container .footer__description {
     font-weight: 600;
   }
   #hero .hero__container .hero__left .hero__title span {
-    color: #6f34fe;
+    color: #003e68;
     font-weight: 800;
     font-size: 4.625rem;
   }
@@ -1082,7 +1082,7 @@ footer .footer__container .footer__description {
     font-weight: 600;
   }
   #hero .hero__container .hero__left .hero__title span {
-    color: #6f34fe;
+    color: #003e68;
     font-weight: 800;
     font-size: 4rem;
   }
@@ -1186,7 +1186,7 @@ footer .footer__container .footer__description {
     font-weight: 600;
   }
   #hero .hero__container .hero__left .hero__title span {
-    color: #6f34fe;
+    color: #003e68;
     font-weight: 800;
     font-size: 2.5rem;
   }
@@ -1260,10 +1260,9 @@ footer .footer__container .footer__description {
   align-items: center;
   position: relative;
 }
-#services #circle-bg-left {
-  position: absolute;
-  top: 207px;
-  left: 0;
+#services .default-circle {
+  top: 200px;
+  left: -150px;
   animation: moveRight 1s ease-in-out infinite alternate;
 }
 #services #half-circle-left {
@@ -1295,7 +1294,7 @@ footer .footer__container .footer__description {
   gap: 15px;
 }
 #services .services__container .services__top h4 {
-  color: #6f34fe;
+  color: #003e68;
   font-weight: 600;
   font-size: 1.375rem;
 }
@@ -1320,24 +1319,9 @@ footer .footer__container .footer__description {
     align-items: center;
     position: relative;
   }
-  #services #circle-bg-left {
-    position: absolute;
-    top: 207px;
-    left: 0;
-    animation: moveRight 1s ease-in-out infinite alternate;
-  }
-  #services #half-circle-left {
-    height: 42px;
-    top: 170px;
-    left: 13px;
-    position: absolute;
-    animation: moveTop 1s ease-in-out infinite alternate;
-  }
-  #services #corn-left-icon {
-    position: absolute;
-    animation: moveTop 2s ease-in-out infinite alternate;
-    bottom: 250px;
-    right: 25px;
+  #services #half-circle-left,
+  #services .default-circle {
+    display: none;
   }
   #services .services__container {
     z-index: 10;
@@ -1355,7 +1339,7 @@ footer .footer__container .footer__description {
     gap: 15px;
   }
   #services .services__container .services__top h4 {
-    color: #6f34fe;
+    color: #003e68;
     font-weight: 600;
     font-size: 1.375rem;
   }
@@ -1380,12 +1364,6 @@ footer .footer__container .footer__description {
     align-items: center;
     position: relative;
   }
-  #services #circle-bg-left {
-    position: absolute;
-    top: 207px;
-    left: 0;
-    animation: moveRight 1s ease-in-out infinite alternate;
-  }
   #services #half-circle-left {
     height: 42px;
     top: 170px;
@@ -1414,7 +1392,7 @@ footer .footer__container .footer__description {
     gap: 15px;
   }
   #services .services__container .services__top h4 {
-    color: #6f34fe;
+    color: #003e68;
     font-weight: 600;
     font-size: 1.375rem;
   }
@@ -1446,7 +1424,7 @@ footer .footer__container .footer__description {
   left: 0;
   width: 100%;
   min-height: 544px;
-  background-color: #6f34fe;
+  background-color: #003e68;
 }
 #portfolio #portfolio-right,
 #portfolio #portfolio-left,
@@ -1570,7 +1548,7 @@ footer .footer__container .footer__description {
     left: 0;
     width: 100%;
     min-height: 544px;
-    background-color: #6f34fe;
+    background-color: #003e68;
   }
   #portfolio #portfolio-right,
   #portfolio #portfolio-left,
@@ -1747,9 +1725,10 @@ footer .footer__container .footer__description {
 #team #circleBgLeft {
   position: absolute;
 }
-#team #circleBgLeft {
-  left: 0;
-  top: 10%;
+#team .default-circle {
+  width: 300px;
+  height: 300px;
+  left: -200px;
   animation: moveRight 1s ease-in-out infinite alternate;
 }
 #team #halfCircle {
@@ -1829,7 +1808,7 @@ footer .footer__container .footer__description {
 #team .team__container .team__content .team__content-testimonials .testimonial > h1 {
   font-weight: 600;
   font-size: 1.375rem;
-  color: #6f34fe;
+  color: #003e68;
 }
 #team .team__container .team__content .team__content-testimonials .testimonial .testimonial-carousel {
   display: flex;
@@ -1881,7 +1860,7 @@ footer .footer__container .footer__description {
   font-size: 2rem;
 }
 #team .team__container .team__content .team__content-testimonials .swiper-nav-btns button:hover {
-  background-color: #6f34fe;
+  background-color: #003e68;
 }
 #team .team__container .team__content .team__content-testimonials .swiper-button-prev,
 #team .team__container .team__content .team__content-testimonials .swiper-button-next {
@@ -1901,10 +1880,8 @@ footer .footer__container .footer__description {
   #team #circleBgLeft {
     display: none;
   }
-  #team #circleBgLeft {
-    left: 0;
-    top: 10%;
-    animation: moveRight 1s ease-in-out infinite alternate;
+  #team .default-circle {
+    display: none;
   }
   #team #halfCircle {
     top: 20%;
@@ -1984,7 +1961,7 @@ footer .footer__container .footer__description {
   #team .team__container .team__content .team__content-testimonials .testimonial > h1 {
     font-weight: 600;
     font-size: 1.375rem;
-    color: #6f34fe;
+    color: #003e68;
   }
   #team .team__container .team__content .team__content-testimonials .testimonial .testimonial-carousel {
     display: flex;
@@ -2001,6 +1978,7 @@ footer .footer__container .footer__description {
     gap: 10px;
   }
   #team .team__container .team__content .team__content-testimonials .testimonial .testimonial-carousel > .testimonial__content > i {
+    display: none;
     font-size: 3rem;
     color: rgb(252, 166, 31);
   }
@@ -2028,7 +2006,7 @@ footer .footer__container .footer__description {
   #team .team__container .team__content .team__content-testimonials .swiper-nav-btns {
     display: flex;
     justify-content: center;
-    margin-left: 50px;
+    margin-left: 0px;
     margin-top: 20px;
     display: flex;
     display: flex;
@@ -2038,7 +2016,7 @@ footer .footer__container .footer__description {
     font-size: 2rem;
   }
   #team .team__container .team__content .team__content-testimonials .swiper-nav-btns button:hover {
-    background-color: #6f34fe;
+    background-color: #003e68;
   }
   #team .team__container .team__content .team__content-testimonials .swiper-button-prev,
   #team .team__container .team__content .team__content-testimonials .swiper-button-next {
@@ -2055,7 +2033,7 @@ footer .footer__container .footer__description {
     font-size: 2rem;
   }
   #team .team__container .team__content .testimonial__buttons button:hover {
-    background-color: #6f34fe;
+    background-color: #003e68;
   }
 }
 #desire {
@@ -2067,10 +2045,9 @@ footer .footer__container .footer__description {
   justify-content: center;
   align-items: center;
 }
-#desire #desireBgLeft {
-  position: absolute;
+#desire .default-circle {
+  right: -150px;
   top: 100px;
-  right: -10px;
   animation: moveRight 1s ease-in-out infinite alternate;
 }
 #desire #desireHalfCircle {
@@ -2127,7 +2104,7 @@ footer .footer__container .footer__description {
   width: 100%;
   height: 30px;
   border-radius: 50px;
-  background-color: #6f34fe;
+  background-color: #003e68;
 }
 #desire .desire__container .desire__bottom .desire__left .desire__input-row input[type=range]::-webkit-slider-thumb {
   -webkit-appearance: none;
@@ -2188,7 +2165,7 @@ footer .footer__container .footer__description {
   gap: 5px;
 }
 #desire .desire__container .desire__bottom .desire__right .desire__checkboxes .desire__checkbox-row label input {
-  accent-color: #6f34fe;
+  accent-color: #003e68;
   width: 20px;
   height: 20px;
 }
@@ -2213,10 +2190,10 @@ footer .footer__container .footer__description {
     justify-content: center;
     align-items: center;
   }
-  #desire #desireBgLeft {
+  #desire #desireHalfCircle {
     display: none;
   }
-  #desire #desireHalfCircle {
+  #desire .default-circle {
     display: none;
   }
   #desire .desire__container {
@@ -2267,7 +2244,7 @@ footer .footer__container .footer__description {
     width: 100%;
     height: 30px;
     border-radius: 50px;
-    background-color: #6f34fe;
+    background-color: #003e68;
   }
   #desire .desire__container .desire__bottom .desire__left .desire__input-row input[type=range]::-webkit-slider-thumb {
     -webkit-appearance: none;
@@ -2328,7 +2305,7 @@ footer .footer__container .footer__description {
     gap: 5px;
   }
   #desire .desire__container .desire__bottom .desire__right .desire__checkboxes .desire__checkbox-row label input {
-    accent-color: #6f34fe;
+    accent-color: #003e68;
     width: 20px;
     height: 20px;
   }
@@ -2352,9 +2329,6 @@ footer .footer__container .footer__description {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  #desire #desireBgLeft {
-    display: none;
   }
   #desire #desireHalfCircle {
     display: none;
@@ -2407,7 +2381,7 @@ footer .footer__container .footer__description {
     width: 100%;
     height: 30px;
     border-radius: 50px;
-    background-color: #6f34fe;
+    background-color: #003e68;
   }
   #desire .desire__container .desire__bottom .desire__left .desire__input-row input[type=range]::-webkit-slider-thumb {
     -webkit-appearance: none;
@@ -2469,7 +2443,7 @@ footer .footer__container .footer__description {
     gap: 5px;
   }
   #desire .desire__container .desire__bottom .desire__right .desire__checkboxes .desire__checkbox-row label input {
-    accent-color: #6f34fe;
+    accent-color: #003e68;
     width: 20px;
     height: 20px;
   }
@@ -2514,7 +2488,7 @@ footer .footer__container .footer__description {
 }
 #contact .contact__container .contact__top h3 {
   font-size: 1.375rem;
-  color: #6f34fe;
+  color: #003e68;
   font-weight: 600;
 }
 #contact .contact__container .contact__top h1 {
@@ -2531,7 +2505,7 @@ footer .footer__container .footer__description {
 #contact .contact__container .contact__bottom .contact__info {
   padding: 40px 15px;
   border-radius: 20px;
-  background-color: #6f34fe;
+  background-color: #003e68;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -2625,7 +2599,7 @@ footer .footer__container .footer__description {
   }
   #contact .contact__container .contact__top h3 {
     font-size: 1.375rem;
-    color: #6f34fe;
+    color: #003e68;
     font-weight: 600;
   }
   #contact .contact__container .contact__top h1 {
@@ -2642,7 +2616,7 @@ footer .footer__container .footer__description {
   #contact .contact__container .contact__bottom .contact__info {
     padding: 40px 15px;
     border-radius: 20px;
-    background-color: #6f34fe;
+    background-color: #003e68;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -2735,7 +2709,7 @@ footer .footer__container .footer__description {
   }
   #contact .contact__container .contact__top h3 {
     font-size: 1.375rem;
-    color: #6f34fe;
+    color: #003e68;
     font-weight: 600;
   }
   #contact .contact__container .contact__top h1 {
@@ -2752,7 +2726,7 @@ footer .footer__container .footer__description {
   #contact .contact__container .contact__bottom .contact__info {
     padding: 40px 15px;
     border-radius: 20px;
-    background-color: #6f34fe;
+    background-color: #003e68;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -2833,11 +2807,9 @@ footer .footer__container .footer__description {
   left: 40px;
   animation: moveTop 3s ease-in-out infinite alternate;
 }
-#blog #blogBgLeft {
-  position: absolute;
-  width: 32px;
+#blog .default-circle {
+  right: -150px;
   top: 80px;
-  right: -10px;
   animation: moveRight 1s ease-in-out infinite alternate;
 }
 #blog #blogHalfCircle {
@@ -2936,7 +2908,7 @@ footer .footer__container .footer__description {
   left: 0;
   width: 0;
   height: 2px;
-  background-color: #6f34fe;
+  background-color: #003e68;
   transition: 0.4s;
 }
 #blog .blog__container .blog__cards .blog__card .blog__card-container .blog__card-info:hover {
@@ -2967,11 +2939,11 @@ footer .footer__container .footer__description {
   left: 0;
   width: 0;
   height: 2px;
-  background-color: #6f34fe;
+  background-color: #003e68;
   transition: 0.4s;
 }
 #blog .blog__container .blog__cards .blog__card .blog__card-container #readmore:hover {
-  color: #6f34fe;
+  color: #003e68;
 }
 #blog .blog__container .blog__cards .blog__card .blog__card-container #readmore:hover::after {
   width: 100%;
@@ -2979,8 +2951,8 @@ footer .footer__container .footer__description {
 
 @media screen and (max-width: 1000px) {
   #triangle-icon,
-  #blogBgLeft,
-  #blogHalfCircle {
+  #blogHalfCircle,
+  .default-circle {
     display: none;
   }
 }
@@ -3012,7 +2984,7 @@ footer .footer__container .footer__description {
   font-size: 3rem;
 }
 #not__found .not__found-container p {
-  color: #6f34fe;
+  color: #003e68;
   font-size: 1.5rem;
 }
 

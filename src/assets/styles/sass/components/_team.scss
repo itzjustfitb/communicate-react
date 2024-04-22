@@ -9,10 +9,10 @@
   #circleBgLeft {
     position: absolute;
   }
-  #circleBgLeft {
-    left: 0;
-    top: 10%;
-
+  .default-circle {
+    width: 300px;
+    height: 300px;
+    left: -200px;
     animation: moveRight 1s ease-in-out infinite alternate;
   }
   #halfCircle {
@@ -164,10 +164,8 @@
     #circleBgLeft {
       display: none;
     }
-    #circleBgLeft {
-      left: 0;
-      top: 10%;
-      animation: moveRight 1s ease-in-out infinite alternate;
+    .default-circle {
+      display: none;
     }
     #halfCircle {
       top: 20%;
@@ -258,6 +256,7 @@
                 display: flex;
                 gap: 10px;
                 > i {
+                  display: none;
                   font-size: 3rem;
                   color: $accent;
                 }
@@ -288,7 +287,7 @@
           .swiper-nav-btns {
             display: flex;
             justify-content: center;
-            margin-left: 50px;
+            margin-left: 0px;
             margin-top: 20px;
             display: flex;
             display: flex;

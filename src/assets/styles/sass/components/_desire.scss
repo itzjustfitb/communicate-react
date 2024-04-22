@@ -10,10 +10,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  #desireBgLeft {
-    position: absolute;
+  .default-circle {
+    right: -150px;
     top: 100px;
-    right: -10px;
     animation: moveRight 1s ease-in-out infinite alternate;
   }
   #desireHalfCircle {
@@ -165,10 +164,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    #desireBgLeft {
+    #desireHalfCircle {
       display: none;
     }
-    #desireHalfCircle {
+
+    .default-circle {
       display: none;
     }
 
@@ -316,9 +316,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    #desireBgLeft {
-      display: none;
-    }
     #desireHalfCircle {
       display: none;
     }
