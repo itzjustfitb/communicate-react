@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import TeamImages from "./TeamImages";
 import TeamContent from "./TeamContent";
-import circleBgLeft from "../../assets/image/circle-bg-left-img.png";
 import halfCircle from "../../assets/image/half-circle-left-icon.png";
 import { DefaultCircle } from "../components.styles";
 

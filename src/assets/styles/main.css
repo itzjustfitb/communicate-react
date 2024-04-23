@@ -1160,7 +1160,8 @@ footer .footer__container .footer__description {
     display: none;
   }
   #hero .hero__container {
-    padding: 40px 0;
+    padding: 0;
+    padding-top: 40px;
     width: 80%;
     display: flex;
     flex-direction: column;
