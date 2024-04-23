@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
 import TeamSliderButtons from "./TeamSliderButtons";
 
-function TeamContent({ data }) {
+function TeamContent({ data, active, setActive }) {
   return (
     <div className="team__content" data-aos="fade-left">
       <div className="team__content-testimonials">
@@ -35,7 +35,11 @@ function TeamContent({ data }) {
               </SwiperSlide>
             );
           })}
-          <TeamSliderButtons />
+          <TeamSliderButtons
+            data={data}
+            active={active}
+            setActive={setActive}
+          />
         </Swiper>
       </div>
     </div>
