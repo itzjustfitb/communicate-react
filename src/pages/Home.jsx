@@ -7,10 +7,12 @@ import Contact from "../components/Contact/Contact";
 import Team from "../components/Team/Team";
 import Blog from "../components/Blog/Blog";
 import SubHero from "../components/SubHero/SubHero";
+import SubHeader from "../components/SubHeader";
 
 function Home({ modalActive, setModalActive }) {
   return (
     <main>
+      <SubHeader />
       <SubHero />
       <Hero />
       <Services modalActive={modalActive} setModalActive={setModalActive} />
