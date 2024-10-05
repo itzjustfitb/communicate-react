@@ -61,7 +61,6 @@ function Header() {
         <div className="header__logo">
           <a href="./">
             <img src={siteLogo} alt="Site Logo" />
-            <p>CommuniCat-e</p>
           </a>
         </div>
         <nav>
