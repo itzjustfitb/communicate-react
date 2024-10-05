@@ -55,7 +55,7 @@ function Footer() {
             <i className="ri-linkedin-fill"></i>
           </SocialItem>
         </div>
-        <p className="footer__description">blueCat</p>
+        <p className="footer__description">blueCats</p>
       </div>
     </footer>
   );
